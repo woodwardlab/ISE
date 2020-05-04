@@ -1,0 +1,330 @@
+{
+    "frames": {
+        "trials": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "sources": "FAM",
+                    "altSources": "FAM",
+                    "audioSources": "video_1_HO_intro",
+                    "calibrationLength": 2000
+                },
+                {
+                    "sources": "FAM",
+                    "altSources": "FAM"
+                },
+                {
+                    "sources": "FAM",
+                    "altSources": "FAM"
+                },
+                {
+                    "sources": "FAM",
+                    "altSources": "FAM"
+                },
+                {
+                    "sources": "TEST1",
+                    "altSources": "ALTTEST1"
+                },
+                {
+                    "sources": "TEST2",
+                    "altSources": "ALTTEST2"
+                },
+                {
+                    "sources": "TEST1",
+                    "altSources": "ALTTEST1"
+                },
+                {
+                    "sources": "TEST2",
+                    "altSources": "ALTTEST2"
+                },
+                {
+                    "sources": "TEST1",
+                    "altSources": "ALTTEST1"
+                },
+                {
+                    "sources": "TEST2",
+                    "altSources": "ALTTEST2"
+                },
+                {
+                    "sources": [],
+                    "altSources": [],
+                    "doRecording": false,
+                    "audioSources": "all_done",
+                    "calibrationLength": 0
+                }
+            ],
+            "parameterSets": [
+                {
+                    "FAM": "W4B2",
+                    "TEST1": "W4B2A-15",
+                    "TEST2": "W4B2D-15",
+                    "ALTTEST1": "W4B2D-15",
+                    "ALTTEST2": "W4B2A-15"
+                },
+                {
+                    "FAM": "W2W3",
+                    "TEST1": "W2W3A-15",
+                    "TEST2": "W2W3D-15",
+                    "ALTTEST1": "W2W3D-15",
+                    "ALTTEST2": "W2W3A-15"
+                }
+            ],
+            "commonFrameProperties": {
+                "kind": "exp-lookit-video",
+                "baseDir": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/",
+                "testCount": 1,
+                "audioTypes": [
+                    "mp3"
+                ],
+                "pauseAudio": "pause",
+                "videoTypes": [
+                    "mp4"
+                ],
+                "attnSources": "attentiongrabber",
+                "introSources": [],
+                "musicSources": [],
+                "unpauseAudio": "return_after_pause",
+                "announceLength": 3,
+                "calibrationLength": 0,
+                "calibrationPositions": [
+                    "left",
+                    "right",
+                    "center"
+                ],
+                "calibrationAudioSources": "chimes",
+                "calibrationVideoSources": "attentiongrabber"
+            }
+        },
+        "exit-survey": {
+            "kind": "exp-lookit-exit-survey",
+            "debriefing": {
+                "text": "Here is where you would enter debriefing information for the family. This is a chance to explain the purpose of your study and how the family helped; at this point it's more obvious to the participant that skimming the info is fine if they're not super-interested, so you can elaborate in ways you might have avoided ahead of time in the interest of keeping instructions short. You may want to mention the various conditions kids were assigned to if you didn't before, and try to head off any concerns parents might have about how their child 'did' on the study, especially if there are 'correct' answers that will have been obvious to a parent. <br><br> It is great if you can link people to a layperson-accessible article on a related topic - e.g., media coverage of one of your previous studies in this research program, a talk on Youtube, a parenting resource. <br><br> If you are compensating participants, restate what the compensation is (and any conditions, and let them know when to expect their payment! E.g.: To thank you for your participation, we'll be emailing you a $4 Amazon gift card - this should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. (If you don't hear from us by then, feel free to reach out!) If you participate again with another child in the age range, you'll receive one gift card per child.",
+                "title": "Thank you!"
+            }
+        },
+        "test-trials": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "sources": "VIDEO0",
+                    "altSources": "ALTVIDEO0",
+                    "audioSources": "video_1_HO_intro",
+                    "calibrationLength": 2000
+                },
+                {
+                    "sources": "VIDEO0",
+                    "altSources": "ALTVIDEO0"
+                },
+                {
+                    "sources": "VIDEO0",
+                    "altSources": "ALTVIDEO0"
+                },
+                {
+                    "sources": "VIDEO0",
+                    "altSources": "ALTVIDEO0"
+                },
+                {
+                    "sources": [],
+                    "altSources": [],
+                    "doRecording": false,
+                    "audioSources": "all_done",
+                    "calibrationLength": 0
+                }
+            ],
+            "parameterSets": [
+                {
+                    "VIDEO0": "W4B2",
+                    "ALTVIDEO0": "W2W3"
+                },
+                {
+                    "VIDEO0": "W2W3",
+                    "ALTVIDEO0": "W4B2"
+                }
+            ],
+            "commonFrameProperties": {
+                "kind": "exp-lookit-video",
+                "baseDir": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/",
+                "testCount": 1,
+                "audioTypes": [
+                    "mp3"
+                ],
+                "pauseAudio": "pause",
+                "videoTypes": [
+                    "mp4"
+                ],
+                "attnSources": "attentiongrabber",
+                "introSources": [],
+                "musicSources": [],
+                "unpauseAudio": "return_after_pause",
+                "announceLength": 3,
+                "calibrationLength": 0,
+                "calibrationPositions": [
+                    "left",
+                    "right",
+                    "center"
+                ],
+                "calibrationAudioSources": "chimes",
+                "calibrationVideoSources": "attentiongrabber"
+            }
+        },
+        "instructions": {
+            "kind": "exp-lookit-text",
+            "blocks": [
+                {
+                    "emph": true,
+                    "text": "Your child does not need to be with you yet! First, let's go over what will happen in this study..."
+                },
+                {
+                    "text": "You might use a simple text frame like this one to give parents a broad overview of the study. You should make sure to let them know (here or at some point before really getting started) that they will have a chance to select a video privacy level at the end of the study, and that they can leave at any point by pressing F1 or ctrl-X. Try those now - you will see a little box pop up asking if you really want to end the study, and taking you straight to the exit survey if so. If you close this window/tab, you will get a generic warning (it's not possible to override that!) and if you choose to stay you will see that same box."
+                },
+                {
+                    "text": "This frame is an 'exp-lookit-text' frame, and you can find the text you're reading right now in the JSON document for this study. Try editing it so it says something silly!"
+                },
+                {
+                    "text": "You can learn more about the frames available, and how to customize each one, in the frame documentation. Here's the <a href='https://lookit.github.io/ember-lookit-frameplayer/classes/ExpLookitText.html' target='_blank'>exp-lookit-text frame doc.</a>."
+                }
+            ],
+            "showPreviousButton": false
+        },
+        "video-config": {
+            "kind": "exp-video-config",
+            "troubleshootingIntro": "This is a standard frame you probably want to put at the very start of your study. You can customize this bit of text; the rest is standard and maintained by Lookit."
+        },
+        "video-consent": {
+            "kind": "exp-lookit-video-consent",
+            "PIName": "Jane Smith",
+            "datause": "We are primarily interested in your child's emotional reactions to the images and sounds. A research assistant will watch your video to measure the precise amount of delight in your child's face as he or she sees each cat picture.",
+            "payment": "After you finish the study, we will email you a $5 BabyStore gift card within approximately three days. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
+            "purpose": "Why do babies love cats? This study will help us find out whether babies love cats because of their soft fur or their twitchy tails.",
+            "PIContact": "Jane Smith at 123 456 7890",
+            "procedures": "Your child will be shown pictures of lots of different cats, along with noises that cats make like meowing and purring. We are interested in which pictures and sounds make your child smile. We will ask you (the parent) to turn around to avoid influencing your child's responses. There are no anticipated risks associated with participating.",
+            "institution": "Science University"
+        },
+        "video-preview": {
+            "kind": "exp-video-preview",
+            "text": "Here are the videos your child will see in this study. You can watch them ahead of time if you're curious--please just don't show your child yet! (This is an 'exp-video-preview' frame.)",
+            "prompt": "My child can NOT see the screen. Start the preview!",
+            "videos": [
+                {
+                    "caption": "Your child will first see two people talking. The same video will be repeated a couple of times. Here's an example.",
+                    "sources": [
+                        {
+                            "src": "https://raw.githubusercontent.com/woodwardlab/ISE/master/W4B2.mp4",
+                            "type": "video/mp4"
+                        }
+                    ]
+                },
+                {
+                    "caption": "Your child will then see the two people interact and hear a BEEP sound. The video will freeze for a few seconds after playing. Please keep it at this freezed still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image. These videos will then alternate and repeat a couple of times. Here's an example.",
+                    "sources": [
+                        {
+                            "src": "https://raw.githubusercontent.com/woodwardlab/ISE/master/W4B2A-15.mp4",
+                            "type": "video/mp4"
+                        }
+                    ]
+                },
+                {
+                    "caption": "Here is another exmample. These videoss will then alternate and repeat a couple of times. ",
+                    "sources": [
+                        {
+                            "src": "https://raw.githubusercontent.com/woodwardlab/ISE/master/W4B2D-15.mp4",
+                            "type": "video/mp4"
+                        }
+                    ]
+                }
+            ]
+        },
+        "video-preview-exp": {
+            "kind": "exp-lookit-preview-explanation",
+            "image": {
+                "alt": "Father holding child looking over his shoulder",
+                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics/OverShoulder.jpg"
+            },
+            "blocks": [
+                {
+                    "text": "The reason we ask this is that your child is learning from you all the time. Even if he or she can't see where you're looking, you may unconsciously shift to face the \"unexpected\" events and influence your child's attention. We want to make sure we're measuring your child's own intuitions, rather than yours! (We know YOU know whether things should fall up or down.)"
+                },
+                {
+                    "text": "If you'd like to see the videos your child will be shown, you can take a look ahead of time now. It's important that you do this WITHOUT your child, so that the videos will still be new to him or her!"
+                }
+            ],
+            "introBlock": {
+                "text": "During the videos, we'll ask that you hold your child over your shoulder like this, so that you face away from the screen. (This is an 'exp-lookit-preview-explanation' frame.)"
+            },
+            "skipButtonText": "Skip preview",
+            "previewButtonText": "I'd like to preview the videos",
+            "showPreviousButton": true
+        },
+        "final-instructions": {
+            "kind": "exp-lookit-instructions",
+            "blocks": [
+                {
+                    "title": "This is an 'exp-lookit-instructions' frame.",
+                    "listblocks": [
+                        {
+                            "text": "See https://lookit.github.io/ember-lookit-frameplayer/classes/ExpLookitInstructions.html"
+                        },
+                        {
+                            "text": "You can display any text, audio, images, and video you want, and can optionally require participants to play audio/video segments to move on. You can also choose whether to display the webcam."
+                        }
+                    ]
+                },
+                {
+                    "text": "It's important that we can see you",
+                    "image": {
+                        "alt": "Father holding child looking over his shoulder",
+                        "src": "https://s3.amazonaws.com/lookitcontents/exp-physics/OverShoulder.jpg"
+                    },
+                    "title": "Camera position"
+                },
+                {
+                    "text": "Here's a video you have to play!",
+                    "title": "Test",
+                    "mediaBlock": {
+                        "text": "Look at that.",
+                        "isVideo": true,
+                        "sources": [
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/examples/7_control_same.mp4",
+                                "type": "video/mp4"
+                            },
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/examples/7_control_same.webm",
+                                "type": "video/webm"
+                            }
+                        ],
+                        "mustPlay": true,
+                        "warningText": "Please try playing the sample video."
+                    }
+                }
+            ],
+            "showWebcam": true,
+            "webcamBlocks": [
+                {
+                    "title": "Some webcam instructions",
+                    "listblocks": [
+                        {
+                            "text": "Like this!"
+                        },
+                        {
+                            "text": "Be careful your webcam does not have tape over it"
+                        }
+                    ]
+                }
+            ],
+            "nextButtonText": "Next"
+        }
+    },
+    "sequence": [
+        "video-config",
+        "video-consent",
+        "instructions",
+        "video-preview-exp",
+        "video-preview",
+        "final-instructions",
+        "trials",
+        "exit-survey"
+    ]
+}

@@ -211,7 +211,7 @@
                     "caption": "Your child will first see two people talking. The same video will be repeated a couple of times. Here's an example.",
                     "sources": [
                         {
-                            "src": "https://raw.githubusercontent.com/woodwardlab/ISE/master/W4B2.mp4",
+                            "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/mp4/W4B2.mp4",
                             "type": "video/mp4"
                         }
                     ]
@@ -220,7 +220,7 @@
                     "caption": "Your child will then see the two people interact and hear a BEEP sound. The video will freeze for a few seconds after playing. Please keep it at this freezed still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image. These videos will then alternate and repeat a couple of times. Here's an example.",
                     "sources": [
                         {
-                            "src": "https://raw.githubusercontent.com/woodwardlab/ISE/master/W4B2A-15.mp4",
+                            "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/mp4/W4B2A-15.mp4",
                             "type": "video/mp4"
                         }
                     ]
@@ -229,7 +229,7 @@
                     "caption": "Here is another exmample. These videoss will then alternate and repeat a couple of times. ",
                     "sources": [
                         {
-                            "src": "https://raw.githubusercontent.com/woodwardlab/ISE/master/W4B2D-15.mp4",
+                            "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/mp4/W4B2D-15.mp4",
                             "type": "video/mp4"
                         }
                     ]

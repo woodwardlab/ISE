@@ -177,10 +177,20 @@
                     "text": "Your child does not need to be with you yet! First, let's go over what will happen in this study..."
                 },
                 {
-                    "text": "Your baby will see two types of videos: two people talking and these people interacting (both positively and negatively). We are most interested in the baby's natural attention to these videos, especially during still images of people. So we ask that you don't talk while the videos are playing and not to direct your baby's attention or point to the screen. Participation is completely voluntary and you can leave at any point by pressing F1 or ctrl-X. You will have a chance to select a video privacy level at the end of the study. There are also some questions that we would love for you to fill out to help us better understand babies' social behavior! We thank you for your participation.  "
+                    "text": "Your baby will see 10 videos about 30s each. There will be three types of videos: (1) two people talking; (2) two people saying hi; and (3) two people disengaging. We are most interested in the baby's natural attention to these videos, especially during still images of people. So we ask that you don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos."
                 },
                 {
-                    "text": "You can learn more about the frames available, and how to customize each one, in the frame documentation. Here's the <a href='https://lookit.github.io/ember-lookit-frameplayer/classes/ExpLookitText.html' target='_blank'>exp-lookit-text frame doc.</a>."
+                    "text": "In some videos, there will be a BEEP sound. The video will then freeze for a few seconds."
+                },
+                    
+                {
+                    "text":"This is suppose to happen! Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image. These videos will then alternate and repeat a couple of times."
+                },
+                {
+                    "text": "To pause the study, press the space bar. Participation is completely voluntary and you can leave at any point by pressing F1."
+                },
+                 {
+                    "text":"You will have a chance to select a video privacy level at the end of the study. There are also some questions that we would love for you to fill out to help us better understand babies' social behavior!"
                 }
             ],
             "showPreviousButton": false
@@ -191,12 +201,12 @@
         },
         "video-consent": {
             "kind": "exp-lookit-video-consent",
-            "PIName": "Grace Hwang and Jessica Lee",
-            "datause": "We are primarily interested in how babies start to think about different people. A research assistant will watch your video to measure how long the baby looks at the screen.",
-            "payment": "After you finish the study, we will email you a $5 BabyStore gift card within approximately three days. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
+            "PIName": "Amanda Woodward",
+            "datause": "We are primarily interested in how babies start to think about people based on race, language, and other social categories. A research assistant will watch your video to measure how long the baby looks at the screen.",
+            "payment": "After you finish the study, we will email you a $5 gift card within approximately three days. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
             "purpose": "How do babies process people's interactions?",
-            "PIContact": "chicago.infant.learning@gmail.com",
-            "procedures": "Your child will be shown videos of different people, first talking and then interacting positively and negatively. We are interested in what babies think about different people and their interactions. We will ask you (the parent) to turn around to avoid influencing your child's responses. There are no anticipated risks associated with participating.",
+            "PIContact": "hyesung@uchicago.edu",
+            "procedures": "Your child will be shown videos of different people, first talking and then interacting. We are interested in what babies think about people and their interactions. We will ask you (the parent) to turn around to avoid influencing your child's responses. There are no anticipated risks associated with participating.",
             "institution": "University of Chicago"
         },
         "video-preview": {
@@ -241,7 +251,7 @@
             },
             "blocks": [
                 {
-                    "text": "The reason we ask this is that your child is learning from you all the time. Even if he or she can't see where you're looking, you may unconsciously shift to face the \"unexpected\" events and influence your child's attention. We want to make sure we're measuring your child's own intuitions, rather than yours! (We know YOU know whether things should fall up or down.)"
+                    "text": "The reason we ask this is that your child is learning from you all the time. Even if he or she can't see where you're looking, you may unconsciously shift to face the \"unexpected\" events and influence your child's attention. We want to make sure we're measuring your child's own intuitions, rather than yours!"
                 },
                 {
                     "text": "If you'd like to see the videos your child will be shown, you can take a look ahead of time now. It's important that you do this WITHOUT your child, so that the videos will still be new to him or her!"

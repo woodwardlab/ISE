@@ -12,39 +12,48 @@
                 },
                 {
                     "sources": "FAM",
-                    "altSources": "FAM"
+                    "altSources": "FAM",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
                 },
                 {
                     "sources": "FAM",
-                    "altSources": "FAM"
+                    "altSources": "FAM",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
                 },
                 {
                     "sources": "FAM",
-                    "altSources": "FAM"
+                    "altSources": "FAM",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
                 },
                 {
                     "sources": "TEST1",
-                    "altSources": "ALTTEST1"
+                    "altSources": "ALTTEST1",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
                 },
                 {
                     "sources": "TEST2",
-                    "altSources": "ALTTEST2"
+                    "altSources": "ALTTEST2",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
                 },
                 {
                     "sources": "TEST1",
-                    "altSources": "ALTTEST1"
+                    "altSources": "ALTTEST1",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
                 },
                 {
                     "sources": "TEST2",
-                    "altSources": "ALTTEST2"
+                    "altSources": "ALTTEST2",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
                 },
                 {
                     "sources": "TEST1",
-                    "altSources": "ALTTEST1"
+                    "altSources": "ALTTEST1",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
                 },
                 {
                     "sources": "TEST2",
-                    "altSources": "ALTTEST2"
+                    "altSources": "ALTTEST2",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
                 },
                 {
                     "sources": [],
@@ -60,14 +69,26 @@
                     "TEST1": "W4B2A-15",
                     "TEST2": "W4B2D-15",
                     "ALTTEST1": "W4B2D-15",
-                    "ALTTEST2": "W4B2A-15"
+                    "ALTTEST2": "W4B2A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
                 },
                 {
                     "FAM": "W2W3",
                     "TEST1": "W2W3A-15",
                     "TEST2": "W2W3D-15",
                     "ALTTEST1": "W2W3D-15",
-                    "ALTTEST2": "W2W3A-15"
+                    "ALTTEST2": "W2W3A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
                 }
             ],
             "commonFrameProperties": {
@@ -99,7 +120,7 @@
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
-                "text": "Here is where you would enter debriefing information for the family. This is a chance to explain the purpose of your study and how the family helped; at this point it's more obvious to the participant that skimming the info is fine if they're not super-interested, so you can elaborate in ways you might have avoided ahead of time in the interest of keeping instructions short. You may want to mention the various conditions kids were assigned to if you didn't before, and try to head off any concerns parents might have about how their child 'did' on the study, especially if there are 'correct' answers that will have been obvious to a parent. <br><br> It is great if you can link people to a layperson-accessible article on a related topic - e.g., media coverage of one of your previous studies in this research program, a talk on Youtube, a parenting resource. <br><br> If you are compensating participants, restate what the compensation is (and any conditions, and let them know when to expect their payment! E.g.: To thank you for your participation, we'll be emailing you a $4 Amazon gift card - this should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. (If you don't hear from us by then, feel free to reach out!) If you participate again with another child in the age range, you'll receive one gift card per child.",
+                "text": "Here is where you would enter debriefing information for the family. This is a chance to explain the purpose of your study and how the family helped; at this point it's more obvious to the participant that skimming the info is fine if they're not super-interested, so you can elaborate in ways you might have avoided ahead of time in the interest of keeping instructions short. You may want to mention the various conditions kids were assigned to if you didn't before, and try to head off any concerns parents might have about how their child 'did' on the study, especially if there are 'correct' answers that will have been obvious to a parent. <br><br> It is great if you can link people to a layperson-accessible article on a related topic - e.g., media coverage of one of your previous studies in this research program, a talk on Youtube, a parenting resource. <br><br> If you are compensating participants, restate what the compensation is (and any conditions, and let them know when to expect their payment! E.g.: To thank you for your participation, we'll be emailing you a $5 Amazon gift card - this should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. (If you don't hear from us by then, feel free to reach out!) If you participate again with another child in the age range, you'll receive one gift card per child.",
                 "title": "Thank you!"
             }
         },
@@ -182,15 +203,14 @@
                 {
                     "text": "In some videos, there will be a BEEP sound. The video will then freeze for a few seconds."
                 },
-                    
                 {
-                    "text":"This is suppose to happen! Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image. These videos will then alternate and repeat a couple of times."
+                    "text": "This is supposed to happen! Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image. These videos will then alternate and repeat a couple of times."
                 },
                 {
                     "text": "To pause the study, press the space bar. Participation is completely voluntary and you can leave at any point by pressing F1."
                 },
-                 {
-                    "text":"You will have a chance to select a video privacy level at the end of the study. There are also some questions that we would love for you to fill out to help us better understand babies' social behavior!"
+                {
+                    "text": "You will have a chance to select a video privacy level at the end of the study. There are also some questions that we would love for you to fill out to help us better understand babies' social behavior!"
                 }
             ],
             "showPreviousButton": false
@@ -198,6 +218,83 @@
         "video-config": {
             "kind": "exp-video-config",
             "troubleshootingIntro": "This is a standard frame you probably want to put at the very start of your study. You can customize this bit of text; the rest is standard and maintained by Lookit."
+        },
+        "demographic-1": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about your child",
+                    "properties": {
+                        "DOB": {
+                            "type": "string",
+                            "title": "Date of Birth (m/d/y)",
+                            "required": true
+                        },
+                        "sex": {
+                            "enum": [
+                                "Male",
+                                "Female"
+                            ],
+                            "type": "string",
+                            "title": "Sex",
+                            "required": true
+                        },
+                        "race": {
+                            "enum": [
+                                "American Indian or Alaska Native",
+                                "Asian",
+                                "Black or African-American",
+                                "Hispanic or Latino",
+                                "White",
+                                "Native Hawaiian or Other Pacific Islander",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "string",
+                            "title": "I would identify my child's race or ethnicity as (if more than one, please select other and specify in the next question)",
+                            "required": true
+                        },
+                        "race2": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        },
+                        "address": {
+                            "type": "string",
+                            "title": "Your child's current address"
+                        },
+                        "language": {
+                            "enum": [
+                                "1. Monolingual (English-Speaking)",
+                                "2. Exposure (English 80-90% and some exposure to another language 10-20%)",
+                                "3. Bilingual (English 50-70% and one other language 30-50%)",
+                                "4. Multilingual (English and 2 or more other languages)"
+                            ],
+                            "type": "string",
+                            "title": "Your baby's language exposure (please select the description that best matches your child)"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "DOB": {
+                            "placeholder": "your child's date of birth"
+                        },
+                        "sex": {
+                            "validator": "required-field"
+                        },
+                        "race": {
+                            "validator": "required-field"
+                        },
+                        "race2": {
+                            "placeholder": "please specify your child's race or ethnicity"
+                        },
+                        "address": {
+                            "placeholder": "street address, city, state, zipcode"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Moving on..."
         },
         "video-consent": {
             "kind": "exp-lookit-video-consent",
@@ -328,6 +425,7 @@
         }
     },
     "sequence": [
+        "demographic-1",
         "video-config",
         "video-consent",
         "instructions",

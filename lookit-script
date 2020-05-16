@@ -191,6 +191,13 @@
                             "title": "Your baby's language exposure (please select the description that best matches your child)"
                         }
                     }
+                },
+                "options": {
+                    "fields": {
+                        "language": {
+                            "type": "checkbox"
+                        }
+                    }
                 }
             },
             "nextButtonText": "Next"
@@ -370,6 +377,83 @@
                         },
                         "parent2-language2": {
                             "placeholder": "please specify the other language"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "sequence": [
+            "video-config",
+            "video-consent",
+            "instructions",
+            "video-preview-exp",
+            "video-preview",
+            "final-instructions",
+            "trials",
+            "demographic",
+            "language",
+            "parent-1",
+            "parent-2",
+            "childcare",
+            "exposure",
+            "neighborhood-years",
+            "neighborhood-1",
+            "neighborhood-2",
+            "neighborhood-3",
+            "neighborhood-4",
+            "exit-survey"
+        ],
+        "childcare": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about childcare arrangment",
+                    "properties": {
+                        "childcare1": {
+                            "enum": [
+                                "Yes",
+                                "No"
+                            ],
+                            "type": "checkbox",
+                            "title": "Do you use any type of childcare for your child?"
+                        },
+                        "childcare2": {
+                            "type": "string",
+                            "title": "If yes, about how many hours per week does your child spend in childcare?"
+                        },
+                        "childcare3": {
+                            "enum": [
+                                "Relative (other than parent) cares for child",
+                                "Childcare provider in child's own home",
+                                "Childcare provider out of child's home (unlicensed)",
+                                "Licensed family daycare",
+                                "Daycare center",
+                                "Other (please describe below)"
+                            ],
+                            "type": "checkbox",
+                            "title": "If yes, which of the following best describes your current childcare arrangment?"
+                        },
+                        "childcare4": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "childcare1": {
+                            "type": "checkbox"
+                        },
+                        "childcare2": {
+                            "placeholder": "Number of hours per week"
+                        },
+                        "childcare3": {
+                            "type": "checkbox"
+                        },
+                        "childcare4": {
+                            "placeholder": "please specify your current childcare arrangment"
                         }
                     }
                 }
@@ -591,6 +675,347 @@
                 }
             ]
         },
+        "neighborhood-1": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Please indicate how often you and other people in this neighborhood: (please check one item per question)",
+                    "properties": {
+                        "question1": {
+                            "enum": [
+                                "1. Never",
+                                "2. Rarely",
+                                "3. Sometimes",
+                                "4. Often"
+                            ],
+                            "type": "checkbox",
+                            "title": "Visit in each other’s homes or meet on the street?"
+                        },
+                        "question2": {
+                            "enum": [
+                                "1. Never",
+                                "2. Rarely",
+                                "3. Sometimes",
+                                "4. Often"
+                            ],
+                            "type": "checkbox",
+                            "title": "Do favors for each other?"
+                        },
+                        "question3": {
+                            "enum": [
+                                "1. Never",
+                                "2. Rarely",
+                                "3. Sometimes",
+                                "4. Often"
+                            ],
+                            "type": "checkbox",
+                            "title": "Ask each other for advice about personal things?"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "question1": {
+                            "type": "checkbox"
+                        },
+                        "question2": {
+                            "type": "checkbox"
+                        },
+                        "question3": {
+                            "type": "checkbox"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "neighborhood-2": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Please indicate your agreement or disagreement with the following statements about your neighborhood: (Please check one item per question)",
+                    "properties": {
+                        "question1": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "I feel that I belong in this neighborhood."
+                        },
+                        "question2": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "I am proud to live in this neighborhood."
+                        },
+                        "question3": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "If I had to move away from this neighborhood, I would be sad to leave."
+                        },
+                        "question4": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "This neighborhood is a good place for older people to live."
+                        },
+                        "question5": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "This neighborhood is a good place for young families to live."
+                        },
+                        "question6": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "This is a close-knit neighborhood."
+                        },
+                        "question7": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People around here are willing to help their neighbors."
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "question1": {
+                            "type": "checkbox"
+                        },
+                        "question2": {
+                            "type": "checkbox"
+                        },
+                        "question3": {
+                            "type": "checkbox"
+                        },
+                        "question4": {
+                            "type": "checkbox"
+                        },
+                        "question5": {
+                            "type": "checkbox"
+                        },
+                        "question6": {
+                            "type": "checkbox"
+                        },
+                        "question7": {
+                            "type": "checkbox"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "neighborhood-3": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Please indicate your agreement or disagreement with the following statements about your neighborhood: (Please check one item per question)",
+                    "properties": {
+                        "question1": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People in this neighborhood generally don’t get along with each other."
+                        },
+                        "question2": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People in this neighborhood don’t share the same values."
+                        },
+                        "question3": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People in this neighborhood can be trusted."
+                        },
+                        "question4": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "Many people in this neighborhood are afraid to go out at night."
+                        },
+                        "question5": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "There are places in this neighborhood where everyone knows “trouble” is expected."
+                        },
+                        "question6": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "You’re taking a big chance if you walk in this neighborhood alone after dark."
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "question1": {
+                            "type": "checkbox"
+                        },
+                        "question2": {
+                            "type": "checkbox"
+                        },
+                        "question3": {
+                            "type": "checkbox"
+                        },
+                        "question4": {
+                            "type": "checkbox"
+                        },
+                        "question5": {
+                            "type": "checkbox"
+                        },
+                        "question6": {
+                            "type": "checkbox"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "neighborhood-4": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Please indicate how likely that people in your neighborhood would act in the following manner: (Please check one item per question)",
+                    "properties": {
+                        "question1": {
+                            "enum": [
+                                "1. Very unlikely",
+                                "2. Unlikely",
+                                "3. Neither likely nor unlikely",
+                                "4. Likely",
+                                "5. Very likely"
+                            ],
+                            "type": "checkbox",
+                            "title": "If a group of neighborhood children were skipping school and hanging out on a street corner, how likely is it that your neighbors would do something about it?"
+                        },
+                        "question2": {
+                            "enum": [
+                                "1. Very unlikely",
+                                "2. Unlikely",
+                                "3. Neither likely nor unlikely",
+                                "4. Likely",
+                                "5. Very likely"
+                            ],
+                            "type": "checkbox",
+                            "title": "If some children were spray-painting graffiti on a local building, how likely is it that your neighbors would do something about it?"
+                        },
+                        "question3": {
+                            "enum": [
+                                "1. Very unlikely",
+                                "2. Unlikely",
+                                "3. Neither likely nor unlikely",
+                                "4. Likely",
+                                "5. Very likely"
+                            ],
+                            "type": "checkbox",
+                            "title": "If a child was showing disrespect to an adult, how likely is it that your neighbors would scold that child?"
+                        },
+                        "question4": {
+                            "enum": [
+                                "1. Very unlikely",
+                                "2. Unlikely",
+                                "3. Neither likely nor unlikely",
+                                "4. Likely",
+                                "5. Very likely"
+                            ],
+                            "type": "checkbox",
+                            "title": "If there was a fight in front of your house and someone was being beaten or threatened, how likely it is that your neighbors would break it up?"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "question1": {
+                            "type": "checkbox"
+                        },
+                        "question2": {
+                            "type": "checkbox"
+                        },
+                        "question3": {
+                            "type": "checkbox"
+                        },
+                        "question4": {
+                            "type": "checkbox"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
         "video-preview-exp": {
             "kind": "exp-lookit-preview-explanation",
             "image": {
@@ -673,21 +1098,56 @@
                 }
             ],
             "nextButtonText": "Next"
+        },
+        "neighborhood-years": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about neighborhood: The following questions ask about your local neighborhood – that is, everywhere within a 20-minute walk or within about a mile of your home.",
+                    "properties": {
+                        "years1": {
+                            "enum": [
+                                "1. Less than one year",
+                                "2. 1-5 years",
+                                "3. 6-10 years",
+                                "4. 11-15 years",
+                                "5. 16-20 years",
+                                "6. 21-25 years",
+                                "7. 26-50 years",
+                                "8. More than 50 years"
+                            ],
+                            "type": "checkbox",
+                            "title": "About how many years have you lived at this address?"
+                        },
+                        "years2": {
+                            "enum": [
+                                "1. Less than one year",
+                                "2. 1-5 years",
+                                "3. 6-10 years",
+                                "4. 11-15 years",
+                                "5. 16-20 years",
+                                "6. 21-25 years",
+                                "7. 26-50 years",
+                                "8. More than 50 years"
+                            ],
+                            "type": "checkbox",
+                            "title": "About how many years have you lived in this neighborhood?"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "years1": {
+                            "type": "checkbox"
+                        },
+                        "years2": {
+                            "type": "checkbox"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
         }
-    },
-    "sequence": [
-        "parent-1",
-        "parent-2",
-        "demographic",
-        "language",
-        "exposure",
-        "video-config",
-        "video-consent",
-        "instructions",
-        "video-preview-exp",
-        "video-preview",
-        "final-instructions",
-        "trials",
-        "exit-survey"
-    ]
+    }
 }

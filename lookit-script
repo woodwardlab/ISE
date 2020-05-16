@@ -117,6 +117,334 @@
                 "calibrationVideoSources": "attentiongrabber"
             }
         },
+        "exposure": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about exposure",
+                    "properties": {
+                        "race-exposure1": {
+                            "enum": [
+                                "1. Not at all",
+                                "2. Little",
+                                "3. Somewhat",
+                                "4. Much",
+                                "5. A great deal"
+                            ],
+                            "type": "string",
+                            "title": "How much contact does your child have with people who are of a different race?"
+                        },
+                        "race-exposure2": {
+                            "enum": [
+                                "1. Not at all",
+                                "2. Little",
+                                "3. Somewhat",
+                                "4. Much",
+                                "5. A great deal"
+                            ],
+                            "type": "string",
+                            "title": "In general, when your child meets people who are of a different race, does your child find the contact pleasant?"
+                        },
+                        "language-exposure1": {
+                            "enum": [
+                                "1. Not at all",
+                                "2. Little",
+                                "3. Somewhat",
+                                "4. Much",
+                                "5. A great deal"
+                            ],
+                            "type": "string",
+                            "title": "How much contact does your child have with people who speak a different language?"
+                        },
+                        "language-exposure2": {
+                            "enum": [
+                                "1. Not at all",
+                                "2. Little",
+                                "3. Somewhat",
+                                "4. Much",
+                                "5. A great deal"
+                            ],
+                            "type": "string",
+                            "title": "In general, when your child meets people who speak a different language, does your child find the contact pleasant?"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "language": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about your child",
+                    "properties": {
+                        "language": {
+                            "enum": [
+                                "1. Monolingual (English-Speaking)",
+                                "2. Exposure (English and some exposure to another language)",
+                                "3. Bilingual (English and one other language)",
+                                "4. Multilingual (English and 2 or more other languages)"
+                            ],
+                            "type": "checkbox",
+                            "title": "Your baby's language exposure (please select the description that best matches your child)"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "parent-1": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about caregivers",
+                    "properties": {
+                        "parent1": {
+                            "enum": [
+                                "Mother",
+                                "Father",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "Parent 1 is: "
+                        },
+                        "parent1-1": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        },
+                        "parent1-race1": {
+                            "enum": [
+                                "American Indian or Alaska Native",
+                                "Asian",
+                                "Black or African-American",
+                                "Hispanic or Latino",
+                                "White",
+                                "Native Hawaiian or Other Pacific Islander",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "I would identify Parent 1's race or ethnicity as (please check all that apply)"
+                        },
+                        "parent1-race2": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        },
+                        "parent1-education": {
+                            "enum": [
+                                "1. 8th grade of less",
+                                "2. 9th - 12th grade no diploma",
+                                "3. High school graduate or GED completed",
+                                "4. Some college credit but no degree",
+                                "5. Associate degree (AA, AS)",
+                                "6. Bachelor's degree (BA, BS, AB)",
+                                "7. Graduate or professional degree"
+                            ],
+                            "type": "string",
+                            "title": "Parent 1's highest level of education:"
+                        },
+                        "parent1-language1": {
+                            "enum": [
+                                "English",
+                                "English and Other (please specify in the next question)",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "Parent 1's native language:"
+                        },
+                        "parent1-language2": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "parent1": {
+                            "type": "checkbox"
+                        },
+                        "parent1-1": {
+                            "placeholder": "please specify parent/legal guardian type"
+                        },
+                        "parent1-race1": {
+                            "type": "checkbox"
+                        },
+                        "parent1-race2": {
+                            "placeholder": "please specify your race or ethnicity"
+                        },
+                        "parent1-language1": {
+                            "type": "checkbox"
+                        },
+                        "parent1-language2": {
+                            "placeholder": "please specify the other language"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "parent-2": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about caregivers",
+                    "properties": {
+                        "parent2": {
+                            "enum": [
+                                "Mother",
+                                "Father",
+                                "Other (please specify in the next question)",
+                                "None"
+                            ],
+                            "type": "checkbox",
+                            "title": "Parent 2 is: "
+                        },
+                        "parent2-1": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        },
+                        "parent2-race1": {
+                            "enum": [
+                                "American Indian or Alaska Native",
+                                "Asian",
+                                "Black or African-American",
+                                "Hispanic or Latino",
+                                "White",
+                                "Native Hawaiian or Other Pacific Islander",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "I would identify Parent 2's race or ethnicity as (please check all that apply)"
+                        },
+                        "parent2-race2": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        },
+                        "parent2-education": {
+                            "enum": [
+                                "1. 8th grade of less",
+                                "2. 9th - 12th grade no diploma",
+                                "3. High school graduate or GED completed",
+                                "4. Some college credit but no degree",
+                                "5. Associate degree (AA, AS)",
+                                "6. Bachelor's degree (BA, BS, AB)",
+                                "7. Graduate or professional degree"
+                            ],
+                            "type": "string",
+                            "title": "Parent 2's highest level of education:"
+                        },
+                        "parent2-language1": {
+                            "enum": [
+                                "English",
+                                "English and Other (please specify in the next question)",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "Parent 2's native language:"
+                        },
+                        "parent2-language2": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "parent2": {
+                            "type": "checkbox"
+                        },
+                        "parent2-1": {
+                            "placeholder": "please specify parent/legal guardian type"
+                        },
+                        "parent2-race1": {
+                            "type": "checkbox"
+                        },
+                        "parent2-race2": {
+                            "placeholder": "please specify your race or ethnicity"
+                        },
+                        "parent2-language1": {
+                            "type": "checkbox"
+                        },
+                        "parent2-language2": {
+                            "placeholder": "please specify the other language"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "demographic": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about your child",
+                    "properties": {
+                        "DOB": {
+                            "type": "string",
+                            "title": "Date of Birth (m/d/y)"
+                        },
+                        "sex": {
+                            "enum": [
+                                "Male",
+                                "Female"
+                            ],
+                            "type": "string",
+                            "title": "Sex"
+                        },
+                        "race": {
+                            "enum": [
+                                "American Indian or Alaska Native",
+                                "Asian",
+                                "Black or African-American",
+                                "Hispanic or Latino",
+                                "White",
+                                "Native Hawaiian or Other Pacific Islander",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "I would identify my child's race or ethnicity as (please check all that apply)"
+                        },
+                        "race2": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        },
+                        "address": {
+                            "type": "string",
+                            "title": "Your child's current address"
+                        },
+                        "zipcode": {
+                            "type": "integer",
+                            "title": "Your child's current zipcode"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "DOB": {
+                            "placeholder": "your child's date of birth"
+                        },
+                        "race": {
+                            "type": "checkbox"
+                        },
+                        "race2": {
+                            "placeholder": "please specify your child's race or ethnicity"
+                        },
+                        "address": {
+                            "placeholder": "street address, city, state"
+                        },
+                        "zipcode": {
+                            "placeholder": "zipcode",
+                            "numericEntry": true
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
@@ -218,83 +546,6 @@
         "video-config": {
             "kind": "exp-video-config",
             "troubleshootingIntro": "This is a standard frame you probably want to put at the very start of your study. You can customize this bit of text; the rest is standard and maintained by Lookit."
-        },
-        "demographic-1": {
-            "kind": "exp-lookit-survey",
-            "formSchema": {
-                "schema": {
-                    "type": "object",
-                    "title": "Information about your child",
-                    "properties": {
-                        "DOB": {
-                            "type": "string",
-                            "title": "Date of Birth (m/d/y)",
-                            "required": true
-                        },
-                        "sex": {
-                            "enum": [
-                                "Male",
-                                "Female"
-                            ],
-                            "type": "string",
-                            "title": "Sex",
-                            "required": true
-                        },
-                        "race": {
-                            "enum": [
-                                "American Indian or Alaska Native",
-                                "Asian",
-                                "Black or African-American",
-                                "Hispanic or Latino",
-                                "White",
-                                "Native Hawaiian or Other Pacific Islander",
-                                "Other (please specify in the next question)"
-                            ],
-                            "type": "string",
-                            "title": "I would identify my child's race or ethnicity as (if more than one, please select other and specify in the next question)",
-                            "required": true
-                        },
-                        "race2": {
-                            "type": "string",
-                            "title": "If you have selected other in previous question"
-                        },
-                        "address": {
-                            "type": "string",
-                            "title": "Your child's current address"
-                        },
-                        "language": {
-                            "enum": [
-                                "1. Monolingual (English-Speaking)",
-                                "2. Exposure (English 80-90% and some exposure to another language 10-20%)",
-                                "3. Bilingual (English 50-70% and one other language 30-50%)",
-                                "4. Multilingual (English and 2 or more other languages)"
-                            ],
-                            "type": "string",
-                            "title": "Your baby's language exposure (please select the description that best matches your child)"
-                        }
-                    }
-                },
-                "options": {
-                    "fields": {
-                        "DOB": {
-                            "placeholder": "your child's date of birth"
-                        },
-                        "sex": {
-                            "validator": "required-field"
-                        },
-                        "race": {
-                            "validator": "required-field"
-                        },
-                        "race2": {
-                            "placeholder": "please specify your child's race or ethnicity"
-                        },
-                        "address": {
-                            "placeholder": "street address, city, state, zipcode"
-                        }
-                    }
-                }
-            },
-            "nextButtonText": "Moving on..."
         },
         "video-consent": {
             "kind": "exp-lookit-video-consent",
@@ -425,7 +676,11 @@
         }
     },
     "sequence": [
-        "demographic-1",
+        "parent-1",
+        "parent-2",
+        "demographic",
+        "language",
+        "exposure",
         "video-config",
         "video-consent",
         "instructions",

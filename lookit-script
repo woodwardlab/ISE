@@ -132,7 +132,7 @@
                                 "4. Much",
                                 "5. A great deal"
                             ],
-                            "type": "string",
+                            "type": "checkbox",
                             "title": "How much contact does your child have with people who are of a different race?"
                         },
                         "race-exposure2": {
@@ -143,7 +143,7 @@
                                 "4. Much",
                                 "5. A great deal"
                             ],
-                            "type": "string",
+                            "type": "checkbox",
                             "title": "In general, when your child meets people who are of a different race, does your child find the contact pleasant?"
                         },
                         "language-exposure1": {
@@ -154,7 +154,7 @@
                                 "4. Much",
                                 "5. A great deal"
                             ],
-                            "type": "string",
+                            "type": "checkbox",
                             "title": "How much contact does your child have with people who speak a different language?"
                         },
                         "language-exposure2": {
@@ -165,8 +165,24 @@
                                 "4. Much",
                                 "5. A great deal"
                             ],
-                            "type": "string",
+                            "type": "checkbox",
                             "title": "In general, when your child meets people who speak a different language, does your child find the contact pleasant?"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "race-exposure1": {
+                            "type": "checkbox"
+                        },
+                        "race-exposure2": {
+                            "type": "checkbox"
+                        },
+                        "language-exposure1": {
+                            "type": "checkbox"
+                        },
+                        "language-exposure2": {
+                            "type": "checkbox"
                         }
                     }
                 }

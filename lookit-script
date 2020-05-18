@@ -178,17 +178,51 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "Information about your child",
+                    "title": "Your baby's language exposure (please select the description that best matches your child)",
                     "properties": {
-                        "language": {
+                        "language-1": {
                             "enum": [
-                                "1. Monolingual (English-Speaking)",
-                                "2. Exposure (English and some exposure to another language)",
-                                "3. Bilingual (English and one other language)",
-                                "4. Multilingual (English and 2 or more other languages)"
+                                "A “monolingual” (English-speaking) infant is one who hears English almost all of the time (e.g., over 95% of the time). All of the child’s primary caregivers speak to her in English. An example might be a child who hears English from all family members at home. She may occasionally hear another language on TV (e.g., Spanish on Dora the Explorer) or in a weekly language-learning playgroup, but all of her primary caregivers speak to her in English. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native English speaker, and not be fluent in any other language."
                             ],
                             "type": "checkbox",
-                            "title": "Your baby's language exposure (please select the description that best matches your child)"
+                            "title": "Monolingual (English-Speaking)"
+                        },
+                        "language-2": {
+                            "enum": [
+                                "An “exposure” infant is one who hears primarily English, but who is exposed to a second language on a regular basis, but not nearly as much as English (e.g., 80-90% English; 10-20% Spanish). An example might be a child who hears English from both parents, yet who has a grandmother or nanny who watches the baby one or two afternoons a week and speaks in Spanish. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of English, and will have some proficiency in a second language, yet will not be fluent in that language."
+                            ],
+                            "type": "checkbox",
+                            "title": "Exposure (English and some exposure to another language)"
+                        },
+                        "language-3": {
+                            "enum": [
+                                "A “bilingual” infant is one who hears both English and a second language on a highly regular basis (e.g., 50% English/50% Spanish; or 70% English/30% Spanish). An example might be a child who hears English from one parent and Spanish from a second parent. Or, the child might hear English from both parents and hear Spanish during the day each day from a grandparent or nanny. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of both English and of a second language."
+                            ],
+                            "type": "checkbox",
+                            "title": "Bilingual (English and one other language)"
+                        },
+                        "language-4": {
+                            "enum": [
+                                "A “multilingual” infant hears English, and at least two other languages on a regular basis. An example might be a baby who hears English from one parent, Spanish from another parent, and French during the day each day from a nanny. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native speaker of English and of two other languages."
+                            ],
+                            "type": "checkbox",
+                            "title": " Multilingual (English and 2 or more other languages)"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "language-1": {
+                            "type": "checkbox"
+                        },
+                        "language-2": {
+                            "type": "checkbox"
+                        },
+                        "language-3": {
+                            "type": "checkbox"
+                        },
+                        "language-4": {
+                            "type": "checkbox"
                         }
                     }
                 }
@@ -448,7 +482,7 @@
                                 "Male",
                                 "Female"
                             ],
-                            "type": "string",
+                            "type": "checkbox",
                             "title": "Sex"
                         },
                         "race": {
@@ -468,13 +502,21 @@
                             "type": "string",
                             "title": "If you have selected other in previous question"
                         },
-                        "address": {
-                            "type": "string",
-                            "title": "Your child's current address"
-                        },
-                        "zipcode": {
+                        "address-1": {
                             "type": "integer",
                             "title": "Your child's current zipcode"
+                        },
+                        "address-2": {
+                            "type": "string",
+                            "title": "city"
+                        },
+                        "address-3": {
+                            "type": "string",
+                            "title": "state"
+                        },
+                        "address-4": {
+                            "type": "string",
+                            "title": "street address"
                         }
                     }
                 },
@@ -483,18 +525,27 @@
                         "DOB": {
                             "placeholder": "your child's date of birth"
                         },
+                        "sex": {
+                            "type": "checkbox"
+                        },
                         "race": {
                             "type": "checkbox"
                         },
                         "race2": {
                             "placeholder": "please specify your child's race or ethnicity"
                         },
-                        "address": {
-                            "placeholder": "street address, city, state"
-                        },
-                        "zipcode": {
+                        "address-1": {
                             "placeholder": "zipcode",
                             "numericEntry": true
+                        },
+                        "address-2": {
+                            "placeholder": "city"
+                        },
+                        "address-3": {
+                            "placeholder": "state"
+                        },
+                        "address-4": {
+                            "placeholder": "street address"
                         }
                     }
                 }
@@ -605,12 +656,12 @@
         },
         "video-consent": {
             "kind": "exp-lookit-video-consent",
-            "PIName": "Amanda Woodward",
-            "datause": "We are primarily interested in how babies start to think about people based on race, language, and other social categories. A research assistant will watch your video to measure how long the baby looks at the screen.",
+            "PIName": "Professor Amanda Woodward",
+            "datause": "We are interested in how infants and young children reason about the world and how they learn from their interactions with other people. In today's study, we are investigating how social categories (such as race and language groups) and social experiences affect children’s learning.  A research assistant will watch your video to measure how long the baby looks at the screen.",
             "payment": "After you finish the study, we will email you a $5 gift card within approximately three days. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
             "purpose": "How do babies process people's interactions?",
-            "PIContact": "hyesung@uchicago.edu",
-            "procedures": "Your child will be shown videos of different people, first talking and then interacting. We are interested in what babies think about people and their interactions. We will ask you (the parent) to turn around to avoid influencing your child's responses. There are no anticipated risks associated with participating.",
+            "PIContact": "woodward@uchicago.edu",
+            "procedures": "Your child will be shown videos of different people, first talking and then interacting. We are interested in what babies think about people and their interactions. We will ask you (the parent) to turn around to avoid influencing your child's responses. There are no anticipated risks associated with participating. To better understand child social behavior, we will also ask you to fill out a questionnaire after the experiment.",
             "institution": "University of Chicago"
         },
         "video-preview": {
@@ -681,7 +732,7 @@
                             "text": "You will be able to choose video privacy level at the end of the study.  "
                         },
                         {
-                            "text": "There will be a short questionnaire for you to fill out at the end to help us better understand babies' social behavior. "
+                            "text": "There will be a questionnaire for you to fill out at the end to help us better understand babies' social behavior. "
                         }
                     ]
                 },

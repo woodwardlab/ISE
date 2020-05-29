@@ -1,0 +1,955 @@
+{
+    "frames": {
+        "trials": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "sources": "FAM",
+                    "altSources": "FAM",
+                    "audioSources": "video_1_HO_intro",
+                    "calibrationLength": 2000
+                },
+                {
+                    "sources": "FAM",
+                    "altSources": "FAM",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "FAM",
+                    "altSources": "FAM",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "FAM",
+                    "altSources": "FAM",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "TEST1",
+                    "altSources": "ALTTEST1",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "TEST2",
+                    "altSources": "ALTTEST2",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "TEST1",
+                    "altSources": "ALTTEST1",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "TEST2",
+                    "altSources": "ALTTEST2",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "TEST1",
+                    "altSources": "ALTTEST1",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "TEST2",
+                    "altSources": "ALTTEST2",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": [],
+                    "altSources": [],
+                    "doRecording": false,
+                    "audioSources": "all_done",
+                    "calibrationLength": 0
+                }
+            ],
+            "parameterSets": [
+                {
+                    "FAM": "W4B2",
+                    "TEST1": "W4B2A-15",
+                    "TEST2": "W4B2D-15",
+                    "ALTTEST1": "W4B2D-15",
+                    "ALTTEST2": "W4B2A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W2W3",
+                    "TEST1": "W2W3A-15",
+                    "TEST2": "W2W3D-15",
+                    "ALTTEST1": "W2W3D-15",
+                    "ALTTEST2": "W2W3A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                }
+            ],
+            "commonFrameProperties": {
+                "kind": "exp-lookit-video",
+                "baseDir": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/",
+                "testCount": 1,
+                "audioTypes": [
+                    "mp3"
+                ],
+                "pauseAudio": "pause",
+                "videoTypes": [
+                    "mp4"
+                ],
+                "attnSources": "attentiongrabber",
+                "introSources": [],
+                "musicSources": [],
+                "unpauseAudio": "return_after_pause",
+                "announceLength": 3,
+                "calibrationLength": 0,
+                "calibrationPositions": [
+                    "left",
+                    "right",
+                    "center"
+                ],
+                "calibrationAudioSources": "chimes",
+                "calibrationVideoSources": "attentiongrabber"
+            }
+        },
+        "exposure": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about exposure",
+                    "properties": {
+                        "race-exposure1": {
+                            "enum": [
+                                "1. Not at all",
+                                "2. Little",
+                                "3. Somewhat",
+                                "4. Much",
+                                "5. A great deal"
+                            ],
+                            "type": "checkbox",
+                            "title": "How much contact does your child have with people who are of a different race?"
+                        },
+                        "race-exposure2": {
+                            "enum": [
+                                "1. Not at all",
+                                "2. Little",
+                                "3. Somewhat",
+                                "4. Much",
+                                "5. A great deal"
+                            ],
+                            "type": "checkbox",
+                            "title": "In general, when your child meets people who are of a different race, does your child find the contact pleasant?"
+                        },
+                        "language-exposure1": {
+                            "enum": [
+                                "1. Not at all",
+                                "2. Little",
+                                "3. Somewhat",
+                                "4. Much",
+                                "5. A great deal"
+                            ],
+                            "type": "checkbox",
+                            "title": "How much contact does your child have with people who speak a different language?"
+                        },
+                        "language-exposure2": {
+                            "enum": [
+                                "1. Not at all",
+                                "2. Little",
+                                "3. Somewhat",
+                                "4. Much",
+                                "5. A great deal"
+                            ],
+                            "type": "checkbox",
+                            "title": "In general, when your child meets people who speak a different language, does your child find the contact pleasant?"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "race-exposure1": {
+                            "type": "checkbox"
+                        },
+                        "race-exposure2": {
+                            "type": "checkbox"
+                        },
+                        "language-exposure1": {
+                            "type": "checkbox"
+                        },
+                        "language-exposure2": {
+                            "type": "checkbox"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "language": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Your baby's language exposure (please select the description that best matches your child)",
+                    "properties": {
+                        "language-1": {
+                            "enum": [
+                                "A “monolingual” (English-speaking) infant is one who hears English almost all of the time (e.g., over 95% of the time). All of the child’s primary caregivers speak to her in English. An example might be a child who hears English from all family members at home. She may occasionally hear another language on TV (e.g., Spanish on Dora the Explorer) or in a weekly language-learning playgroup, but all of her primary caregivers speak to her in English. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native English speaker, and not be fluent in any other language."
+                            ],
+                            "type": "checkbox",
+                            "title": "Monolingual (English-Speaking)"
+                        },
+                        "language-2": {
+                            "enum": [
+                                "An “exposure” infant is one who hears primarily English, but who is exposed to a second language on a regular basis, but not nearly as much as English (e.g., 80-90% English; 10-20% Spanish). An example might be a child who hears English from both parents, yet who has a grandmother or nanny who watches the baby one or two afternoons a week and speaks in Spanish. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of English, and will have some proficiency in a second language, yet will not be fluent in that language."
+                            ],
+                            "type": "checkbox",
+                            "title": "Exposure (English and some exposure to another language)"
+                        },
+                        "language-3": {
+                            "enum": [
+                                "A “bilingual” infant is one who hears both English and a second language on a highly regular basis (e.g., 50% English/50% Spanish; or 70% English/30% Spanish). An example might be a child who hears English from one parent and Spanish from a second parent. Or, the child might hear English from both parents and hear Spanish during the day each day from a grandparent or nanny. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of both English and of a second language."
+                            ],
+                            "type": "checkbox",
+                            "title": "Bilingual (English and one other language)"
+                        },
+                        "language-4": {
+                            "enum": [
+                                "A “multilingual” infant hears English, and at least two other languages on a regular basis. An example might be a baby who hears English from one parent, Spanish from another parent, and French during the day each day from a nanny. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native speaker of English and of two other languages."
+                            ],
+                            "type": "checkbox",
+                            "title": " Multilingual (English and 2 or more other languages)"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "language-1": {
+                            "type": "checkbox"
+                        },
+                        "language-2": {
+                            "type": "checkbox"
+                        },
+                        "language-3": {
+                            "type": "checkbox"
+                        },
+                        "language-4": {
+                            "type": "checkbox"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "parent-1": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about caregivers",
+                    "properties": {
+                        "parent1": {
+                            "enum": [
+                                "Mother",
+                                "Father",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "Parent 1 is: "
+                        },
+                        "parent1-1": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        },
+                        "parent1-race1": {
+                            "enum": [
+                                "American Indian or Alaska Native",
+                                "Asian",
+                                "Black or African-American",
+                                "Hispanic or Latino",
+                                "White",
+                                "Native Hawaiian or Other Pacific Islander",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "I would identify Parent 1's race or ethnicity as (please check all that apply)"
+                        },
+                        "parent1-race2": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        },
+                        "parent1-education": {
+                            "enum": [
+                                "1. 8th grade of less",
+                                "2. 9th - 12th grade no diploma",
+                                "3. High school graduate or GED completed",
+                                "4. Some college credit but no degree",
+                                "5. Associate degree (AA, AS)",
+                                "6. Bachelor's degree (BA, BS, AB)",
+                                "7. Graduate or professional degree"
+                            ],
+                            "type": "string",
+                            "title": "Parent 1's highest level of education:"
+                        },
+                        "parent1-language1": {
+                            "enum": [
+                                "English",
+                                "English and Other (please specify in the next question)",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "Parent 1's native language:"
+                        },
+                        "parent1-language2": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "parent1": {
+                            "type": "checkbox"
+                        },
+                        "parent1-1": {
+                            "placeholder": "please specify parent/legal guardian type"
+                        },
+                        "parent1-race1": {
+                            "type": "checkbox"
+                        },
+                        "parent1-race2": {
+                            "placeholder": "please specify your race or ethnicity"
+                        },
+                        "parent1-language1": {
+                            "type": "checkbox"
+                        },
+                        "parent1-language2": {
+                            "placeholder": "please specify the other language"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "parent-2": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about caregivers",
+                    "properties": {
+                        "parent2": {
+                            "enum": [
+                                "Mother",
+                                "Father",
+                                "Other (please specify in the next question)",
+                                "None"
+                            ],
+                            "type": "checkbox",
+                            "title": "Parent 2 is: "
+                        },
+                        "parent2-1": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        },
+                        "parent2-race1": {
+                            "enum": [
+                                "American Indian or Alaska Native",
+                                "Asian",
+                                "Black or African-American",
+                                "Hispanic or Latino",
+                                "White",
+                                "Native Hawaiian or Other Pacific Islander",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "I would identify Parent 2's race or ethnicity as (please check all that apply)"
+                        },
+                        "parent2-race2": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        },
+                        "parent2-education": {
+                            "enum": [
+                                "1. 8th grade of less",
+                                "2. 9th - 12th grade no diploma",
+                                "3. High school graduate or GED completed",
+                                "4. Some college credit but no degree",
+                                "5. Associate degree (AA, AS)",
+                                "6. Bachelor's degree (BA, BS, AB)",
+                                "7. Graduate or professional degree"
+                            ],
+                            "type": "string",
+                            "title": "Parent 2's highest level of education:"
+                        },
+                        "parent2-language1": {
+                            "enum": [
+                                "English",
+                                "English and Other (please specify in the next question)",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "Parent 2's native language:"
+                        },
+                        "parent2-language2": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "parent2": {
+                            "type": "checkbox"
+                        },
+                        "parent2-1": {
+                            "placeholder": "please specify parent/legal guardian type"
+                        },
+                        "parent2-race1": {
+                            "type": "checkbox"
+                        },
+                        "parent2-race2": {
+                            "placeholder": "please specify your race or ethnicity"
+                        },
+                        "parent2-language1": {
+                            "type": "checkbox"
+                        },
+                        "parent2-language2": {
+                            "placeholder": "please specify the other language"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "childcare": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Current childcare arrangement",
+                    "properties": {
+                        "childcare": {
+                            "enum": [
+                                "Yes",
+                                "No"
+                            ],
+                            "type": "checkbox",
+                            "title": "Do you use any type of childcare for your child?"
+                        },
+                        "arrangement": {
+                            "enum": [
+                                "Relative (other than parent) cares for child",
+                                "Childcare provider in child's own home",
+                                "Childcare provider out of child's home (unlicensed)",
+                                "Licensed family daycare",
+                                "Daycare center",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "If yes, which of the following best describes your current childcare arrangement?"
+                        },
+                        "childcare-hours": {
+                            "type": "string",
+                            "title": "If yes, about how many hours per week does your child spend in childcare?"
+                        },
+                        "arrangement-other": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "childcare": {
+                            "type": "checkbox"
+                        },
+                        "arrangement": {
+                            "type": "checkbox"
+                        },
+                        "childcare-hours": {
+                            "placeholder": "number of hours per week"
+                        },
+                        "arrangement-other": {
+                            "placeholder": "please specify type of childcare"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "demographic": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about your child",
+                    "properties": {
+                        "DOB": {
+                            "type": "string",
+                            "title": "Date of Birth (m/d/y)"
+                        },
+                        "sex": {
+                            "enum": [
+                                "Male",
+                                "Female"
+                            ],
+                            "type": "checkbox",
+                            "title": "Sex"
+                        },
+                        "race": {
+                            "enum": [
+                                "American Indian or Alaska Native",
+                                "Asian",
+                                "Black or African-American",
+                                "Hispanic or Latino",
+                                "White",
+                                "Native Hawaiian or Other Pacific Islander",
+                                "Other (please specify in the next question)"
+                            ],
+                            "type": "checkbox",
+                            "title": "I would identify my child's race or ethnicity as (please check all that apply)"
+                        },
+                        "race2": {
+                            "type": "string",
+                            "title": "If you have selected other in previous question"
+                        },
+                        "address-1": {
+                            "type": "integer",
+                            "title": "Your child's current zipcode"
+                        },
+                        "address-2": {
+                            "type": "string",
+                            "title": "city"
+                        },
+                        "address-3": {
+                            "type": "string",
+                            "title": "state"
+                        },
+                        "address-4": {
+                            "type": "string",
+                            "title": "street address"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "DOB": {
+                            "placeholder": "your child's date of birth"
+                        },
+                        "sex": {
+                            "type": "checkbox"
+                        },
+                        "race": {
+                            "type": "checkbox"
+                        },
+                        "race2": {
+                            "placeholder": "please specify your child's race or ethnicity"
+                        },
+                        "address-1": {
+                            "placeholder": "zipcode",
+                            "numericEntry": true
+                        },
+                        "address-2": {
+                            "placeholder": "city"
+                        },
+                        "address-3": {
+                            "placeholder": "state"
+                        },
+                        "address-4": {
+                            "placeholder": "street address"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "exit-survey": {
+            "kind": "exp-lookit-exit-survey",
+            "debriefing": {
+                "text": "Thank you for participating and completing the survey. There is one more survey we would love for you to fill out to have a better sense of the types of people your baby interacts with on a regular basis for an additional $5 Amazon gift card. Please copy and paste the link below in your browser. <br><br> https://voices.uchicago.edu/woodwardlab/ <br><br> To thank you for your time and participation, we'll be emailing you a $5 Amazon gift card (and an addition $5 gift card if you have filled out the survey linked in this page) - this should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. (If you don't hear from us by then, feel free to reach out!) If you participate again with another child in the age range, you'll receive one gift card per child.",
+                "title": "Thank you!"
+            }
+        },
+        "test-trials": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "sources": "VIDEO0",
+                    "altSources": "ALTVIDEO0",
+                    "audioSources": "video_1_HO_intro",
+                    "calibrationLength": 2000
+                },
+                {
+                    "sources": "VIDEO0",
+                    "altSources": "ALTVIDEO0"
+                },
+                {
+                    "sources": "VIDEO0",
+                    "altSources": "ALTVIDEO0"
+                },
+                {
+                    "sources": "VIDEO0",
+                    "altSources": "ALTVIDEO0"
+                },
+                {
+                    "sources": [],
+                    "altSources": [],
+                    "doRecording": false,
+                    "audioSources": "all_done",
+                    "calibrationLength": 0
+                }
+            ],
+            "parameterSets": [
+                {
+                    "VIDEO0": "W4B2",
+                    "ALTVIDEO0": "W2W3"
+                },
+                {
+                    "VIDEO0": "W2W3",
+                    "ALTVIDEO0": "W4B2"
+                }
+            ],
+            "commonFrameProperties": {
+                "kind": "exp-lookit-video",
+                "baseDir": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/",
+                "testCount": 1,
+                "audioTypes": [
+                    "mp3"
+                ],
+                "pauseAudio": "pause",
+                "videoTypes": [
+                    "mp4"
+                ],
+                "attnSources": "attentiongrabber",
+                "introSources": [],
+                "musicSources": [],
+                "unpauseAudio": "return_after_pause",
+                "announceLength": 3,
+                "calibrationLength": 0,
+                "calibrationPositions": [
+                    "left",
+                    "right",
+                    "center"
+                ],
+                "calibrationAudioSources": "chimes",
+                "calibrationVideoSources": "attentiongrabber"
+            }
+        },
+        "instructions": {
+            "kind": "exp-lookit-text",
+            "blocks": [
+                {
+                    "emph": true,
+                    "text": "Your child does not need to be with you yet! First, let's go over what will happen in this study..."
+                },
+                {
+                    "text": "Your baby will see 10 videos about 30s each. We are most interested in the baby's natural attention to these videos, so we ask that you don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos."
+                },
+                {
+                    "text": "In some videos, there will be a BEEP sound. The video will then freeze for a few seconds."
+                },
+                {
+                    "text": "This is supposed to happen! Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image. These videos will then alternate and repeat a couple of times."
+                },
+                {
+                    "text": "To pause the study, press the space bar. Participation is completely voluntary and you can leave at any point by pressing F1."
+                },
+                {
+                    "text": "You will have a chance to select a video privacy level at the end of the study. There are also some questions that we would love for you to fill out to help us better understand babies' social behavior!"
+                }
+            ],
+            "showPreviousButton": false
+        },
+        "neighborhood": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Please indicate your agreement or disagreement with the following statements about your neighborhood:",
+                    "properties": {
+                        "question-1": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "This is a close-knit neighborhood."
+                        },
+                        "question-2": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People around here are willing to help their neighbors."
+                        },
+                        "question-3": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People in this neighborhood generally don’t get along with each other."
+                        },
+                        "question-4": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People in this neighborhood don’t share the same values."
+                        },
+                        "question-5": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People in this neighborhood can be trusted."
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "question-1": {
+                            "type": "checkbox"
+                        },
+                        "question-2": {
+                            "type": "checkbox"
+                        },
+                        "question-3": {
+                            "type": "checkbox"
+                        },
+                        "question-4": {
+                            "type": "checkbox"
+                        },
+                        "question-5": {
+                            "type": "checkbox"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        "video-config": {
+            "kind": "exp-video-config",
+            "troubleshootingIntro": "This is a standard frame you probably want to put at the very start of your study. You can customize this bit of text; the rest is standard and maintained by Lookit."
+        },
+        "video-consent": {
+            "kind": "exp-lookit-video-consent",
+            "PIName": "Professor Amanda Woodward",
+            "datause": "We are interested in how infants and young children reason about the world and how they learn from their interactions with other people. In today's study, we are investigating how social categories (such as race and language groups) and social experiences affect children’s learning.  A research assistant will watch your video to measure how long the baby looks at the screen.",
+            "payment": "After you finish the study, we will email you a $5 gift card within approximately three days. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
+            "purpose": "How do babies process people's interactions?",
+            "PIContact": "woodward@uchicago.edu",
+            "procedures": "Your child will be shown videos of different people. There will be three types of videos: (1) two people talking; (2) two people saying hi; and (3) two people disengaging. We are interested in what babies think about people and their interactions. We will ask you (the parent) to turn around to avoid influencing your child's responses. There are no anticipated risks associated with participating. To better understand child social behavior, we will also ask you to fill out a questionnaire after the experiment.",
+            "institution": "University of Chicago"
+        },
+        "video-preview": {
+            "kind": "exp-video-preview",
+            "text": "Here are the videos your child will see in this study. You can watch them ahead of time if you're curious--please just don't show your child yet!",
+            "prompt": "My child can NOT see the screen. Start the preview!",
+            "videos": [
+                {
+                    "caption": "Your child will first see two people talking. The same video will be repeated a couple of times. Here's an example.",
+                    "sources": [
+                        {
+                            "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/mp4/W4B2.mp4",
+                            "type": "video/mp4"
+                        }
+                    ]
+                },
+                {
+                    "caption": "Your child will then see the two people interact and hear a BEEP sound. The video will freeze for a few seconds after playing. Please keep it at this frozen still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image. These videos will then alternate and repeat a couple of times. Here's an example.",
+                    "sources": [
+                        {
+                            "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/mp4/W4B2A-15.mp4",
+                            "type": "video/mp4"
+                        }
+                    ]
+                },
+                {
+                    "caption": "Here is another example. These videos will then alternate and repeat a couple of times. ",
+                    "sources": [
+                        {
+                            "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/mp4/W4B2D-15.mp4",
+                            "type": "video/mp4"
+                        }
+                    ]
+                }
+            ]
+        },
+        "video-preview-exp": {
+            "kind": "exp-lookit-preview-explanation",
+            "image": {
+                "alt": "Father holding child looking over his shoulder",
+                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics/OverShoulder.jpg"
+            },
+            "blocks": [
+                {
+                    "text": "The reason we ask this is that your child is learning from you all the time. Even if he or she can't see where you're looking, you may unconsciously shift to face the \"unexpected\" events and influence your child's attention. We want to make sure we're measuring your child's own intuitions, rather than yours!"
+                },
+                {
+                    "text": "If you'd like to see the videos your child will be shown, you can take a look ahead of time now. It's important that you do this WITHOUT your child, so that the videos will still be new to him or her!"
+                }
+            ],
+            "introBlock": {
+                "text": "During the videos, we'll ask that you hold your child over your shoulder like this, so that you face away from the screen."
+            },
+            "skipButtonText": "Skip preview",
+            "previewButtonText": "I'd like to preview the videos",
+            "showPreviousButton": true
+        },
+        "final-instructions": {
+            "kind": "exp-lookit-instructions",
+            "blocks": [
+                {
+                    "title": "Before we begin:",
+                    "listblocks": [
+                        {
+                            "text": "We will go ahead and start! Again, we are most intersted in baby's natural attention so we ask you don't talk or direct the baby's attention while the videos are playing. "
+                        },
+                        {
+                            "text": "You will be able to choose video privacy level at the end of the study.  "
+                        },
+                        {
+                            "text": "There will be a questionnaire for you to fill out at the end to help us better understand babies' social behavior. "
+                        }
+                    ]
+                },
+                {
+                    "text": "It's important that we can see you",
+                    "image": {
+                        "alt": "Father holding child looking over his shoulder",
+                        "src": "https://s3.amazonaws.com/lookitcontents/exp-physics/OverShoulder.jpg"
+                    },
+                    "title": "Camera position"
+                },
+                {
+                    "text": "Here's a video you have to play!",
+                    "title": "Test",
+                    "mediaBlock": {
+                        "text": "Look at that.",
+                        "isVideo": true,
+                        "sources": [
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/examples/7_control_same.mp4",
+                                "type": "video/mp4"
+                            },
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/examples/7_control_same.webm",
+                                "type": "video/webm"
+                            }
+                        ],
+                        "mustPlay": true,
+                        "warningText": "Please try playing the sample video."
+                    }
+                }
+            ],
+            "showWebcam": true,
+            "webcamBlocks": [
+                {
+                    "title": "Some webcam instructions",
+                    "listblocks": [
+                        {
+                            "text": "Like this!"
+                        },
+                        {
+                            "text": "Be careful your webcam does not have tape over it"
+                        }
+                    ]
+                }
+            ],
+            "nextButtonText": "Next"
+        },
+        "neighborhood-years": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Information about neighborhood--that is, everywhere within a 20-minute walk or within about a mile of your home.",
+                    "properties": {
+                        "question-1": {
+                            "enum": [
+                                "1. Less than one year",
+                                "2. 1-5 years",
+                                "3. 6-10 years",
+                                "4. 11-15 years",
+                                "5. 16-20 years",
+                                "6. 21-25 years",
+                                "7. 26-50 years",
+                                "8. More than 50 years"
+                            ],
+                            "type": "checkbox",
+                            "title": "About how many years have you lived at this address?"
+                        },
+                        "question-2": {
+                            "enum": [
+                                "1. Less than one year",
+                                "2. 1-5 years",
+                                "3. 6-10 years",
+                                "4. 11-15 years",
+                                "5. 16-20 years",
+                                "6. 21-25 years",
+                                "7. 26-50 years",
+                                "8. More than 50 years"
+                            ],
+                            "type": "checkbox",
+                            "title": "About how many years have you lived in this neighborhood?"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "question-1": {
+                            "type": "checkbox"
+                        },
+                        "question-2": {
+                            "type": "checkbox"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        }
+    },
+    "sequence": [
+        "video-config",
+        "video-consent",
+        "instructions",
+        "video-preview-exp",
+        "video-preview",
+        "final-instructions",
+        "trials",
+        "demographic",
+        "language",
+        "parent-1",
+        "parent-2",
+        "childcare",
+        "exposure",
+        "neighborhood-years",
+        "neighborhood",
+        "exit-survey"
+    ]
+}

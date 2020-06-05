@@ -256,14 +256,14 @@
                             "enum": [
                                 "Mother",
                                 "Father",
-                                "Other (please specify in the next question)"
+                                "Other (please specify below)"
                             ],
                             "type": "checkbox",
                             "title": "Parent 1 is: "
                         },
                         "parent1-1": {
                             "type": "string",
-                            "title": "If you have selected other in previous question"
+                            "title": "If you selected other"
                         },
                         "parent1-race1": {
                             "enum": [
@@ -273,14 +273,14 @@
                                 "Hispanic or Latino",
                                 "White",
                                 "Native Hawaiian or Other Pacific Islander",
-                                "Other (please specify in the next question)"
+                                "Other (please specify below)"
                             ],
                             "type": "checkbox",
                             "title": "I would identify Parent 1's race or ethnicity as (please check all that apply)"
                         },
                         "parent1-race2": {
                             "type": "string",
-                            "title": "If you have selected other in previous question"
+                            "title": "If you selected other"
                         },
                         "parent1-education": {
                             "enum": [
@@ -298,15 +298,15 @@
                         "parent1-language1": {
                             "enum": [
                                 "English",
-                                "English and Other (please specify in the next question)",
-                                "Other (please specify in the next question)"
+                                "English and Other (please specify below)",
+                                "Other (please specify below)"
                             ],
                             "type": "checkbox",
                             "title": "Parent 1's native language:"
                         },
                         "parent1-language2": {
                             "type": "string",
-                            "title": "If you have selected other in previous question"
+                            "title": "Please specify other language"
                         }
                     }
                 },
@@ -346,7 +346,7 @@
                             "enum": [
                                 "Mother",
                                 "Father",
-                                "Other (please specify in the next question)",
+                                "Other (please specify below)",
                                 "None"
                             ],
                             "type": "checkbox",
@@ -354,7 +354,7 @@
                         },
                         "parent2-1": {
                             "type": "string",
-                            "title": "If you have selected other in previous question"
+                            "title": "If you selected other"
                         },
                         "parent2-race1": {
                             "enum": [
@@ -364,14 +364,14 @@
                                 "Hispanic or Latino",
                                 "White",
                                 "Native Hawaiian or Other Pacific Islander",
-                                "Other (please specify in the next question)"
+                                "Other (please specify below)"
                             ],
                             "type": "checkbox",
                             "title": "I would identify Parent 2's race or ethnicity as (please check all that apply)"
                         },
                         "parent2-race2": {
                             "type": "string",
-                            "title": "If you have selected other in previous question"
+                            "title": "If you selected other"
                         },
                         "parent2-education": {
                             "enum": [
@@ -389,15 +389,15 @@
                         "parent2-language1": {
                             "enum": [
                                 "English",
-                                "English and Other (please specify in the next question)",
-                                "Other (please specify in the next question)"
+                                "English and Other (please specify below)",
+                                "Other (please specify below)"
                             ],
                             "type": "checkbox",
                             "title": "Parent 2's native language:"
                         },
                         "parent2-language2": {
                             "type": "string",
-                            "title": "If you have selected other in previous question"
+                            "title": "If you selected other"
                         }
                     }
                 },
@@ -448,7 +448,7 @@
                                 "Childcare provider out of child's home (unlicensed)",
                                 "Licensed family daycare",
                                 "Daycare center",
-                                "Other (please specify in the next question)"
+                                "Other (please specify below)"
                             ],
                             "type": "checkbox",
                             "title": "If yes, which of the following best describes your current childcare arrangement?"
@@ -459,7 +459,7 @@
                         },
                         "arrangement-other": {
                             "type": "string",
-                            "title": "If you have selected other in previous question"
+                            "title": "If you selected other"
                         }
                     }
                 },
@@ -491,7 +491,7 @@
                     "properties": {
                         "DOB": {
                             "type": "string",
-                            "title": "Date of Birth (m/d/y)"
+                            "title": "Date of Birth (month/day/year)"
                         },
                         "sex": {
                             "enum": [
@@ -509,14 +509,14 @@
                                 "Hispanic or Latino",
                                 "White",
                                 "Native Hawaiian or Other Pacific Islander",
-                                "Other (please specify in the next question)"
+                                "Other (please specify below)"
                             ],
                             "type": "checkbox",
                             "title": "I would identify my child's race or ethnicity as (please check all that apply)"
                         },
                         "race2": {
                             "type": "string",
-                            "title": "If you have selected other in previous question"
+                            "title": "If you selected other"
                         },
                         "address-1": {
                             "type": "integer",
@@ -524,15 +524,19 @@
                         },
                         "address-2": {
                             "type": "string",
-                            "title": "city"
+                            "title": "Your child's current address"
                         },
                         "address-3": {
                             "type": "string",
-                            "title": "state"
+                            "title": "City"
                         },
                         "address-4": {
                             "type": "string",
-                            "title": "street address"
+                            "title": "State"
+                        },
+                        "address-5": {
+                            "type": "string",
+                            "title": "Country"
                         }
                     }
                 },
@@ -555,13 +559,16 @@
                             "numericEntry": true
                         },
                         "address-2": {
-                            "placeholder": "city"
+                            "placeholder": "street address"
                         },
                         "address-3": {
-                            "placeholder": "state"
+                            "placeholder": "city"
                         },
                         "address-4": {
-                            "placeholder": "street address"
+                            "placeholder": "state"
+                        },
+                        "address-5": {
+                            "placeholder": "country (e.g., U.S.)"
                         }
                     }
                 }
@@ -646,22 +653,10 @@
             "blocks": [
                 {
                     "emph": true,
-                    "text": "Your child does not need to be with you yet! First, let's go over what will happen in this study..."
+                    "text": "First, let's go over what will happen in this study..."
                 },
                 {
-                    "text": "Your baby will see 10 videos about 30s each. We are most interested in the baby's natural attention to these videos, so we ask that you don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos."
-                },
-                {
-                    "text": "In some videos, there will be a BEEP sound. The video will then freeze for a few seconds."
-                },
-                {
-                    "text": "This is supposed to happen! Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image. These videos will then alternate and repeat a couple of times."
-                },
-                {
-                    "text": "To pause the study, press the space bar. Participation is completely voluntary and you can leave at any point by pressing F1."
-                },
-                {
-                    "text": "You will have a chance to select a video privacy level at the end of the study. There are also some questions that we would love for you to fill out to help us better understand babies' social behavior!"
+                    "text": "Your baby will see 10 videos about 30s each. <br><br> In some videos, there will be a BEEP sound. The video will then freeze for a few seconds. This is supposed to happen! <br><br> Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image.<br><br> Please don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos."
                 }
             ],
             "showPreviousButton": false
@@ -831,10 +826,13 @@
                             "text": "We will go ahead and start! Again, we are most intersted in baby's natural attention so we ask you don't talk or direct the baby's attention while the videos are playing. "
                         },
                         {
-                            "text": "You will be able to choose video privacy level at the end of the study.  "
+                            "text": "To pause the study, press the space bar. You can leave the study at any point by pressing F1."
                         },
                         {
                             "text": "There will be a questionnaire for you to fill out at the end to help us better understand babies' social behavior. "
+                        },
+                        {
+                            "text": "You will be able to choose video privacy level at the end of the study.  "
                         }
                     ]
                 },
@@ -873,10 +871,7 @@
                     "title": "Some webcam instructions",
                     "listblocks": [
                         {
-                            "text": "Like this!"
-                        },
-                        {
-                            "text": "Be careful your webcam does not have tape over it"
+                            "text": "Make sure we can see your baby's eyes!"
                         }
                     ]
                 }

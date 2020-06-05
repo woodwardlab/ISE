@@ -571,7 +571,7 @@
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
-                "text": "Here is where you would enter debriefing information for the family. This is a chance to explain the purpose of your study and how the family helped; at this point it's more obvious to the participant that skimming the info is fine if they're not super-interested, so you can elaborate in ways you might have avoided ahead of time in the interest of keeping instructions short. You may want to mention the various conditions kids were assigned to if you didn't before, and try to head off any concerns parents might have about how their child 'did' on the study, especially if there are 'correct' answers that will have been obvious to a parent. <br><br> It is great if you can link people to a layperson-accessible article on a related topic - e.g., media coverage of one of your previous studies in this research program, a talk on Youtube, a parenting resource. <br><br> If you are compensating participants, restate what the compensation is (and any conditions, and let them know when to expect their payment! E.g.: To thank you for your participation, we'll be emailing you a $5 Amazon gift card - this should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. (If you don't hear from us by then, feel free to reach out!) If you participate again with another child in the age range, you'll receive one gift card per child.",
+                "text": "Thank you for participating and completing the survey. There is one more survey we would love for you to fill out to have a better sense of the types of people your baby interacts with on a regular basis for an additional $5 Amazon gift card. Please copy and paste the link below in your browser. <br><br> https://voices.uchicago.edu/woodwardlab/ <br><br> To thank you for your time and participation, we'll be emailing you a $5 Amazon gift card (and an addition $5 gift card if you have filled out the survey linked in this page) - this should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. (If you don't hear from us by then, feel free to reach out!) If you participate again with another child in the age range, you'll receive one gift card per child.",
                 "title": "Thank you!"
             }
         },
@@ -649,7 +649,7 @@
                     "text": "Your child does not need to be with you yet! First, let's go over what will happen in this study..."
                 },
                 {
-                    "text": "Your baby will see 10 videos about 30s each. There will be three types of videos: (1) two people talking; (2) two people saying hi; and (3) two people disengaging. We are most interested in the baby's natural attention to these videos, especially during still images of people. So we ask that you don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos."
+                    "text": "Your baby will see 10 videos about 30s each. We are most interested in the baby's natural attention to these videos, so we ask that you don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos."
                 },
                 {
                     "text": "In some videos, there will be a BEEP sound. The video will then freeze for a few seconds."
@@ -666,6 +666,92 @@
             ],
             "showPreviousButton": false
         },
+        "neighborhood": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "Please indicate your agreement or disagreement with the following statements about your neighborhood:",
+                    "properties": {
+                        "question-1": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "This is a close-knit neighborhood."
+                        },
+                        "question-2": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People around here are willing to help their neighbors."
+                        },
+                        "question-3": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People in this neighborhood generally don’t get along with each other."
+                        },
+                        "question-4": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People in this neighborhood don’t share the same values."
+                        },
+                        "question-5": {
+                            "enum": [
+                                "1. Strongly disagree",
+                                "2. Disagree",
+                                "3. Neither agree nor disagree",
+                                "4. Agree",
+                                "5. Strongly agree"
+                            ],
+                            "type": "checkbox",
+                            "title": "People in this neighborhood can be trusted."
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "question-1": {
+                            "type": "checkbox"
+                        },
+                        "question-2": {
+                            "type": "checkbox"
+                        },
+                        "question-3": {
+                            "type": "checkbox"
+                        },
+                        "question-4": {
+                            "type": "checkbox"
+                        },
+                        "question-5": {
+                            "type": "checkbox"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
         "video-config": {
             "kind": "exp-video-config",
             "troubleshootingIntro": "This is a standard frame you probably want to put at the very start of your study. You can customize this bit of text; the rest is standard and maintained by Lookit."
@@ -677,7 +763,7 @@
             "payment": "After you finish the study, we will email you a $5 gift card within approximately three days. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
             "purpose": "How do babies process people's interactions?",
             "PIContact": "woodward@uchicago.edu",
-            "procedures": "Your child will be shown videos of different people, first talking and then interacting. We are interested in what babies think about people and their interactions. We will ask you (the parent) to turn around to avoid influencing your child's responses. There are no anticipated risks associated with participating. To better understand child social behavior, we will also ask you to fill out a questionnaire after the experiment.",
+            "procedures": "Your child will be shown videos of different people. There will be three types of videos: (1) two people talking; (2) two people saying hi; and (3) two people disengaging. We are interested in what babies think about people and their interactions. We will ask you (the parent) to turn around to avoid influencing your child's responses. There are no anticipated risks associated with participating. To better understand child social behavior, we will also ask you to fill out a questionnaire after the experiment.",
             "institution": "University of Chicago"
         },
         "video-preview": {
@@ -797,363 +883,6 @@
             ],
             "nextButtonText": "Next"
         },
-        "neighborhood-part1": {
-            "kind": "exp-lookit-survey",
-            "formSchema": {
-                "schema": {
-                    "type": "object",
-                    "title": "Please indicate how often you and other people in this neighborhood:",
-                    "properties": {
-                        "question-1": {
-                            "enum": [
-                                "1. Never",
-                                "2. Rarely",
-                                "3. Sometimes",
-                                "4. Often"
-                            ],
-                            "type": "checkbox",
-                            "title": "Visit in each other’s homes or meet on the street?"
-                        },
-                        "question-2": {
-                            "enum": [
-                                "1. Never",
-                                "2. Rarely",
-                                "3. Sometimes",
-                                "4. Often"
-                            ],
-                            "type": "checkbox",
-                            "title": "Do favors for each other?"
-                        },
-                        "question-3": {
-                            "enum": [
-                                "1. Never",
-                                "2. Rarely",
-                                "3. Sometimes",
-                                "4. Often"
-                            ],
-                            "type": "checkbox",
-                            "title": "Ask each other for advice about personal things?"
-                        }
-                    }
-                },
-                "options": {
-                    "fields": {
-                        "question-1": {
-                            "type": "checkbox"
-                        },
-                        "question-2": {
-                            "type": "checkbox"
-                        },
-                        "question-3": {
-                            "type": "checkbox"
-                        }
-                    }
-                }
-            },
-            "nextButtonText": "Next"
-        },
-        "neighborhood-part2": {
-            "kind": "exp-lookit-survey",
-            "formSchema": {
-                "schema": {
-                    "type": "object",
-                    "title": "Please indicate your agreement or disagreement with the following statements about your neighborhood:",
-                    "properties": {
-                        "question-1": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "I feel that I belong in this neighborhood."
-                        },
-                        "question-2": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "I am proud to live in this neighborhood."
-                        },
-                        "question-3": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "If I had to move away from this neighborhood, I would be sad to leave."
-                        },
-                        "question-4": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "This neighborhood is a good place for older people to live."
-                        },
-                        "question-5": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "This neighborhood is a good place for young families to live."
-                        }
-                    }
-                },
-                "options": {
-                    "fields": {
-                        "question-1": {
-                            "type": "checkbox"
-                        },
-                        "question-2": {
-                            "type": "checkbox"
-                        },
-                        "question-3": {
-                            "type": "checkbox"
-                        },
-                        "question-4": {
-                            "type": "checkbox"
-                        },
-                        "question-5": {
-                            "type": "checkbox"
-                        }
-                    }
-                }
-            },
-            "nextButtonText": "Next"
-        },
-        "neighborhood-part3": {
-            "kind": "exp-lookit-survey",
-            "formSchema": {
-                "schema": {
-                    "type": "object",
-                    "title": "Please indicate your agreement or disagreement with the following statements about your neighborhood:",
-                    "properties": {
-                        "question-1": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "This is a close-knit neighborhood."
-                        },
-                        "question-2": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "People around here are willing to help their neighbors."
-                        },
-                        "question-3": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "People in this neighborhood generally don’t get along with each other."
-                        },
-                        "question-4": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "People in this neighborhood don’t share the same values."
-                        }
-                    }
-                },
-                "options": {
-                    "fields": {
-                        "question-1": {
-                            "type": "checkbox"
-                        },
-                        "question-2": {
-                            "type": "checkbox"
-                        },
-                        "question-3": {
-                            "type": "checkbox"
-                        },
-                        "question-4": {
-                            "type": "checkbox"
-                        }
-                    }
-                }
-            },
-            "nextButtonText": "Next"
-        },
-        "neighborhood-part4": {
-            "kind": "exp-lookit-survey",
-            "formSchema": {
-                "schema": {
-                    "type": "object",
-                    "title": "Please indicate your agreement or disagreement with the following statements about your neighborhood:",
-                    "properties": {
-                        "question-1": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "People in this neighborhood can be trusted."
-                        },
-                        "question-2": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "Many people in this neighborhood are afraid to go out at night."
-                        },
-                        "question-3": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "There are places in this neighborhood where everyone knows “trouble” is expected."
-                        },
-                        "question-4": {
-                            "enum": [
-                                "1. Strongly disagree",
-                                "2. Disagree",
-                                "3. Neither agree nor disagree",
-                                "4. Agree",
-                                "5. Strongly agree"
-                            ],
-                            "type": "checkbox",
-                            "title": "You’re taking a big chance if you walk in this neighborhood alone after dark."
-                        }
-                    }
-                },
-                "options": {
-                    "fields": {
-                        "question-1": {
-                            "type": "checkbox"
-                        },
-                        "question-2": {
-                            "type": "checkbox"
-                        },
-                        "question-3": {
-                            "type": "checkbox"
-                        },
-                        "question-4": {
-                            "type": "checkbox"
-                        }
-                    }
-                }
-            },
-            "nextButtonText": "Next"
-        },
-        "neighborhood-part5": {
-            "kind": "exp-lookit-survey",
-            "formSchema": {
-                "schema": {
-                    "type": "object",
-                    "title": "Please indicate how likely that people in your neighborhood would act in the following manner:",
-                    "properties": {
-                        "question-1": {
-                            "enum": [
-                                "1. Very unlikely",
-                                "2. Unlikely",
-                                "3. Neither likely nor unlikely",
-                                "4. Likely",
-                                "5. Very likely"
-                            ],
-                            "type": "checkbox",
-                            "title": "If a group of neighborhood children were skipping school and hanging out on a street corner, how likely is it that your neighbors would do something about it?"
-                        },
-                        "question-2": {
-                            "enum": [
-                                "1. Very unlikely",
-                                "2. Unlikely",
-                                "3. Neither likely nor unlikely",
-                                "4. Likely",
-                                "5. Very likely"
-                            ],
-                            "type": "checkbox",
-                            "title": "If some children were spray-painting graffiti on a local building, how likely is it that your neighbors would do something about it?"
-                        },
-                        "question-3": {
-                            "enum": [
-                                "1. Very unlikely",
-                                "2. Unlikely",
-                                "3. Neither likely nor unlikely",
-                                "4. Likely",
-                                "5. Very likely"
-                            ],
-                            "type": "checkbox",
-                            "title": "If a child was showing disrespect to an adult, how likely is it that your neighbors would scold that child?"
-                        },
-                        "question-4": {
-                            "enum": [
-                                "1. Very unlikely",
-                                "2. Unlikely",
-                                "3. Neither likely nor unlikely",
-                                "4. Likely",
-                                "5. Very likely"
-                            ],
-                            "type": "checkbox",
-                            "title": "If there was a fight in front of your house and someone was being beaten or threatened, how likely it is that your neighbors would break it up?"
-                        }
-                    }
-                },
-                "options": {
-                    "fields": {
-                        "question-1": {
-                            "type": "checkbox"
-                        },
-                        "question-2": {
-                            "type": "checkbox"
-                        },
-                        "question-3": {
-                            "type": "checkbox"
-                        },
-                        "question-4": {
-                            "type": "checkbox"
-                        }
-                    }
-                }
-            },
-            "nextButtonText": "Next"
-        },
         "neighborhood-years": {
             "kind": "exp-lookit-survey",
             "formSchema": {
@@ -1220,11 +949,7 @@
         "childcare",
         "exposure",
         "neighborhood-years",
-        "neighborhood-part1",
-        "neighborhood-part2",
-        "neighborhood-part3",
-        "neighborhood-part4",
-        "neighborhood-part5",
+        "neighborhood",
         "exit-survey"
     ]
 }

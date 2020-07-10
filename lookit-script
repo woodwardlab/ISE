@@ -78,11 +78,11 @@
                     ]
                 },
                 {
-                    "FAM": "W2W3",
-                    "TEST1": "W2W3A-15",
-                    "TEST2": "W2W3D-15",
-                    "ALTTEST1": "W2W3D-15",
-                    "ALTTEST2": "W2W3A-15",
+                    "FAM": "W4B2",
+                    "TEST1": "W4B2A-15",
+                    "TEST2": "W4B2D-15",
+                    "ALTTEST1": "W4B2D-15",
+                    "ALTTEST2": "W4B2A-15",
                     "ATTENTIONGETTER_AUDIO_OPTIONS": [
                         "chimes",
                         "bells",
@@ -92,7 +92,7 @@
                 }
             ],
             "commonFrameProperties": {
-                "kind": "exp-lookit-video",
+                "kind": "exp-lookit-composite-video-trial",
                 "baseDir": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/",
                 "testCount": 1,
                 "audioTypes": [
@@ -499,7 +499,7 @@
                                 "Female"
                             ],
                             "type": "checkbox",
-                            "title": "Sex"
+                            "title": "Baby Sex"
                         },
                         "race": {
                             "enum": [
@@ -520,7 +520,7 @@
                         },
                         "address-1": {
                             "type": "integer",
-                            "title": "Your child's current zipcode"
+                            "title": "The zipcode your child lives in"
                         },
                         "address-2": {
                             "type": "string",
@@ -623,7 +623,7 @@
                 }
             ],
             "commonFrameProperties": {
-                "kind": "exp-lookit-video",
+                "kind": "exp-lookit-composite-video-trial",
                 "baseDir": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/",
                 "testCount": 1,
                 "audioTypes": [
@@ -755,10 +755,10 @@
             "kind": "exp-lookit-video-consent",
             "PIName": "Professor Amanda Woodward",
             "datause": "We are interested in how infants and young children reason about the world and how they learn from their interactions with other people. In today's study, we are investigating how social categories (such as race and language groups) and social experiences affect children’s learning.  A research assistant will watch your video to measure how long the baby looks at the screen.",
-            "payment": "After you finish the study, we will email you a $5 gift card within approximately three days. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
+            "payment": "After you finish the study, we will email you a $5 gift card within approximately three days.  In addition, you can earn an additional $5 gift card if you fill out another external survey linked at the end of the study. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
             "purpose": "How do babies process people's interactions?",
             "PIContact": "woodward@uchicago.edu",
-            "procedures": "Your child will be shown videos of different people. There will be three types of videos: (1) two people talking; (2) two people saying hi; and (3) two people disengaging. We are interested in what babies think about people and their interactions. We will ask you (the parent) to turn around to avoid influencing your child's responses. There are no anticipated risks associated with participating. To better understand child social behavior, we will also ask you to fill out a questionnaire after the experiment.",
+            "procedures": "Your child will be shown videos of different people. There will be three types of videos: (1) two people talking; (2) two people saying hi; and (3) two people disengaging. We are interested in what babies think about people and their interactions. We will ask you (the parent) to turn around, close your eyes, or look down to avoid influencing your child's responses. There are no anticipated risks associated with participating. To better understand child social behavior, we will also ask you to fill out a questionnaire after the experiment.",
             "institution": "University of Chicago"
         },
         "video-preview": {
@@ -798,8 +798,8 @@
         "video-preview-exp": {
             "kind": "exp-lookit-preview-explanation",
             "image": {
-                "alt": "Father holding child looking over his shoulder",
-                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics/OverShoulder.jpg"
+                "alt": "Parent holding child looking over shoulder or on lap",
+                "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/img/Parent_instruction_image.jpeg"
             },
             "blocks": [
                 {
@@ -810,7 +810,7 @@
                 }
             ],
             "introBlock": {
-                "text": "During the videos, we'll ask that you hold your child over your shoulder like this, so that you face away from the screen."
+                "text": "During the videos, we'll ask that you hold your child over your shoulder like this so that you face away from the screen, or hold them in your lap or a high chair with your eyes closed or looking down:"
             },
             "skipButtonText": "Skip preview",
             "previewButtonText": "I'd like to preview the videos",
@@ -930,6 +930,7 @@
         }
     },
     "sequence": [
+
         "video-config",
         "video-consent",
         "instructions",

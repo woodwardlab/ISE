@@ -524,7 +524,7 @@
                         },
                         "address-2": {
                             "type": "string",
-                            "title": "Your child's current address"
+                            "title": "Your child's current address (feel free to skip)"
                         },
                         "address-3": {
                             "type": "string",
@@ -577,26 +577,10 @@
         },
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
-            "blocks": [
-                {
-                    "text": "Thank you for participating and completing the survey. There is one more survey we would love for you to fill out to have a better sense of the people your baby interacts with on a regular basis for an additional $5 gift card. Please copy and paste the link below in your browser. <br><br> https://voices.uchicago.edu/woodwardlab/ <br><br> For an additional $5 gift card <br><br> To thank you for your time and participation, we'll be emailing you a $5 gift card (and an addition $5 gift card if you have filled out the survey linked in this page) - this should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. (If you don't hear from us by then, feel free to reach out!) If you participate again with another child in the age range, you'll receive one gift card per child.",
-                    "title": "Thank you!"
-                },
-                {
-                    "text": "Please play this video",
-                    "title": "Here's a video to explain the additional survey...",
-                    "mediaBlock": {
-                        "isVideo": true,
-                        "sources": [
-                            {
-                                "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/mp4/Grace_lookit_outro.mp4",
-                                "type": "video/mp4"
-                            }
-                        ],
-                        "mustPlay": false
-                    }
-                }
-            ]
+            "debriefing": {
+                "text": "There is one more survey we would love for you to fill out to have a better sense of the people your baby interacts with on a regular basis for <b> an additional $5 gift card.</b> Please copy and paste the link below in your browser. <br><br> https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3<br><br> We'll be emailing you a $5 gift card (and an additional $5 gift card if you have filled out the survey above). This should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study.",
+                "title": "Thank you!"
+            }
         },
         "test-trials": {
             "kind": "choice",
@@ -682,7 +666,7 @@
                     }
                 },
                 {
-                    "text": "Your baby will see 10 videos about 30s each. <br><br> In some videos, there will be a BEEP sound. The video will then freeze for a few seconds. This is supposed to happen! <br><br> Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image.<br><br> Please don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos.",
+                    "text": "Your baby will see 10 videos about 30s each. <br><br> In some videos, there will be a BEEP sound. The video will then freeze for a few seconds. This is supposed to happen! <br><br> Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image.<br><br> Please don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. <br><br> If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos. <br><br> We will let you know when it is okay to open your eyes/look up/turn around at the end of the study.",
                     "title": "Here are written instructions if you would like to read it:"
                 }
             ],
@@ -851,7 +835,7 @@
                     "title": "Before we begin:",
                     "listblocks": [
                         {
-                            "text": "We will go ahead and start! Again, we are most intersted in baby's natural attention so we ask you don't talk or direct the baby's attention while the videos are playing or frozen. "
+                            "text": "We will go ahead and start! Again, we are most intersted in baby's natural attention so we ask that you don't talk or direct the baby's attention while the videos are playing or frozen. "
                         },
                         {
                             "text": "To pause the study, press the space bar."
@@ -950,6 +934,6 @@
         "exposure",
         "neighborhood-years",
         "neighborhood",
-                "exit-survey"
+        "exit-survey"
     ]
 }

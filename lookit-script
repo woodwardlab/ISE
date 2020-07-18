@@ -407,6 +407,26 @@
                             "type": "string",
                             "title": "If you selected other"
                         }
+                    },
+                    "dependencies": {
+                        "parent2-1": [
+                            "parent2"
+                        ],
+                        "parent2-race1": [
+                            "parent2"
+                        ],
+                        "parent2-race2": [
+                            "parent2"
+                        ],
+                        "parent2-education": [
+                            "parent2"
+                        ],
+                        "parent2-language1": [
+                            "parent2"
+                        ],
+                        "parent2-language2": [
+                            "parent2-language1"
+                        ]
                     }
                 },
                 "options": {
@@ -417,25 +437,64 @@
                             "removeDefaultNone": true
                         },
                         "parent2-1": {
-                            "placeholder": "please specify parent/legal guardian type"
+                            "placeholder": "please specify parent/legal guardian type",
+                            "dependencies": {
+                                "parent2": [
+                                    "Other (please specify below)"
+                                ]
+                            }
                         },
                         "parent2-race1": {
                             "sort": false,
-                            "type": "checkbox"
+                            "type": "checkbox",
+                            "dependencies": {
+                                "parent2": [
+                                    "Mother",
+                                    "Father",
+                                    "Other (please specify below)"
+                                ]
+                            }
                         },
                         "parent2-race2": {
-                            "placeholder": "please specify your race or ethnicity"
+                            "placeholder": "please specify your race or ethnicity",
+                            "dependencies": {
+                                "parent2": [
+                                    "Mother",
+                                    "Father",
+                                    "Other (please specify below)"
+                                ]
+                            }
                         },
                         "parent2-education": {
-                            "sort": false
+                            "sort": false,
+                            "dependencies": {
+                                "parent2": [
+                                    "Mother",
+                                    "Father",
+                                    "Other (please specify below)"
+                                ]
+                            }
                         },
                         "parent2-language1": {
                             "sort": false,
                             "type": "radio",
+                            "dependencies": {
+                                "parent2": [
+                                    "Mother",
+                                    "Father",
+                                    "Other (please specify below)"
+                                ]
+                            },
                             "removeDefaultNone": true
                         },
                         "parent2-language2": {
-                            "placeholder": "please specify the other language"
+                            "placeholder": "please specify the other language",
+                            "dependencies": {
+                                "parent2-language1": [
+                                    "English and Other (please specify below)",
+                                    "Other (please specify below)"
+                                ]
+                            }
                         }
                     }
                 }

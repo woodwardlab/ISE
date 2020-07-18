@@ -202,57 +202,22 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "Your baby's language exposure <br> (please select the description that best matches your child)",
+                    "title": "<b> Your baby's language exposure </b> <br> (please select the description that best matches your child)",
                     "properties": {
                         "language-1": {
                             "enum": [
-                                "A “monolingual” (English-speaking) infant is one who hears English almost all of the time (e.g., over 95% of the time). All of the child’s primary caregivers speak to her in English. An example might be a child who hears English from all family members at home. She may occasionally hear another language on TV (e.g., Spanish on Dora the Explorer) or in a weekly language-learning playgroup, but all of her primary caregivers speak to her in English. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native English speaker, and not be fluent in any other language."
-                            ],
-                            "type": "radio",
-                            "title": "Monolingual (English-Speaking)",
-                            "removeDefaultNone": true
-                        },
-                        "language-2": {
-                            "enum": [
-                                "An “exposure” infant is one who hears primarily English, but who is exposed to a second language on a regular basis, but not nearly as much as English (e.g., 80-90% English; 10-20% Spanish). An example might be a child who hears English from both parents, yet who has a grandmother or nanny who watches the baby one or two afternoons a week and speaks in Spanish. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of English, and will have some proficiency in a second language, yet will not be fluent in that language."
-                            ],
-                            "type": "radio",
-                            "title": "Exposure (English and some exposure to another language)",
-                            "removeDefaultNone": true
-                        },
-                        "language-3": {
-                            "enum": [
-                                "A “bilingual” infant is one who hears both English and a second language on a highly regular basis (e.g., 50% English/50% Spanish; or 70% English/30% Spanish). An example might be a child who hears English from one parent and Spanish from a second parent. Or, the child might hear English from both parents and hear Spanish during the day each day from a grandparent or nanny. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of both English and of a second language."
-                            ],
-                            "type": "radio",
-                            "title": "Bilingual (English and one other language)",
-                            "removeDefaultNone": true
-                        },
-                        "language-4": {
-                            "enum": [
-                                "A “multilingual” infant hears English, and at least two other languages on a regular basis. An example might be a baby who hears English from one parent, Spanish from another parent, and French during the day each day from a nanny. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native speaker of English and of two other languages."
-                            ],
-                            "type": "radio",
-                            "title": " Multilingual (English and 2 or more other languages)",
-                            "removeDefaultNone": true
+                                "<b> Monolingual (English-Speaking) </b>: A “monolingual” (English-speaking) infant is one who hears English almost all of the time (e.g., over 95% of the time). All of the child’s primary caregivers speak to her in English. An example might be a child who hears English from all family members at home. She may occasionally hear another language on TV (e.g., Spanish on Dora the Explorer) or in a weekly language-learning playgroup, but all of her primary caregivers speak to her in English. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native English speaker, and not be fluent in any other language.",
+                                "<b> Exposure (English and some exposure to another language) </b>: An “exposure” infant is one who hears primarily English, but who is exposed to a second language on a regular basis, but not nearly as much as English (e.g., 80-90% English; 10-20% Spanish). An example might be a child who hears English from both parents, yet who has a grandmother or nanny who watches the baby one or two afternoons a week and speaks in Spanish. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of English, and will have some proficiency in a second language, yet will not be fluent in that language.",
+                                "<b> Bilingual (English and one other language) </b>: A “bilingual” infant is one who hears both English and a second language on a highly regular basis (e.g., 50% English/50% Spanish; or 70% English/30% Spanish). An example might be a child who hears English from one parent and Spanish from a second parent. Or, the child might hear English from both parents and hear Spanish during the day each day from a grandparent or nanny. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of both English and of a second language.",
+                                "<b> Multilingual (English and 2 or more other languages) </b>: A “multilingual” infant hears English, and at least two other languages on a regular basis. An example might be a baby who hears English from one parent, Spanish from another parent, and French during the day each day from a nanny. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native speaker of English and of two other languages."
+                            ]
                         }
                     }
                 },
                 "options": {
                     "fields": {
                         "language-1": {
-                            "type": "radio",
-                            "removeDefaultNone": true
-                        },
-                        "language-2": {
-                            "type": "radio",
-                            "removeDefaultNone": true
-                        },
-                        "language-3": {
-                            "type": "radio",
-                            "removeDefaultNone": true
-                        },
-                        "language-4": {
+                            "sort": false,
                             "type": "radio",
                             "removeDefaultNone": true
                         }

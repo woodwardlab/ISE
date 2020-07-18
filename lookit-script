@@ -122,7 +122,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "Information about exposure",
+                    "title": "<b> Information about your child's exposure to different race people and different language speakers </b> <br> In the following, we are interested in how much contact your child has with people who are of different races or speak different languages from your child's parents/caregivers in the past month. Contact includes how many people or amount of time your child spends with these people in general in the past month.",
                     "properties": {
                         "race-exposure1": {
                             "enum": [
@@ -133,7 +133,7 @@
                                 "A great deal"
                             ],
                             "type": "string",
-                            "title": "How much contact does your child have with people who are of a different race?"
+                            "title": "How much contact did your child have with people who are of a different race this past month?"
                         },
                         "race-exposure2": {
                             "enum": [
@@ -155,7 +155,7 @@
                                 "A great deal"
                             ],
                             "type": "string",
-                            "title": "How much contact does your child have with people who speak a different language?"
+                            "title": "How much contact did your child have with people who speak a different language this past month?"
                         },
                         "language-exposure2": {
                             "enum": [
@@ -231,7 +231,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "Information about caregivers",
+                    "title": "<b> Information about parent 1 or caregiver 1 </b> <br> In the following, please tell us about your child's parent 1 or primary caregiver 1 (i.e., the caregiver your child spends the most time with). This person can be a parent/grandparent/relative/foster parent/or any other person that spends the most time with your child as the primary parent/caregiver",
                     "properties": {
                         "parent1": {
                             "enum": [
@@ -348,7 +348,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "Information about caregivers",
+                    "title": "<b> Information about Parent 2 or caregiver 2 </b> <br> In the following, please tell us about your child's parent 2 or caregiver 2. This person can be a parent/grandparent/relative/foster parent/or any other person that you consider a parent/caregiver to your child who spends the second most time with your child after parent 1 / caregiver 1",
                     "properties": {
                         "parent2": {
                             "enum": [
@@ -506,7 +506,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Demographic Survey </b> <br> This survey will ask some information about your child, your child's primary caregivers, and the neighborhood your child lives in to better understand your child's social experience with different race and language people. This survey will take about 5 minutues. Your answers will be kept completely confidential and will be used for research purposes only.",
+                    "title": "<b> Demographic Survey </b> <br> This survey will ask some information about your child, your child's primary caregivers, and the neighborhood your child lives in to better understand your child's social experience with different race people and different language speakers. This survey will take about 5 minutues. Your answers will be kept completely confidential and will be used for research purposes only.",
                     "properties": {
                         "race": {
                             "enum": [
@@ -531,7 +531,7 @@
                         },
                         "address-2": {
                             "type": "string",
-                            "title": "<b> To identify census tract information, it would be helpful to have your child's current address or the cross roads where your child lives in. This information will never be shared and used only for research purposes. </b> <br> <br> Your child's current address (feel free to skip)"
+                            "title": "<b> To identify census tract information, it would be helpful to have your child's current address or the cross roads/interactions where your child lives in. This information will never be shared and used only for research purposes. </b> <br> <br> Your child's current address (feel free to skip)"
                         },
                         "address-3": {
                             "type": "string",
@@ -589,7 +589,7 @@
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
-                "text": "There is one more survey we would love for you to fill out to have a better sense of the people your baby interacts with on a regular basis for <b> an additional $5 gift card.</b> Please copy and paste the link below in your browser. <br><br> https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3<br><br> We'll be emailing you a $5 gift card (and an additional $5 gift card if you have filled out the survey above). This should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study.",
+                "text": "There is one more survey we would love for you to fill out to have a better sense of the people your baby interacts with on a regular basis for <b> an additional $5 gift card.</b> Please copy and paste the link below in your browser. <br><br> <b>https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3 </b><br><br> We'll be emailing you a $5 gift card (and an additional $5 gift card if you have filled out the survey above). This should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. <br><br><u>Following is more information about the study you participated in:</u><br> In this study, we are testing if infants’ might have different expectations about how people from the same racial background versus different racial backgrounds interact. To try to answer this question, we are using the fact that infants tend to look longer when they see a surprising event. We are curious if infants will look longer (i.e., be more “surprised”) when they see people from different racial backgrounds interact versus people from the same racial backgrounds interact. We are also interested in how infants’ own exposure to different races and language speakers - through their neighborhood or in their daily lives - might influence infants’ looking patterns. Your baby’s looking pattern to the videos and your survey responses will help us get closer to understanding how social experience early in life shapes infants’ thinking about race.",
                 "title": "Thank you!"
             }
         },
@@ -677,7 +677,7 @@
                     }
                 },
                 {
-                    "text": "Your baby will see 10 videos about 30s each. <br><br> In some videos, there will be a BEEP sound. The video will then freeze for a few seconds. This is supposed to happen! <br><br> Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image.<br><br> Please don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. <br><br> If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos. <br><br> We will let you know when it is okay to open your eyes/look up/turn around at the end of the study.",
+                    "text": "Your baby will see 10 videos about 30s each. <br><br> In some videos, there will be a <b>BEEP</b> sound. The video will then freeze for a few seconds. This is supposed to happen! <br><br> Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image.<br><br> Please don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. <br><br> If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos. <br><br> We will let you know when it is okay to open your eyes/look up/turn around at the end of the study.",
                     "title": "Here are some points for you to remember:"
                 }
             ],
@@ -689,7 +689,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "Please indicate your agreement or disagreement with the following statements about your neighborhood:",
+                    "title": "Please indicate your agreement or disagreement with the following statements about your child's neighborhood:",
                     "properties": {
                         "question-1": {
                             "enum": [
@@ -815,7 +815,7 @@
                     ]
                 },
                 {
-                    "text": "Here are different ways you can hold your baby: <br> (1) over your shoulder, <br> (2) on your lap, <br> or (3) on a high chair. <br> If you are comfortable, you can close your eyes or look down during the study to avoid influencing your baby's attention.",
+                    "text": "Here are different ways you can hold your baby: <br> (1) over your shoulder <br> (2) on your lap <br> (3) on a high chair <br> <br> If you are comfortable, you can close your eyes or look down during the study to avoid influencing your baby's attention.",
                     "image": {
                         "alt": "Parent holding child looking over shoulder or on lap",
                         "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/img/Parent_instruction_image.jpeg"
@@ -830,80 +830,28 @@
                     "listblocks": [
                         {
                             "text": "Please make sure we can see your baby's eyes!"
+                        },
+                        {
+                            "text": "Once you and your baby are ready, click the next button to start watching the videos!"
                         }
                     ]
                 }
             ],
             "nextButtonText": "Next"
-        },
-        "neighborhood-years": {
-            "kind": "exp-lookit-survey",
-            "formSchema": {
-                "schema": {
-                    "type": "object",
-                    "title": "Information about neighborhood--that is, everywhere within a 20-minute walk or within about a mile of your home.",
-                    "properties": {
-                        "question-1": {
-                            "enum": [
-                                "Less than one year",
-                                "1-5 years",
-                                "6-10 years",
-                                "11-15 years",
-                                "16-20 years",
-                                "21-25 years",
-                                "26-50 years",
-                                "More than 50 years"
-                            ],
-                            "type": "string",
-                            "title": "About how many years have you lived at this address?"
-                        },
-                        "question-2": {
-                            "enum": [
-                                "Less than one year",
-                                "1-5 years",
-                                "6-10 years",
-                                "11-15 years",
-                                "16-20 years",
-                                "21-25 years",
-                                "26-50 years",
-                                "More than 50 years"
-                            ],
-                            "type": "string",
-                            "title": "About how many years have you lived in this neighborhood?"
-                        }
-                    }
-                },
-                "options": {
-                    "fields": {
-                        "question-1": {
-                            "sort": false,
-                            "type": "radio",
-                            "removeDefaultNone": true
-                        },
-                        "question-2": {
-                            "sort": false,
-                            "type": "radio",
-                            "removeDefaultNone": true
-                        }
-                    }
-                }
-            },
-            "nextButtonText": "Next"
         }
     },
     "sequence": [
-        "demographic",
-        "language",
-        "parent-1",
-        "parent-2",
-        "exposure",
-        "neighborhood-years",
-        "neighborhood",
         "video-config",
         "video-consent",
         "instructions",
         "final-instructions",
         "trials",
+        "demographic",
+        "language",
+        "parent-1",
+        "parent-2",
+        "exposure",
+        "neighborhood",
         "exit-survey"
     ]
 }

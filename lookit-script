@@ -289,6 +289,14 @@
                             "type": "string",
                             "title": "Please specify other language"
                         }
+                    },
+                    "dependencies": {
+                        "parent1-1": [
+                            "parent1"
+                        ],
+                        "parent1-language2": [
+                            "parent1-language1"
+                        ]
                     }
                 },
                 "options": {
@@ -299,7 +307,12 @@
                             "removeDefaultNone": true
                         },
                         "parent1-1": {
-                            "placeholder": "please specify parent/legal guardian type"
+                            "placeholder": "please specify parent/legal guardian type",
+                            "dependencies": {
+                                "parent1": [
+                                    "Other (please specify below)"
+                                ]
+                            }
                         },
                         "parent1-race1": {
                             "sort": false,
@@ -317,7 +330,13 @@
                             "removeDefaultNone": true
                         },
                         "parent1-language2": {
-                            "placeholder": "please specify the other language"
+                            "placeholder": "please specify the other language",
+                            "dependencies": {
+                                "parent1-language1": [
+                                    "English and Other (please specify below)",
+                                    "Other (please specify below)"
+                                ]
+                            }
                         }
                     }
                 }
@@ -467,6 +486,11 @@
                             "type": "string",
                             "title": "Country"
                         }
+                    },
+                    "dependencies": {
+                        "race2": [
+                            "race"
+                        ]
                     }
                 },
                 "options": {
@@ -476,7 +500,12 @@
                             "type": "checkbox"
                         },
                         "race2": {
-                            "placeholder": "please specify your child's race or ethnicity"
+                            "placeholder": "please specify your child's race or ethnicity",
+                            "dependencies": {
+                                "race2": [
+                                    "Other (please specify below)"
+                                ]
+                            }
                         },
                         "address-1": {
                             "placeholder": "zipcode"

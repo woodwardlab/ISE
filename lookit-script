@@ -117,6 +117,29 @@
                 "calibrationVideoSources": "attentiongrabber"
             }
         },
+        "zipcode": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "<b> Zip code </b> <br> We are asking for zip code information so that we can identify the demographics in your child's neighborhood. We will use your zip code to extract zip code level racial and linguistic demographic information from the U.S. census. This information will help us understand how neighborhood demographics relate to infants' looking patterns collected in the previous part of this study. This information will not be shared and be used for research purposes only.",
+                    "properties": {
+                        "address-1": {
+                            "type": "string",
+                            "title": "What zip code does your child currently live at?"
+                        }
+                    }
+                },
+                "options": {
+                    "fields": {
+                        "address-1": {
+                            "placeholder": "zipcode"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
         "exposure": {
             "kind": "exp-lookit-survey",
             "formSchema": {
@@ -231,7 +254,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Information about parent 1 or caregiver 1 </b> <br> In the following, please tell us about your child's parent 1 or primary caregiver 1 (i.e., the caregiver your child spends the most time with). This person can be a parent/grandparent/relative/foster parent/or any other person that spends the most time with your child as the primary parent/caregiver",
+                    "title": "<b> Information about parents or primary caregivers </b> <br> In the following, please tell us about your child's parents or primary caregivers (i.e., the person(s) that spends the most time with your child on a daily basis and has the greatest responsiblity for the daily care and rearing of your child). Person(s) can be parent/grandparent/relative/foster parent/or any other person. If there are more than one parent/primary caregiver (e.g., another person that spends as much time and has as much responsibility for caring daily for your child), you can enter in this individual on the next page. If there are more than two parents/primary caregivers, there will be an option for you to add additional individuals on the next page for upto 4 individuals in total.",
                     "properties": {
                         "parent1": {
                             "enum": [
@@ -307,7 +330,7 @@
                             "removeDefaultNone": true
                         },
                         "parent1-1": {
-                            "placeholder": "please specify parent/legal guardian type",
+                            "placeholder": "please specify",
                             "dependencies": {
                                 "parent1": [
                                     "Other (please specify below)"
@@ -319,7 +342,7 @@
                             "type": "checkbox"
                         },
                         "parent1-race2": {
-                            "placeholder": "please specify your race or ethnicity"
+                            "placeholder": "please specify parent/caregiver race or ethnicity"
                         },
                         "parent1-education": {
                             "sort": false
@@ -348,7 +371,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Information about Parent 2 or caregiver 2 </b> <br> In the following, please tell us about your child's parent 2 or caregiver 2. This person can be a parent/grandparent/relative/foster parent/or any other person that you consider a parent/caregiver to your child who spends the second most time with your child after parent 1 / caregiver 1",
+                    "title": "<b> Information about parents or primary caregivers </b> <br> In the following, please tell us about your child's parents or primary caregivers. Person(s) can be paren/grandparent/relative/foster parent/or any other person that spends as much time or the second most time as Parent 1 and is as responsible for the daily care and rearing of your child as Parent 1",
                     "properties": {
                         "parent2": {
                             "enum": [
@@ -406,6 +429,134 @@
                         "parent2-language2": {
                             "type": "string",
                             "title": "If you selected other"
+                        },
+                        "parent2-z-othercaregivers": {
+                            "enum": [
+                                "No",
+                                "Yes, there are more parent(s)/primary caregivers(s)"
+                            ],
+                            "type": "string",
+                            "title": "Are there other parent(s) or primary caregiver(s) for your child?"
+                        },
+                        "parent2-z-othercaregivers-parent3": {
+                            "enum": [
+                                "Mother",
+                                "Father",
+                                "Other (please specify below)"
+                            ],
+                            "type": "string",
+                            "title": "Parent 3 is: "
+                        },
+                        "parent2-z-othercaregivers-parent3-1": {
+                            "type": "string",
+                            "title": "If you selected other"
+                        },
+                        "parent2-z-othercaregivers-parent3-race1": {
+                            "enum": [
+                                "American Indian or Alaska Native",
+                                "Asian",
+                                "Black or African-American",
+                                "Hispanic or Latino",
+                                "White",
+                                "Native Hawaiian or Other Pacific Islander",
+                                "Other (please specify below)"
+                            ],
+                            "type": "checkbox",
+                            "title": "I would identify Parent 3's race or ethnicity as (please check all that apply)"
+                        },
+                        "parent2-z-othercaregivers-parent3-race2": {
+                            "type": "string",
+                            "title": "If you selected other"
+                        },
+                        "parent2-z-othercaregivers-parent3-education": {
+                            "enum": [
+                                "8th grade of less",
+                                "9th - 12th grade no diploma",
+                                "High school graduate or GED completed",
+                                "Some college credit but no degree",
+                                "Associate degree (AA, AS)",
+                                "Bachelor's degree (BA, BS, AB)",
+                                "Graduate or professional degree"
+                            ],
+                            "type": "string",
+                            "title": "Parent 3's highest level of education:"
+                        },
+                        "parent2-z-othercaregivers-parent3-language1": {
+                            "enum": [
+                                "English",
+                                "English and Other (please specify below)",
+                                "Other (please specify below)"
+                            ],
+                            "type": "string",
+                            "title": "Parent 3's native language:"
+                        },
+                        "parent2-z-othercaregivers-parent3-language2": {
+                            "type": "string",
+                            "title": "If you selected other"
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers": {
+                            "enum": [
+                                "No",
+                                "Yes, there are more parent(s)/primary caregivers(s)"
+                            ],
+                            "type": "string",
+                            "title": "Are there other parent(s) or primary caregiver(s) for your child?"
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4": {
+                            "enum": [
+                                "Mother",
+                                "Father",
+                                "Other (please specify below)"
+                            ],
+                            "type": "string",
+                            "title": "Parent 4 is: "
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-1": {
+                            "type": "string",
+                            "title": "If you selected other"
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-race1": {
+                            "enum": [
+                                "American Indian or Alaska Native",
+                                "Asian",
+                                "Black or African-American",
+                                "Hispanic or Latino",
+                                "White",
+                                "Native Hawaiian or Other Pacific Islander",
+                                "Other (please specify below)"
+                            ],
+                            "type": "checkbox",
+                            "title": "I would identify Parent 4's race or ethnicity as (please check all that apply)"
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-race2": {
+                            "type": "string",
+                            "title": "If you selected other"
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-education": {
+                            "enum": [
+                                "8th grade of less",
+                                "9th - 12th grade no diploma",
+                                "High school graduate or GED completed",
+                                "Some college credit but no degree",
+                                "Associate degree (AA, AS)",
+                                "Bachelor's degree (BA, BS, AB)",
+                                "Graduate or professional degree"
+                            ],
+                            "type": "string",
+                            "title": "Parent 4's highest level of education:"
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-language1": {
+                            "enum": [
+                                "English",
+                                "English and Other (please specify below)",
+                                "Other (please specify below)"
+                            ],
+                            "type": "string",
+                            "title": "Parent 4's native language:"
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-language2": {
+                            "type": "string",
+                            "title": "If you selected other"
                         }
                     },
                     "dependencies": {
@@ -426,6 +577,54 @@
                         ],
                         "parent2-language2": [
                             "parent2-language1"
+                        ],
+                        "parent2-z-othercaregivers": [
+                            "parent2"
+                        ],
+                        "parent2-z-othercaregivers-parent3": [
+                            "parent2-z-othercaregivers"
+                        ],
+                        "parent2-z-othercaregivers-parent3-1": [
+                            "parent2-z-othercaregivers-parent3"
+                        ],
+                        "parent2-z-othercaregivers-parent3-race1": [
+                            "parent2-z-othercaregivers-parent3"
+                        ],
+                        "parent2-z-othercaregivers-parent3-race2": [
+                            "parent2-z-othercaregivers-parent3"
+                        ],
+                        "parent2-z-othercaregivers-parent3-education": [
+                            "parent2-z-othercaregivers-parent3"
+                        ],
+                        "parent2-z-othercaregivers-parent3-language1": [
+                            "parent2-z-othercaregivers-parent3"
+                        ],
+                        "parent2-z-othercaregivers-parent3-language2": [
+                            "parent2-z-othercaregivers-parent3-language1"
+                        ],
+                        "parent2-z-othercaregivers-z-othercaregivers": [
+                            "parent2-z-othercaregivers-parent3"
+                        ],
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4": [
+                            "parent2-z-othercaregivers-z-othercaregivers"
+                        ],
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-1": [
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4"
+                        ],
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-race1": [
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4"
+                        ],
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-race2": [
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4"
+                        ],
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-education": [
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4"
+                        ],
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-language1": [
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4"
+                        ],
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-language2": [
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4-language1"
                         ]
                     }
                 },
@@ -437,7 +636,7 @@
                             "removeDefaultNone": true
                         },
                         "parent2-1": {
-                            "placeholder": "please specify parent/legal guardian type",
+                            "placeholder": "please specify",
                             "dependencies": {
                                 "parent2": [
                                     "Other (please specify below)"
@@ -456,7 +655,7 @@
                             }
                         },
                         "parent2-race2": {
-                            "placeholder": "please specify your race or ethnicity",
+                            "placeholder": "please specify parent/caregiver race or ethnicity",
                             "dependencies": {
                                 "parent2": [
                                     "Mother",
@@ -495,6 +694,171 @@
                                     "Other (please specify below)"
                                 ]
                             }
+                        },
+                        "parent2-z-othercaregivers": {
+                            "sort": false,
+                            "type": "radio",
+                            "dependencies": {
+                                "parent2": [
+                                    "Mother",
+                                    "Father",
+                                    "Other (please specify below)"
+                                ]
+                            },
+                            "removeDefaultNone": true
+                        },
+                        "parent2-z-othercaregivers-parent3": {
+                            "sort": false,
+                            "type": "radio",
+                            "dependencies": {
+                                "parent2-z-othercaregivers": [
+                                    "Yes, there are more parent(s)/primary caregivers(s)"
+                                ]
+                            },
+                            "removeDefaultNone": true
+                        },
+                        "parent2-z-othercaregivers-parent3-1": {
+                            "placeholder": "please specify",
+                            "dependencies": {
+                                "parent2-z-othercaregivers-parent3": [
+                                    "Other (please specify below)"
+                                ]
+                            }
+                        },
+                        "parent2-z-othercaregivers-parent3-race1": {
+                            "sort": false,
+                            "type": "checkbox",
+                            "dependencies": {
+                                "parent2-z-othercaregivers-parent3": [
+                                    "Mother",
+                                    "Father",
+                                    "Other (please specify below)"
+                                ]
+                            }
+                        },
+                        "parent2-z-othercaregivers-parent3-race2": {
+                            "placeholder": "please specify parent/caregiver race or ethnicity",
+                            "dependencies": {
+                                "parent2-z-othercaregivers-parent3": [
+                                    "Mother",
+                                    "Father",
+                                    "Other (please specify below)"
+                                ]
+                            }
+                        },
+                        "parent2-z-othercaregivers-parent3-education": {
+                            "sort": false,
+                            "dependencies": {
+                                "parent2-z-othercaregivers-parent3": [
+                                    "Mother",
+                                    "Father",
+                                    "Other (please specify below)"
+                                ]
+                            }
+                        },
+                        "parent2-z-othercaregivers-parent3-language1": {
+                            "sort": false,
+                            "type": "radio",
+                            "dependencies": {
+                                "parent2-z-othercaregivers-parent3": [
+                                    "Mother",
+                                    "Father",
+                                    "Other (please specify below)"
+                                ]
+                            },
+                            "removeDefaultNone": true
+                        },
+                        "parent2-z-othercaregivers-parent3-language2": {
+                            "placeholder": "please specify the other language",
+                            "dependencies": {
+                                "parent2-z-othercaregivers-parent3-language1": [
+                                    "English and Other (please specify below)",
+                                    "Other (please specify below)"
+                                ]
+                            },
+                            "parent2-z-othercaregivers-z-othercaregivers": {
+                                "sort": false,
+                                "type": "radio",
+                                "dependencies": {
+                                    "parent2-z-othercaregivers-parent3": [
+                                        "Mother",
+                                        "Father",
+                                        "Other (please specify below)"
+                                    ]
+                                },
+                                "removeDefaultNone": true
+                            },
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4": {
+                                "sort": false,
+                                "type": "radio",
+                                "dependencies": {
+                                    "parent2-z-othercaregivers-z-othercaregivers": [
+                                        "Yes, there are more parent(s)/primary caregivers(s)"
+                                    ]
+                                },
+                                "removeDefaultNone": true
+                            },
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4-1": {
+                                "placeholder": "please specify",
+                                "dependencies": {
+                                    "parent2-z-othercaregivers-z-othercaregivers-parent4": [
+                                        "Other (please specify below)"
+                                    ]
+                                }
+                            },
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4-race1": {
+                                "sort": false,
+                                "type": "checkbox",
+                                "dependencies": {
+                                    "parent2-z-othercaregivers-z-othercaregivers-parent4": [
+                                        "Mother",
+                                        "Father",
+                                        "Other (please specify below)"
+                                    ]
+                                },
+                                "removeDefaultNone": true
+                            },
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4-race2": {
+                                "placeholder": "please specify parent/caregiver race or ethnicity",
+                                "dependencies": {
+                                    "pparent2-z-othercaregivers-z-othercaregivers-parent4": [
+                                        "Mother",
+                                        "Father",
+                                        "Other (please specify below)"
+                                    ]
+                                }
+                            },
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4-education": {
+                                "sort": false,
+                                "dependencies": {
+                                    "parent2-z-othercaregivers-z-othercaregivers-parent4": [
+                                        "Mother",
+                                        "Father",
+                                        "Other (please specify below)"
+                                    ]
+                                }
+                            },
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4-language1": {
+                                "sort": false,
+                                "type": "radio",
+                                "dependencies": {
+                                    "parent2-z-othercaregivers-z-othercaregivers-parent4": [
+                                        "Mother",
+                                        "Father",
+                                        "Other (please specify below)"
+                                    ]
+                                },
+                                "removeDefaultNone": true
+                            },
+                            "parent2-z-othercaregivers-z-othercaregivers-parent4-language2": {
+                                "placeholder": "please specify the other language",
+                                "dependencies": {
+                                    "parent2-z-othercaregivers-z-othercaregivers-parent4-language1": [
+                                        "English and Other (please specify below)",
+                                        "Other (please specify below)"
+                                    ]
+                                }
+                            }
                         }
                     }
                 }
@@ -506,7 +870,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Demographic Survey </b> <br> This survey will ask some information about your child, your child's primary caregivers, and the neighborhood your child lives in to better understand your child's social experience with different race people and different language speakers. This survey will take about 5 minutues. Your answers will be kept completely confidential and will be used for research purposes only.",
+                    "title": "<b> Demographic Survey </b> <br> This survey will ask some information about your child, your child's parents/primary caregivers, and the neighborhood your child lives in to better understand your child's social experience with people who vary in racial and linguistic backgrounds. This survey will take about 5-10 minutes. Your answers will be kept completely confidential and will be used for research purposes only.",
                     "properties": {
                         "race": {
                             "enum": [
@@ -524,26 +888,6 @@
                         "race2": {
                             "type": "string",
                             "title": "If you selected other"
-                        },
-                        "address-1": {
-                            "type": "string",
-                            "title": "What is the current zipcode your child lives in?"
-                        },
-                        "address-2": {
-                            "type": "string",
-                            "title": "<b> To identify census tract information, it would be helpful to have your child's current address or the cross roads/interactions where your child lives in. This information will never be shared and used only for research purposes. </b> <br> <br> Your child's current address (feel free to skip)"
-                        },
-                        "address-3": {
-                            "type": "string",
-                            "title": "City"
-                        },
-                        "address-4": {
-                            "type": "string",
-                            "title": "State"
-                        },
-                        "address-5": {
-                            "type": "string",
-                            "title": "Country"
                         }
                     },
                     "dependencies": {
@@ -565,21 +909,6 @@
                                     "Other (please specify below)"
                                 ]
                             }
-                        },
-                        "address-1": {
-                            "placeholder": "zipcode"
-                        },
-                        "address-2": {
-                            "placeholder": "street address"
-                        },
-                        "address-3": {
-                            "placeholder": "city"
-                        },
-                        "address-4": {
-                            "placeholder": "state"
-                        },
-                        "address-5": {
-                            "placeholder": "country (e.g., U.S.)"
                         }
                     }
                 }
@@ -841,17 +1170,17 @@
         }
     },
     "sequence": [
+        "parent-2",
+        "demographic",
+        "zipcode",
+        "language",
+        "parent-1",
+        "neighborhood",
+        "exit-survey",
         "video-config",
         "video-consent",
         "instructions",
         "final-instructions",
-        "trials",
-        "demographic",
-        "language",
-        "parent-1",
-        "parent-2",
-        "exposure",
-        "neighborhood",
-        "exit-survey"
+        "trials"
     ]
 }

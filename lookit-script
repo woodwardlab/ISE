@@ -122,7 +122,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Zip code </b> <br> We are asking for zip code information so that we can identify the demographics in your child's neighborhood. We will use your zip code to extract zip code level racial and linguistic demographic information from the U.S. census. This information will help us understand how neighborhood demographics relate to infants' looking patterns collected in the previous part of this study. This information will not be shared and be used for research purposes only.",
+                    "title": "<b> Zip code </b> <br> We are asking for zip code information so that we can identify the demographics in your child's neighborhood. We will use the zip code provided to extract zip code level racial and linguistic demographic information from the U.S. census. This information will help us understand how neighborhood demographics relate to infants' looking patterns collected in the previous part of this study. This information will not be shared and be used for research purposes only.",
                     "properties": {
                         "address-1": {
                             "type": "string",
@@ -140,86 +140,6 @@
             },
             "nextButtonText": "Next"
         },
-        "exposure": {
-            "kind": "exp-lookit-survey",
-            "formSchema": {
-                "schema": {
-                    "type": "object",
-                    "title": "<b> Information about your child's exposure to different race people and different language speakers </b> <br> In the following, we are interested in how much contact your child has with people who are of different races or speak different languages from your child's parents/caregivers in the past month. Contact includes how many people or amount of time your child spends with these people in general in the past month.",
-                    "properties": {
-                        "race-exposure1": {
-                            "enum": [
-                                "Not at all",
-                                "Little",
-                                "Somewhat",
-                                "Much",
-                                "A great deal"
-                            ],
-                            "type": "string",
-                            "title": "How much contact did your child have with people who are of a different race this past month?"
-                        },
-                        "race-exposure2": {
-                            "enum": [
-                                "Not at all",
-                                "Little",
-                                "Somewhat",
-                                "Much",
-                                "A great deal"
-                            ],
-                            "type": "string",
-                            "title": "In general, when your child meets people who are of a different race, does your child find the contact pleasant?"
-                        },
-                        "language-exposure1": {
-                            "enum": [
-                                "Not at all",
-                                "Little",
-                                "Somewhat",
-                                "Much",
-                                "A great deal"
-                            ],
-                            "type": "string",
-                            "title": "How much contact did your child have with people who speak a different language this past month?"
-                        },
-                        "language-exposure2": {
-                            "enum": [
-                                "Not at all",
-                                "Little",
-                                "Somewhat",
-                                "Much",
-                                "A great deal"
-                            ],
-                            "type": "string",
-                            "title": "In general, when your child meets people who speak a different language, does your child find the contact pleasant?"
-                        }
-                    }
-                },
-                "options": {
-                    "fields": {
-                        "race-exposure1": {
-                            "sort": false,
-                            "type": "radio",
-                            "removeDefaultNone": true
-                        },
-                        "race-exposure2": {
-                            "sort": false,
-                            "type": "radio",
-                            "removeDefaultNone": true
-                        },
-                        "language-exposure1": {
-                            "sort": false,
-                            "type": "radio",
-                            "removeDefaultNone": true
-                        },
-                        "language-exposure2": {
-                            "sort": false,
-                            "type": "radio",
-                            "removeDefaultNone": true
-                        }
-                    }
-                }
-            },
-            "nextButtonText": "Next"
-        },
         "language": {
             "kind": "exp-lookit-survey",
             "formSchema": {
@@ -231,7 +151,7 @@
                             "enum": [
                                 "<b> Monolingual (English-Speaking) </b>: A “monolingual” (English-speaking) infant is one who hears English almost all of the time (e.g., over 95% of the time). All of the child’s primary caregivers speak to her in English. An example might be a child who hears English from all family members at home. She may occasionally hear another language on TV (e.g., Spanish on Dora the Explorer) or in a weekly language-learning playgroup, but all of her primary caregivers speak to her in English. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native English speaker, and not be fluent in any other language.",
                                 "<b> Exposure (English and some exposure to another language) </b>: An “exposure” infant is one who hears primarily English, but who is exposed to a second language on a regular basis, but not nearly as much as English (e.g., 80-90% English; 10-20% Spanish). An example might be a child who hears English from both parents, yet who has a grandmother or nanny who watches the baby one or two afternoons a week and speaks in Spanish. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of English, and will have some proficiency in a second language, yet will not be fluent in that language.",
-                                "<b> Bilingual (English and one other language) </b>: A “bilingual” infant is one who hears both English and a second language on a highly regular basis (e.g., 50% English/50% Spanish; or 70% English/30% Spanish). An example might be a child who hears English from one parent and Spanish from a second parent. Or, the child might hear English from both parents and hear Spanish during the day each day from a grandparent or nanny. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of both English and of a second language.",
+                                "<b> Bilingual (English and one other language) </b>: A “bilingual” infant is one who hears both English and a second language on a highly regular basis (e.g., 50% English/50% Spanish; or 70% English/30% Spanish). An example might be a child who hears English from one parent and Spanish from a second parent. Or, the child might hear English from both parents and hear Spanish during the day each day from a grand parent or nanny. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of both English and of a second language.",
                                 "<b> Multilingual (English and 2 or more other languages) </b>: A “multilingual” infant hears English, and at least two other languages on a regular basis. An example might be a baby who hears English from one parent, Spanish from another parent, and French during the day each day from a nanny. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native speaker of English and of two other languages."
                             ]
                         }
@@ -254,7 +174,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Information about parents or primary caregivers </b> <br> In the following, please tell us about your child's parents or primary caregivers (i.e., the person(s) that spends the most time with your child on a daily basis and has the greatest responsiblity for the daily care and rearing of your child). Person(s) can be parent/grandparent/relative/foster parent/or any other person. If there are more than one parent/primary caregiver (e.g., another person that spends as much time and has as much responsibility for caring daily for your child), you can enter in this individual on the next page. If there are more than two parents/primary caregivers, there will be an option for you to add additional individuals on the next page for upto 4 individuals in total.",
+                    "title": "<b> Information about parents or primary caregivers </b> <br> In the following, please tell us about your child's parents or primary caregivers (i.e., the person(s) that spends the most time with your child on a daily basis and has the greatest responsiblity for the daily care and rearing of your child). Person(s) can be biological, step, adoptive or foster, married or unmarried parents. If there are more than one parent/primary caregiver (e.g., another person that spends as much time and has as much responsibility for caring daily for your child), you can enter in this individual on the next page. If there are more than two parents/primary caregivers, there will be an option for you to add additional individuals on the next page for up to 4 individuals in total.",
                     "properties": {
                         "parent1": {
                             "enum": [
@@ -298,27 +218,11 @@
                             ],
                             "type": "string",
                             "title": "Parent 1's highest level of education:"
-                        },
-                        "parent1-language1": {
-                            "enum": [
-                                "English",
-                                "English and Other (please specify below)",
-                                "Other (please specify below)"
-                            ],
-                            "type": "string",
-                            "title": "Parent 1's native language:"
-                        },
-                        "parent1-language2": {
-                            "type": "string",
-                            "title": "Please specify other language"
                         }
                     },
                     "dependencies": {
                         "parent1-1": [
                             "parent1"
-                        ],
-                        "parent1-language2": [
-                            "parent1-language1"
                         ]
                     }
                 },
@@ -343,23 +247,6 @@
                         },
                         "parent1-race2": {
                             "placeholder": "please specify parent/caregiver race or ethnicity"
-                        },
-                        "parent1-education": {
-                            "sort": false
-                        },
-                        "parent1-language1": {
-                            "sort": false,
-                            "type": "radio",
-                            "removeDefaultNone": true
-                        },
-                        "parent1-language2": {
-                            "placeholder": "please specify the other language",
-                            "dependencies": {
-                                "parent1-language1": [
-                                    "English and Other (please specify below)",
-                                    "Other (please specify below)"
-                                ]
-                            }
                         }
                     }
                 }
@@ -371,7 +258,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Information about parents or primary caregivers </b> <br> In the following, please tell us about your child's parents or primary caregivers. Person(s) can be paren/grandparent/relative/foster parent/or any other person that spends as much time or the second most time as Parent 1 and is as responsible for the daily care and rearing of your child as Parent 1",
+                    "title": "<b> Information about parents or primary caregivers </b> <br> In the following, please tell us about your child's parents or primary caregivers. Person(s) can be biological, step, adoptive or foster, married or unmarried parents that spends as much time or the second most time as Parent 1 and is as responsible for the daily care and rearing of your child as Parent 1",
                     "properties": {
                         "parent2": {
                             "enum": [
@@ -416,19 +303,6 @@
                             ],
                             "type": "string",
                             "title": "Parent 2's highest level of education:"
-                        },
-                        "parent2-language1": {
-                            "enum": [
-                                "English",
-                                "English and Other (please specify below)",
-                                "Other (please specify below)"
-                            ],
-                            "type": "string",
-                            "title": "Parent 2's native language:"
-                        },
-                        "parent2-language2": {
-                            "type": "string",
-                            "title": "If you selected other"
                         },
                         "parent2-z-othercaregivers": {
                             "enum": [
@@ -481,19 +355,6 @@
                             "type": "string",
                             "title": "Parent 3's highest level of education:"
                         },
-                        "parent2-z-othercaregivers-parent3-language1": {
-                            "enum": [
-                                "English",
-                                "English and Other (please specify below)",
-                                "Other (please specify below)"
-                            ],
-                            "type": "string",
-                            "title": "Parent 3's native language:"
-                        },
-                        "parent2-z-othercaregivers-parent3-language2": {
-                            "type": "string",
-                            "title": "If you selected other"
-                        },
                         "parent2-z-othercaregivers-z-othercaregivers": {
                             "enum": [
                                 "No",
@@ -544,19 +405,6 @@
                             ],
                             "type": "string",
                             "title": "Parent 4's highest level of education:"
-                        },
-                        "parent2-z-othercaregivers-z-othercaregivers-parent4-language1": {
-                            "enum": [
-                                "English",
-                                "English and Other (please specify below)",
-                                "Other (please specify below)"
-                            ],
-                            "type": "string",
-                            "title": "Parent 4's native language:"
-                        },
-                        "parent2-z-othercaregivers-z-othercaregivers-parent4-language2": {
-                            "type": "string",
-                            "title": "If you selected other"
                         }
                     },
                     "dependencies": {
@@ -571,12 +419,6 @@
                         ],
                         "parent2-education": [
                             "parent2"
-                        ],
-                        "parent2-language1": [
-                            "parent2"
-                        ],
-                        "parent2-language2": [
-                            "parent2-language1"
                         ],
                         "parent2-z-othercaregivers": [
                             "parent2"
@@ -596,12 +438,6 @@
                         "parent2-z-othercaregivers-parent3-education": [
                             "parent2-z-othercaregivers-parent3"
                         ],
-                        "parent2-z-othercaregivers-parent3-language1": [
-                            "parent2-z-othercaregivers-parent3"
-                        ],
-                        "parent2-z-othercaregivers-parent3-language2": [
-                            "parent2-z-othercaregivers-parent3-language1"
-                        ],
                         "parent2-z-othercaregivers-z-othercaregivers": [
                             "parent2-z-othercaregivers-parent3"
                         ],
@@ -619,12 +455,6 @@
                         ],
                         "parent2-z-othercaregivers-z-othercaregivers-parent4-education": [
                             "parent2-z-othercaregivers-z-othercaregivers-parent4"
-                        ],
-                        "parent2-z-othercaregivers-z-othercaregivers-parent4-language1": [
-                            "parent2-z-othercaregivers-z-othercaregivers-parent4"
-                        ],
-                        "parent2-z-othercaregivers-z-othercaregivers-parent4-language2": [
-                            "parent2-z-othercaregivers-z-othercaregivers-parent4-language1"
                         ]
                     }
                 },
@@ -670,27 +500,6 @@
                                 "parent2": [
                                     "Mother",
                                     "Father",
-                                    "Other (please specify below)"
-                                ]
-                            }
-                        },
-                        "parent2-language1": {
-                            "sort": false,
-                            "type": "radio",
-                            "dependencies": {
-                                "parent2": [
-                                    "Mother",
-                                    "Father",
-                                    "Other (please specify below)"
-                                ]
-                            },
-                            "removeDefaultNone": true
-                        },
-                        "parent2-language2": {
-                            "placeholder": "please specify the other language",
-                            "dependencies": {
-                                "parent2-language1": [
-                                    "English and Other (please specify below)",
                                     "Other (please specify below)"
                                 ]
                             }
@@ -756,7 +565,7 @@
                                 ]
                             }
                         },
-                        "parent2-z-othercaregivers-parent3-language1": {
+                        "parent2-z-othercaregivers-z-othercaregivers": {
                             "sort": false,
                             "type": "radio",
                             "dependencies": {
@@ -768,96 +577,54 @@
                             },
                             "removeDefaultNone": true
                         },
-                        "parent2-z-othercaregivers-parent3-language2": {
-                            "placeholder": "please specify the other language",
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4": {
+                            "sort": false,
+                            "type": "radio",
                             "dependencies": {
-                                "parent2-z-othercaregivers-parent3-language1": [
-                                    "English and Other (please specify below)",
+                                "parent2-z-othercaregivers-z-othercaregivers": [
+                                    "Yes, there are more parent(s)/primary caregivers(s)"
+                                ]
+                            },
+                            "removeDefaultNone": true
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-1": {
+                            "placeholder": "please specify",
+                            "dependencies": {
+                                "parent2-z-othercaregivers-z-othercaregivers-parent4": [
+                                    "Other (please specify below)"
+                                ]
+                            }
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-race1": {
+                            "sort": false,
+                            "type": "checkbox",
+                            "dependencies": {
+                                "parent2-z-othercaregivers-z-othercaregivers-parent4": [
+                                    "Mother",
+                                    "Father",
                                     "Other (please specify below)"
                                 ]
                             },
-                            "parent2-z-othercaregivers-z-othercaregivers": {
-                                "sort": false,
-                                "type": "radio",
-                                "dependencies": {
-                                    "parent2-z-othercaregivers-parent3": [
-                                        "Mother",
-                                        "Father",
-                                        "Other (please specify below)"
-                                    ]
-                                },
-                                "removeDefaultNone": true
-                            },
-                            "parent2-z-othercaregivers-z-othercaregivers-parent4": {
-                                "sort": false,
-                                "type": "radio",
-                                "dependencies": {
-                                    "parent2-z-othercaregivers-z-othercaregivers": [
-                                        "Yes, there are more parent(s)/primary caregivers(s)"
-                                    ]
-                                },
-                                "removeDefaultNone": true
-                            },
-                            "parent2-z-othercaregivers-z-othercaregivers-parent4-1": {
-                                "placeholder": "please specify",
-                                "dependencies": {
-                                    "parent2-z-othercaregivers-z-othercaregivers-parent4": [
-                                        "Other (please specify below)"
-                                    ]
-                                }
-                            },
-                            "parent2-z-othercaregivers-z-othercaregivers-parent4-race1": {
-                                "sort": false,
-                                "type": "checkbox",
-                                "dependencies": {
-                                    "parent2-z-othercaregivers-z-othercaregivers-parent4": [
-                                        "Mother",
-                                        "Father",
-                                        "Other (please specify below)"
-                                    ]
-                                },
-                                "removeDefaultNone": true
-                            },
-                            "parent2-z-othercaregivers-z-othercaregivers-parent4-race2": {
-                                "placeholder": "please specify parent/caregiver race or ethnicity",
-                                "dependencies": {
-                                    "pparent2-z-othercaregivers-z-othercaregivers-parent4": [
-                                        "Mother",
-                                        "Father",
-                                        "Other (please specify below)"
-                                    ]
-                                }
-                            },
-                            "parent2-z-othercaregivers-z-othercaregivers-parent4-education": {
-                                "sort": false,
-                                "dependencies": {
-                                    "parent2-z-othercaregivers-z-othercaregivers-parent4": [
-                                        "Mother",
-                                        "Father",
-                                        "Other (please specify below)"
-                                    ]
-                                }
-                            },
-                            "parent2-z-othercaregivers-z-othercaregivers-parent4-language1": {
-                                "sort": false,
-                                "type": "radio",
-                                "dependencies": {
-                                    "parent2-z-othercaregivers-z-othercaregivers-parent4": [
-                                        "Mother",
-                                        "Father",
-                                        "Other (please specify below)"
-                                    ]
-                                },
-                                "removeDefaultNone": true
-                            },
-                            "parent2-z-othercaregivers-z-othercaregivers-parent4-language2": {
-                                "placeholder": "please specify the other language",
-                                "dependencies": {
-                                    "parent2-z-othercaregivers-z-othercaregivers-parent4-language1": [
-                                        "English and Other (please specify below)",
-                                        "Other (please specify below)"
-                                    ]
-                                }
+                            "removeDefaultNone": true
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-race2": {
+                            "placeholder": "please specify parent/caregiver race or ethnicity",
+                            "dependencies": {
+                                "pparent2-z-othercaregivers-z-othercaregivers-parent4": [
+                                    "Mother",
+                                    "Father",
+                                    "Other (please specify below)"
+                                ]
+                            }
+                        },
+                        "parent2-z-othercaregivers-z-othercaregivers-parent4-education": {
+                            "sort": false,
+                            "dependencies": {
+                                "parent2-z-othercaregivers-z-othercaregivers-parent4": [
+                                    "Mother",
+                                    "Father",
+                                    "Other (please specify below)"
+                                ]
                             }
                         }
                     }
@@ -918,7 +685,7 @@
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
-                "text": "There is one more survey we would love for you to fill out to have a better sense of the people your baby interacts with on a regular basis for <b> an additional $5 gift card.</b> Please copy and paste the link below in your browser. <br><br> <b>https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3 </b><br><br> We'll be emailing you a $5 gift card (and an additional $5 gift card if you have filled out the survey above). This should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. <br><br><u>Following is more information about the study you participated in:</u><br> In this study, we are testing if infants’ might have different expectations about how people from the same racial background versus different racial backgrounds interact. To try to answer this question, we are using the fact that infants tend to look longer when they see a surprising event. We are curious if infants will look longer (i.e., be more “surprised”) when they see people from different racial backgrounds interact versus people from the same racial backgrounds interact. We are also interested in how infants’ own exposure to different races and language speakers - through their neighborhood or in their daily lives - might influence infants’ looking patterns. Your baby’s looking pattern to the videos and your survey responses will help us get closer to understanding how social experience early in life shapes infants’ thinking about race.",
+                "text": "There is one more optional survey we would love for you to fill out to have a better sense of the people your baby interacts with on a regular basis for <b> an additional $5 gift card.</b> To complete this optional survey, please copy and paste the link below in your browser. <br><br> <b>https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3 </b><br><br> We'll be emailing you a $5 gift card (and an additional $5 gift card if you have filled out the optional survey above). This should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. <br><br><u>Following is more information about the study you participated in:</u><br> In this study, we are testing if infants’ might have different expectations about how people from the same racial background versus different racial backgrounds interact. To try to answer this question, we are using the fact that infants tend to look longer when they see a surprising event. We are curious if infants will look longer (i.e., be more “surprised”) when they see people from different racial backgrounds interact versus people from the same racial backgrounds interact. We are also interested in how infants’ own exposure to different races and language speakers - through their neighborhood or in their daily lives - might influence infants’ looking patterns. Your baby’s looking pattern to the videos and your survey responses will help us get closer to understanding how social experience early in life shapes infants’ thinking about race.",
                 "title": "Thank you!"
             }
         },
@@ -1170,11 +937,11 @@
         }
     },
     "sequence": [
+        "parent-1",
         "parent-2",
         "demographic",
         "zipcode",
         "language",
-        "parent-1",
         "neighborhood",
         "exit-survey",
         "video-config",

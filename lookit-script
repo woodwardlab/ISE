@@ -219,6 +219,84 @@
                         "electronic",
                         "xylophone"
                     ]
+                },
+                {
+                    "FAM": "W1B4",
+                    "TEST1": "W1B4A-15",
+                    "TEST2": "W1B4D-15",
+                    "ALTTEST1": "W1B4D-15",
+                    "ALTTEST2": "W1B4A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W2B4",
+                    "TEST1": "W2B4A-15",
+                    "TEST2": "W2B4D-15",
+                    "ALTTEST1": "W2B4D-15",
+                    "ALTTEST2": "W2B4A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W3B4",
+                    "TEST1": "W3B4A-15",
+                    "TEST2": "W3B4D-15",
+                    "ALTTEST1": "W3B4D-15",
+                    "ALTTEST2": "W3B4A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W4B1",
+                    "TEST1": "W4B1A-15",
+                    "TEST2": "W4B1D-15",
+                    "ALTTEST1": "W4B1D-15",
+                    "ALTTEST2": "W4B1A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W4B2",
+                    "TEST1": "W4B2A-15",
+                    "TEST2": "W4B2D-15",
+                    "ALTTEST1": "W4B2D-15",
+                    "ALTTEST2": "W4B2A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W4B4",
+                    "TEST1": "W4B4A-15",
+                    "TEST2": "W4B4D-15",
+                    "ALTTEST1": "W4B4D-15",
+                    "ALTTEST2": "W4B4A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
                 }
             ],
             "commonFrameProperties": {
@@ -278,11 +356,11 @@
                     "title": "<b> Your baby's language exposure </b> <br> (please select the description that best matches your child)",
                     "properties": {
                         "language-1": {
-                            "enum": [
-                                "<b> Monolingual (English-Speaking) </b>: A “monolingual” (English-speaking) infant is one who hears English almost all of the time (e.g., over 95% of the time). All of the child’s primary caregivers speak to her in English. An example might be a child who hears English from all family members at home. She may occasionally hear another language on TV (e.g., Spanish on Dora the Explorer) or in a weekly language-learning playgroup, but all of her primary caregivers speak to her in English. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native English speaker, and not be fluent in any other language.",
-                                "<b> Exposure (English and some exposure to another language) </b>: An “exposure” infant is one who hears primarily English, but who is exposed to a second language on a regular basis, but not nearly as much as English (e.g., 80-90% English; 10-20% Spanish). An example might be a child who hears English from both parents, yet who has a grandmother or nanny who watches the baby one or two afternoons a week and speaks in Spanish. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of English, and will have some proficiency in a second language, yet will not be fluent in that language.",
-                                "<b> Bilingual (English and one other language) </b>: A “bilingual” infant is one who hears both English and a second language on a highly regular basis (e.g., 50% English/50% Spanish; or 70% English/30% Spanish). An example might be a child who hears English from one parent and Spanish from a second parent. Or, the child might hear English from both parents and hear Spanish during the day each day from a grand parent or nanny. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of both English and of a second language.",
-                                "<b> Multilingual (English and 2 or more other languages) </b>: A “multilingual” infant hears English, and at least two other languages on a regular basis. An example might be a baby who hears English from one parent, Spanish from another parent, and French during the day each day from a nanny. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native speaker of English and of two other languages."
+                            "enum": 
+                            [
+                                "<b> Monolingual (One language only) </b>: A “monolingual” infant is one who hears one language almost all of the time (e.g., over 95% of the time). All of the child’s primary caregivers speak to her in this one language. An example might be a child who hears English from all family members at home. She may occasionally hear another language on TV (e.g., Spanish on Dora the Explorer) or in a weekly language-learning playgroup, but all of her primary caregivers speak to her in English. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native English speaker, and not be fluent in any other language.",
+                                "<b> Exposure (One main language and some exposure to another language) </b>: An “exposure” infant is one who hears primarily one main langauge, but who is exposed to a second language on a regular basis, but not nearly as much as the main language (e.g., 80-90% English; 10-20% Spanish). An example might be a child who hears English from both parents, yet who has a grandmother or nanny who watches the baby one or two afternoons a week and speaks in Spanish. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of English, and will have some proficiency in a second language, yet will not be fluent in that language.",
+                                "<b> Bilingual/Multilingual (Two languages or more) </b>: A “bilingual/multilingual” infant hears at least two or more other languages on a regular basis (e.g., 50% English/50% Spanish; or 70% English/30% Spanish). An example might be a child who hears English from one parent and Spanish from a second parent. Or, the child might hear English from both parents and hear Spanish during the day each day from a grand parent or nanny. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native speaker of both English and of another language(s)."
                             ]
                         }
                     }
@@ -299,12 +377,53 @@
             },
             "nextButtonText": "Next"
         },
+        
+        
+        "language-follow-up": {
+            "kind": "exp-lookit-survey",
+            "formSchema": {
+                "schema": {
+                    "type": "object",
+                    "title": "<b> Your baby's language(s)</b>",
+                    "properties": {
+                         "language-list": {
+                            "enum": [
+                                "English only",
+                                "English and other language(s) (please specify below)",
+                                "Other language(s) that are not English (please specify below)"
+                            ],
+                            "type": "string",
+                            "title": "What language(s) does your child hear regularly?"
+                        },
+                        "language-list-specify": {
+                            "type": "string",
+                            "title": "Please specify the other language(s) your child hears regularly"
+                            
+                        }
+                    }
+                },
+               "options": {
+                    "fields": {
+                        "language-list": {
+                            "sort": false,
+                            "type": "radio",
+                            "removeDefaultNone": true
+                        },
+                        "language-list-specify": {
+                            "placeholder": "e.g., Spanish"
+                        }
+                    }
+                }
+            },
+            "nextButtonText": "Next"
+        },
+        
         "parent-1": {
             "kind": "exp-lookit-survey",
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Information about parents or primary caregivers </b> <br> In the following, please tell us about your child's parents or primary caregivers (i.e., the person(s) that spends the most time with your child on a daily basis and has the greatest responsiblity for the daily care and rearing of your child). Person(s) can be biological, step, adoptive or foster, married or unmarried parents. If there are more than one parent/primary caregiver (e.g., another person that spends as much time and has as much responsibility for caring daily for your child), you can enter in this individual on the next page. If there are more than two parents/primary caregivers, there will be an option for you to add additional individuals on the next page for up to 4 individuals in total.",
+                    "title": "<b> Information about parents </b> <br> In the following, please tell us about your child's parent(s) (i.e., the person(s) that spends the most time with your child on a daily basis and has the greatest responsibility for the daily care and rearing of your child). Parent(s) can be biological, step, adoptive, foster, married or unmarried parent(s). If there are more than one parent (that is, another parent that spends as much time and has as much responsibility for caring daily for your child), you can enter this individual on the next page. If there are more than two parents, there will be an option for you to add additional individuals on the next page for up to 4 individuals in total.",
                     "properties": {
                         "parent1": {
                             "enum": [
@@ -376,7 +495,10 @@
                             "type": "checkbox"
                         },
                         "parent1-race2": {
-                            "placeholder": "please specify parent/caregiver race or ethnicity"
+                            "placeholder": "please specify parent race or ethnicity"
+                        },
+                        "parent1-education": {
+                            "sort": false
                         }
                     }
                 }
@@ -388,7 +510,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Information about parents or primary caregivers </b> <br> In the following, please tell us about your child's parents or primary caregivers. Person(s) can be biological, step, adoptive or foster, married or unmarried parents that spends as much time or the second most time as Parent 1 and is as responsible for the daily care and rearing of your child as Parent 1",
+                    "title": "<b> Information about parents </b>",
                     "properties": {
                         "parent2": {
                             "enum": [
@@ -437,10 +559,10 @@
                         "parent2-z-othercaregivers": {
                             "enum": [
                                 "No",
-                                "Yes, there are more parent(s)/primary caregivers(s)"
+                                "Yes, there are more parent(s)"
                             ],
                             "type": "string",
-                            "title": "Are there other parent(s) or primary caregiver(s) for your child?"
+                            "title": "Are there other parent(s) for your child?"
                         },
                         "parent2-z-othercaregivers-parent3": {
                             "enum": [
@@ -488,10 +610,10 @@
                         "parent2-z-othercaregivers-z-othercaregivers": {
                             "enum": [
                                 "No",
-                                "Yes, there are more parent(s)/primary caregivers(s)"
+                                "Yes, there are more parent(s)"
                             ],
                             "type": "string",
-                            "title": "Are there other parent(s) or primary caregiver(s) for your child?"
+                            "title": "Are there other parent(s) for your child?"
                         },
                         "parent2-z-othercaregivers-z-othercaregivers-parent4": {
                             "enum": [
@@ -615,7 +737,7 @@
                             }
                         },
                         "parent2-race2": {
-                            "placeholder": "please specify parent/caregiver race or ethnicity",
+                            "placeholder": "please specify parent race or ethnicity",
                             "dependencies": {
                                 "parent2": [
                                     "Mother",
@@ -651,7 +773,7 @@
                             "type": "radio",
                             "dependencies": {
                                 "parent2-z-othercaregivers": [
-                                    "Yes, there are more parent(s)/primary caregivers(s)"
+                                    "Yes, there are more parent(s)"
                                 ]
                             },
                             "removeDefaultNone": true
@@ -676,7 +798,7 @@
                             }
                         },
                         "parent2-z-othercaregivers-parent3-race2": {
-                            "placeholder": "please specify parent/caregiver race or ethnicity",
+                            "placeholder": "please specify parent race or ethnicity",
                             "dependencies": {
                                 "parent2-z-othercaregivers-parent3": [
                                     "Mother",
@@ -712,7 +834,7 @@
                             "type": "radio",
                             "dependencies": {
                                 "parent2-z-othercaregivers-z-othercaregivers": [
-                                    "Yes, there are more parent(s)/primary caregivers(s)"
+                                    "Yes, there are more parent(s)"
                                 ]
                             },
                             "removeDefaultNone": true
@@ -738,7 +860,7 @@
                             "removeDefaultNone": true
                         },
                         "parent2-z-othercaregivers-z-othercaregivers-parent4-race2": {
-                            "placeholder": "please specify parent/caregiver race or ethnicity",
+                            "placeholder": "please specify parent race or ethnicity",
                             "dependencies": {
                                 "pparent2-z-othercaregivers-z-othercaregivers-parent4": [
                                     "Mother",
@@ -767,7 +889,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Demographic Survey </b> <br> This survey will ask some information about your child, your child's parents/primary caregivers, and the neighborhood your child lives in to better understand your child's social experience with people who vary in racial and linguistic backgrounds. This survey will take about 5-10 minutes. Your answers will be kept completely confidential and will be used for research purposes only.",
+                    "title": "<b> Demographic Survey </b> <br> This survey will ask some information about your child, your child's parents, and the neighborhood your child lives in to better understand your child's social experience with people who vary in racial and linguistic backgrounds. This survey will take about 5-10 minutes. Your answers will be kept completely confidential and will be used for research purposes only.",
                     "properties": {
                         "race": {
                             "enum": [
@@ -815,7 +937,7 @@
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
-                "text": "There is one more optional survey we would love for you to fill out to have a better sense of the people your baby interacts with on a regular basis for <b> an additional $5 gift card.</b> To complete this optional survey, please copy and paste the link below in your browser. <br><br> <b>https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3 </b><br><br> We'll be emailing you a $5 gift card (and an additional $5 gift card if you have filled out the optional survey above). This should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study. <br><br><u>Following is more information about the study you participated in:</u><br> In this study, we are testing if infants’ might have different expectations about how people from the same racial background versus different racial backgrounds interact. To try to answer this question, we are using the fact that infants tend to look longer when they see a surprising event. We are curious if infants will look longer (i.e., be more “surprised”) when they see people from different racial backgrounds interact versus people from the same racial backgrounds interact. We are also interested in how infants’ own exposure to different races and language speakers - through their neighborhood or in their daily lives - might influence infants’ looking patterns. Your baby’s looking pattern to the videos and your survey responses will help us get closer to understanding how social experience early in life shapes infants’ thinking about race.",
+                "text": "There is one more optional survey we would love for you to fill out to have a better sense of the people your baby interacts with on a regular basis for <b> an additional $5 Amazon gift card.</b> To complete this optional survey, please click the link below. <br><br> <b>Click for an additional $5 survey: <a href=\"https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3\">https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3 </a></b><br><br> We'll be emailing you a $5 Amazon gift card (and an additional $5 Amazon gift card if you have filled out the optional survey above). This should arrive in your inbox within the next week after we verify your consent video and check that your child is in the age range for this study.<br><br><br><b><u>Following is more information about the study you participated in:</u></b><br> In this study, each baby is randomly assigned to view either two people from the same racial background or two people from different racial backgrounds. So your baby may have seen two people from the same racial background (i.e., either two White women or two Black women) or two people from different racial backgrounds (i.e., one Black woman and one White woman). All babies saw the two people alternatively interact in a friendly manner (i.e., saying “hi!”) and an unfriendly manner (i.e., turning their backs to each other). In future studies, we plan to add more people from other racial backgrounds as well.<br><br> In this study, we are testing whether infants might have different expectations about how people from the same racial background versus different racial backgrounds interact. To try to answer this question, we designed our study based on a tendency in infants to look longer when they see an event that violates their expectations. That is, infants tend to look longer at a surprising event. We are curious if infants will look longer (i.e., be more “surprised”) when they see people from different racial backgrounds interact in a friendly manner compared to when they see people from the same racial background interact in a friendly manner. We will also compare whether there are any differences in looking at friendly versus unfriendly interactions according to whether the people were from the same racial background or from different racial backgrounds.<br><br>Of course, many things can influence infants’ attention at a single moment so we average across multiple trials and across many infants to find an average response. We will look at whether on average, across many infants, we see a consistent pattern in how babies look at interactions between people from the same or different racial backgrounds. Thus, a baby’s individual response will not be informative and we won’t be able to say anything about how each baby thinks about these interactions. So if your baby appeared to look longer or shorter on each video that is completely okay and this looking pattern at an individual level does not indicate anything absolute. In other words, our findings do not allow us to draw meaningful conclusions about an individual child’s response, although they can provide information about general patterns in infant development.<br><br>Further, as mentioned above, we are looking only at infants’ looking patterns. This study does not reveal anything about what attitudes or thoughts your baby has about people based on race.<br><br>We are also interested in how infants’ exposure to people from different racial and linguistic backgrounds - through their neighborhood or in their daily lives - might influence looking patterns. Your baby’s looking pattern to the videos and your survey responses will help us get closer to understanding how social experiences early in life relate to infants’ attention to people from different racial backgrounds.<br><br>Through this research, you are contributing to our understanding of how babies start to pay attention to race and how early social experiences can shape this attention. <br><br>If you are interested in learning more about this kind of study, you can check out <a href=\"https://cpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/7/1535/files/2018/11/Preverbal-Infants-Infer-Third-Party-Social-Relationships-Based-on-Language_2016-11q5you.pdf\"> this research article </a> from our group. This research article looks at how infants expect people who speak the same language or different languages to interact. Our current study was inspired by this study. If you would like to learn more about research in this area, please visit our <a href=\"https://voices.uchicago.edu/woodwardlab/projects/\"> website</a>. <br><br> Lastly, if you have any questions or concerns, please contact the study leader, Grace Hwang at hyesung@uchicago.edu. She is happy to talk to you and answer any questions you might have over the phone, by video chat, or email.",
                 "title": "Thank you!"
             }
         },
@@ -903,7 +1025,7 @@
                     }
                 },
                 {
-                    "text": "Your baby will see 10 videos about 30s each. <br><br> In some videos, there will be a <b>BEEP</b> sound. The video will then freeze for a few seconds. This is supposed to happen! <br><br> Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image.<br><br> Please don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. <br><br> If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos. <br><br> We will let you know when it is okay to open your eyes/look up/turn around at the end of the study.",
+                    "text": "Your child will see two people and three types of videos with these two people: (1) two people talking (repeated 4 times), and then alternating (2) two people saying hi (repeated 3 times) and (3) two people turning their backs to each other (repeated 3 times). <br><br> In some videos, there will be a <b>BEEP</b> sound. The video will then freeze for a few seconds. This is supposed to happen! <br><br> Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image.<br><br> Please don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. <br><br> If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos.",
                     "title": "Here are some points for you to remember:"
                 }
             ],
@@ -1013,11 +1135,11 @@
         "video-consent": {
             "kind": "exp-lookit-video-consent",
             "PIName": "Professor Amanda Woodward",
-            "datause": "We are interested in how infants and young children reason about the world and how they learn from their interactions with other people. In today's study, we are investigating how social categories (such as race and language groups) and social experiences affect children’s learning.  A research assistant will watch your video to measure how long the baby looks at the screen.",
-            "payment": "After you finish the study, we will email you a $5 gift card within approximately three days.  In addition, you can earn an additional $5 gift card if you fill out another external survey linked at the end of the study. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
-            "purpose": "How do babies process people's interactions?",
+            "datause": " Trained research assistants will view these videos to measure how long infants looked. These research assistants will not have access to identifying information, including name and birthdate, when they are coding these videos. We will not report any identifying information in order to maintain confidentiality. This research is covered by a Certificate of Confidentiality from the National Institutes of Health. The researchers with this Certificate may not disclose or use information, documents or data that may identify you in any federal, state, or local civil, criminal, administrative, legislative, or other action, suit, or proceeding. The Certificate of Confidentiality will not be used to prevent disclosures for any purpose you have consented to in this informed consent document, such as the sharing of videos or pictures of your child. The Certificate of Confidentiality will also not be used to prevent disclosure of child abuse or neglect as required by federal, state, or local law.",
+            "payment": "After you finish the study, we will email you a $5 gift card within the next week. In addition, you can earn an additional $5 gift card if you fill out another external survey linked at the end of the study. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
+            "purpose": "At the Infant Learning and Development Laboratory at the University of Chicago, we are interested in how infants and young children reason about the world and how they learn from their interactions with other people. Through our research, we hope to better understand children’s early reasoning, and how that thinking changes as they grow older, in order to paint a clearer picture of development for scientists, parents and educators. In today's study, we are investigating how social categories (such as race and language groups) and social experiences affect children’s learning. Our goal in these studies is to see what children naturally do in response to seeing people interact and whether they pay attention to the person's race when processing these interactions. Please understand that there are no right or wrong answers. Our findings do not allow us to draw meaningful conclusions about an individual child’s abilities, although they can provide information about general patterns in infant development.",
             "PIContact": "woodward@uchicago.edu",
-            "procedures": "Your child will be shown videos of different people. There will be three types of videos: (1) two people talking; (2) two people saying hi; and (3) two people disengaging. We are interested in what babies think about people and their interactions. We will ask you (the parent) to turn around, close your eyes, or look down to avoid influencing your child's responses. There are no anticipated risks associated with participating. To better understand child social behavior, we will also ask you to fill out a questionnaire after the experiment.",
+            "procedures": "Your child will be shown videos of two people. There will be three types of videos: (1) two people talking; (2) two people saying hi; and (3) two people turning their backs to each other. We are interested in what babies think about people and their interactions according to the race of the people they saw. We will ask you (the parent) to turn around, close your eyes, or look down to avoid influencing your child's responses. There are no anticipated risks associated with participating. To better understand your child's social environment, we will also ask you to fill out a questionnaire after the experiment and an additional survey about the people your child interacts with regularly.",
             "institution": "University of Chicago"
         },
         "final-instructions": {
@@ -1027,27 +1149,28 @@
                     "title": "Before we begin:",
                     "listblocks": [
                         {
-                            "text": "Again, we are most intersted in baby's natural attention so we ask that you don't talk or direct the baby's attention while the videos are playing or frozen. "
+                            "text": "Again, we are most interested in your baby's natural attention so please don't talk or direct your baby's attention while the people are on the screen. "
                         },
                         {
                             "text": "To pause the study, press the space bar."
                         },
                         {
-                            "text": "If your baby becomes fussy or for any reason you want to stop the study, you can press ctrl-X or F1 to skip to the exit survey and select a privacy level for your video."
+                            "text": "If for any reason you want to stop the study, you can press ctrl-X or F1 to skip to the exit survey and select a privacy level for your video."
                         },
                         {
-                            "text": "You will be able to choose video privacy level at the end of the study.  "
+                            "text": "You will be able to choose video privacy level at the end of the study."
                         }
                     ]
                 },
                 {
-                    "text": "Here are different ways you can hold your baby: <br> (1) over your shoulder <br> (2) on your lap <br> (3) on a high chair <br> <br> If you are comfortable, you can close your eyes or look down during the study to avoid influencing your baby's attention.",
+                    "text": "Here are different ways you can hold your baby: <br> (1) over your shoulder <br> (2) on your lap <br> (3) on a high chair",
                     "image": {
                         "alt": "Parent holding child looking over shoulder or on lap",
                         "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/img/Parent_instruction_image.jpeg"
                     },
                     "title": "Holding your baby"
-                }
+                },
+                {                    "text": "If you are comfortable, please close your eyes or look down during the study to avoid influencing your baby's attention."}
             ],
             "showWebcam": true,
             "webcamBlocks": [
@@ -1067,17 +1190,19 @@
         }
     },
     "sequence": [
-        "trials",
         "video-config",
         "video-consent",
         "instructions",
         "final-instructions",
+        "trials",
         "demographic",
         "parent-1",
         "parent-2",
         "zipcode",
-        "language",
         "neighborhood",
+                "language",
+                "language-follow-up",
         "exit-survey"
+
     ]
 }

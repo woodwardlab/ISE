@@ -356,8 +356,7 @@
                     "title": "<b> Your baby's language exposure </b> <br> (please select the description that best matches your child)",
                     "properties": {
                         "language-1": {
-                            "enum": 
-                            [
+                            "enum": [
                                 "<b> Monolingual (One language only) </b>: A “monolingual” infant is one who hears one language almost all of the time (e.g., over 95% of the time). All of the child’s primary caregivers speak to her in this one language. An example might be a child who hears English from all family members at home. She may occasionally hear another language on TV (e.g., Spanish on Dora the Explorer) or in a weekly language-learning playgroup, but all of her primary caregivers speak to her in English. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native English speaker, and not be fluent in any other language.",
                                 "<b> Exposure (One main language and some exposure to another language) </b>: An “exposure” infant is one who hears primarily one main langauge, but who is exposed to a second language on a regular basis, but not nearly as much as the main language (e.g., 80-90% English; 10-20% Spanish). An example might be a child who hears English from both parents, yet who has a grandmother or nanny who watches the baby one or two afternoons a week and speaks in Spanish. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of English, and will have some proficiency in a second language, yet will not be fluent in that language.",
                                 "<b> Bilingual/Multilingual (Two languages or more) </b>: A “bilingual/multilingual” infant hears at least two or more other languages on a regular basis (e.g., 50% English/50% Spanish; or 70% English/30% Spanish). An example might be a child who hears English from one parent and Spanish from a second parent. Or, the child might hear English from both parents and hear Spanish during the day each day from a grand parent or nanny. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native speaker of both English and of another language(s)."
@@ -377,8 +376,6 @@
             },
             "nextButtonText": "Next"
         },
-        
-        
         "language-follow-up": {
             "kind": "exp-lookit-survey",
             "formSchema": {
@@ -386,7 +383,7 @@
                     "type": "object",
                     "title": "<b> Your baby's language(s)</b>",
                     "properties": {
-                         "language-list": {
+                        "language-list": {
                             "enum": [
                                 "English only",
                                 "English and other language(s) (please specify below)",
@@ -398,11 +395,10 @@
                         "language-list-specify": {
                             "type": "string",
                             "title": "Please specify the other language(s) your child hears regularly"
-                            
                         }
                     }
                 },
-               "options": {
+                "options": {
                     "fields": {
                         "language-list": {
                             "sort": false,
@@ -417,13 +413,12 @@
             },
             "nextButtonText": "Next"
         },
-        
         "parent-1": {
             "kind": "exp-lookit-survey",
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Information about parents </b> <br> In the following, please tell us about your child's parent(s) (i.e., the person(s) that spends the most time with your child on a daily basis and has the greatest responsibility for the daily care and rearing of your child). Parent(s) can be biological, step, adoptive, foster, married or unmarried parent(s). If there are more than one parent (that is, another parent that spends as much time and has as much responsibility for caring daily for your child), you can enter this individual on the next page. If there are more than two parents, there will be an option for you to add additional individuals on the next page for up to 4 individuals in total.",
+                    "title": "<b> Information about parents </b> <br> In this section, we will ask for some information about your child’s parents. Please tell us first about the parent who spends the <b>most</b> time caring for your child on a daily basis.<br> <br><i>(What do we mean by parent? Here we are specifically interested in the people responsible for raising your child, rather than other caregivers like a nanny. However, for our purposes “parents” don’t need to be official parents or guardians. For instance, we would include a parent’s live-in partner who is sharing parenting responsibilities, or a grandparent raising a child without an official custody arrangement. We are interested in the people your child sees the most, not in biological relationships - you do not need to include a biological parent who is not involved in raising your child.) </i><br><br> If multiple parents spend equal amounts of time caring for the child, you can choose any of them to enter first, and enter the additional parents on the next page.",
                     "properties": {
                         "parent1": {
                             "enum": [
@@ -514,10 +509,17 @@
                     "properties": {
                         "parent2": {
                             "enum": [
+                                "No",
+                                "Yes, there are additional parent(s)"
+                            ],
+                            "type": "string",
+                            "title": "Are there additional parent(s) who spend an equal amount of time caring for your child? "
+                        },
+                        "parent2-0": {
+                            "enum": [
                                 "Mother",
                                 "Father",
-                                "Other (please specify below)",
-                                "None"
+                                "Other (please specify below)"
                             ],
                             "type": "string",
                             "title": "Parent 2 is: "
@@ -660,20 +662,23 @@
                         }
                     },
                     "dependencies": {
-                        "parent2-1": [
+                        "parent2-0": [
                             "parent2"
+                        ],
+                        "parent2-1": [
+                            "parent2-0"
                         ],
                         "parent2-race1": [
-                            "parent2"
+                            "parent2-0"
                         ],
                         "parent2-race2": [
-                            "parent2"
+                            "parent2-0"
                         ],
                         "parent2-education": [
-                            "parent2"
+                            "parent2-0"
                         ],
                         "parent2-z-othercaregivers": [
-                            "parent2"
+                            "parent2-0"
                         ],
                         "parent2-z-othercaregivers-parent3": [
                             "parent2-z-othercaregivers"
@@ -717,10 +722,20 @@
                             "type": "radio",
                             "removeDefaultNone": true
                         },
+                        "parent2-0": {
+                            "sort": false,
+                            "type": "radio",
+                            "removeDefaultNone": true,
+                            "dependencies": {
+                                "parent2": [
+                                    "Yes, there are additional parent(s)"
+                                ]
+                            }
+                        },
                         "parent2-1": {
                             "placeholder": "please specify",
                             "dependencies": {
-                                "parent2": [
+                                "parent2-0": [
                                     "Other (please specify below)"
                                 ]
                             }
@@ -729,7 +744,7 @@
                             "sort": false,
                             "type": "checkbox",
                             "dependencies": {
-                                "parent2": [
+                                "parent2-0": [
                                     "Mother",
                                     "Father",
                                     "Other (please specify below)"
@@ -739,7 +754,7 @@
                         "parent2-race2": {
                             "placeholder": "please specify parent race or ethnicity",
                             "dependencies": {
-                                "parent2": [
+                                "parent2-0": [
                                     "Mother",
                                     "Father",
                                     "Other (please specify below)"
@@ -749,7 +764,7 @@
                         "parent2-education": {
                             "sort": false,
                             "dependencies": {
-                                "parent2": [
+                                "parent2-0": [
                                     "Mother",
                                     "Father",
                                     "Other (please specify below)"
@@ -760,7 +775,7 @@
                             "sort": false,
                             "type": "radio",
                             "dependencies": {
-                                "parent2": [
+                                "parent2-0": [
                                     "Mother",
                                     "Father",
                                     "Other (please specify below)"
@@ -937,7 +952,7 @@
         "exit-survey": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
-                "text": "There is one more optional survey we would love for you to fill out to have a better sense of the people your baby interacts with on a regular basis for <b> an additional $5 Amazon gift card.</b> To complete this optional survey, please click the link below. <br><br> <b>Click for an additional $5 survey: <a href=\"https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3\">https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3 </a></b><br><br> We'll be emailing you a $5 Amazon gift card (and an additional $5 Amazon gift card if you have filled out the optional survey above). This should arrive in your inbox within the next week after we verify your consent video and check that your child is in the age range for this study.<br><br><br><b><u>Following is more information about the study you participated in:</u></b><br> In this study, each baby is randomly assigned to view either two people from the same racial background or two people from different racial backgrounds. So your baby may have seen two people from the same racial background (i.e., either two White women or two Black women) or two people from different racial backgrounds (i.e., one Black woman and one White woman). All babies saw the two people alternatively interact in a friendly manner (i.e., saying “hi!”) and an unfriendly manner (i.e., turning their backs to each other). In future studies, we plan to add more people from other racial backgrounds as well.<br><br> In this study, we are testing whether infants might have different expectations about how people from the same racial background versus different racial backgrounds interact. To try to answer this question, we designed our study based on a tendency in infants to look longer when they see an event that violates their expectations. That is, infants tend to look longer at a surprising event. We are curious if infants will look longer (i.e., be more “surprised”) when they see people from different racial backgrounds interact in a friendly manner compared to when they see people from the same racial background interact in a friendly manner. We will also compare whether there are any differences in looking at friendly versus unfriendly interactions according to whether the people were from the same racial background or from different racial backgrounds.<br><br>Of course, many things can influence infants’ attention at a single moment so we average across multiple trials and across many infants to find an average response. We will look at whether on average, across many infants, we see a consistent pattern in how babies look at interactions between people from the same or different racial backgrounds. Thus, a baby’s individual response will not be informative and we won’t be able to say anything about how each baby thinks about these interactions. So if your baby appeared to look longer or shorter on each video that is completely okay and this looking pattern at an individual level does not indicate anything absolute. In other words, our findings do not allow us to draw meaningful conclusions about an individual child’s response, although they can provide information about general patterns in infant development.<br><br>Further, as mentioned above, we are looking only at infants’ looking patterns. This study does not reveal anything about what attitudes or thoughts your baby has about people based on race.<br><br>We are also interested in how infants’ exposure to people from different racial and linguistic backgrounds - through their neighborhood or in their daily lives - might influence looking patterns. Your baby’s looking pattern to the videos and your survey responses will help us get closer to understanding how social experiences early in life relate to infants’ attention to people from different racial backgrounds.<br><br>Through this research, you are contributing to our understanding of how babies start to pay attention to race and how early social experiences can shape this attention. <br><br>If you are interested in learning more about this kind of study, you can check out <a href=\"https://cpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/7/1535/files/2018/11/Preverbal-Infants-Infer-Third-Party-Social-Relationships-Based-on-Language_2016-11q5you.pdf\"> this research article </a> from our group. This research article looks at how infants expect people who speak the same language or different languages to interact. Our current study was inspired by this study. If you would like to learn more about research in this area, please visit our <a href=\"https://voices.uchicago.edu/woodwardlab/projects/\"> website</a>. <br><br> Lastly, if you have any questions or concerns, please contact the study leader, Grace Hwang at hyesung@uchicago.edu. She is happy to talk to you and answer any questions you might have over the phone, by video chat, or email.",
+                "text": "There is one more optional survey we would love for you to fill out to have a better sense of the people your baby interacts with on a regular basis for <b> an additional $5 Amazon gift card.</b> <br><br> <b>Click for an additional $5 survey: <a target=\"_blank\" rel=\"noopener\" href=\"https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3\">https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3 </a></b><br><br> We'll be emailing you a $5 Amazon gift card (and an additional $5 Amazon gift card if you have filled out the optional survey above). This should arrive in your inbox within the next week after we verify your consent video and check that your child is in the age range for this study.<br><br><u>Following is more information about the study you participated in:</u></b><br> In this study, each baby is randomly assigned to see either two people of the same race or two people of different races. Your baby may have seen two White women or two Black women, or one Black woman and one White woman. All babies saw the two people alternate between interacting in a friendly way and an unfriendly way. In future studies, we plan to add more people from other racial backgrounds as well.<br><br>In this study, we are testing whether infants might have different expectations about how people of the same race interact, versus people of different races. To try to answer this question, we are using the fact that babies tend to look longer at things they find surprising. We expect babies will overall prefer to look at the friendly interactions just because those are nicer to see! However, we are curious if babies will look longer at (or be more “surprised” by) the friendly interactions compared to unfriendly interactions when the people are of different races. This would suggest that babies already have expectations about how people interact based on race.<br><br>Of course, many other things will influence what your baby looked at most - for instance, maybe one of the women looked familiar or your baby got distracted sometimes. We can’t tell anything about how an individual baby thinks about race or about these interactions based on their looking times. Instead, we average across multiple trials and across many babies to find an average response, and look for consistent overall patterns.<br><br>We are also interested in how babies’ exposure to people from different racial and linguistic backgrounds - through their neighborhood or in their daily lives - might influence looking patterns. Your baby’s looking pattern to the videos and your survey responses will help us get closer to understanding how social experiences early in life relate to infants’ attention to people from different racial backgrounds.<br><br>If you are interested in learning more, you can check out <a target=\"_blank\" rel=\"noopener\" href=\"https://cpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/7/1535/files/2018/11/Preverbal-Infants-Infer-Third-Party-Social-Relationships-Based-on-Language_2016-11q5you.pdf\"> this research article </a> from our group and please visit our <a target=\"_blank\" rel=\"noopener\" href=\"https://voices.uchicago.edu/woodwardlab/projects/\"> website</a>. If you have any questions or concerns, please contact Grace Hwang at hyesung@uchicago.edu. <br><br> <b>Click for an additional $5 survey: <a target=\"_blank\" rel=\"noopener\" href=\"https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3\">https://ssd.az1.qualtrics.com/jfe/form/SV_2aXa5OH1RfO2AD3 </a></b>",
                 "title": "Thank you!"
             }
         },
@@ -1025,7 +1040,7 @@
                     }
                 },
                 {
-                    "text": "Your child will see two people and three types of videos with these two people: (1) two people talking (repeated 4 times), and then alternating (2) two people saying hi (repeated 3 times) and (3) two people turning their backs to each other (repeated 3 times). <br><br> In some videos, there will be a <b>BEEP</b> sound. The video will then freeze for a few seconds. This is supposed to happen! <br><br> Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image.<br><br> Please don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. <br><br> If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos.",
+                    "text": "First your child will see a video of two people talking. This video is repeated four times. <br><br>Then we will alternate between videos that show those people saying hi, and videos that show those people turning their backs to each other. Each of those videos is repeated three times.<br><br> In some videos, there will be a <b>BEEP</b> sound. The video will then freeze for a few seconds. This is supposed to happen! <br><br> Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image.<br><br> Please don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. <br><br> If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos.",
                     "title": "Here are some points for you to remember:"
                 }
             ],
@@ -1130,7 +1145,7 @@
         },
         "video-config": {
             "kind": "exp-video-config",
-            "troubleshootingIntro": "This is a standard frame you probably want to put at the very start of your study. You can customize this bit of text; the rest is standard and maintained by Lookit."
+            "troubleshootingIntro": ""
         },
         "video-consent": {
             "kind": "exp-lookit-video-consent",
@@ -1163,14 +1178,16 @@
                     ]
                 },
                 {
-                    "text": "Here are different ways you can hold your baby: <br> (1) over your shoulder <br> (2) on your lap <br> (3) on a high chair",
+                    "text": "There are several different ways you can hold your baby for the study: <br> (1) over your shoulder <br> (2) on your lap <br> (3) on a high chair.<br> Choose whatever’s comfortable for you both!",
                     "image": {
                         "alt": "Parent holding child looking over shoulder or on lap",
                         "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/img/Parent_instruction_image.jpeg"
                     },
                     "title": "Holding your baby"
                 },
-                {                    "text": "If you are comfortable, please close your eyes or look down during the study to avoid influencing your baby's attention."}
+                {
+                    "text": "Please close your eyes or look down during the study if you feel comfortable doing so. This helps us be sure you don’t influence where your baby looks by accident."
+                }
             ],
             "showWebcam": true,
             "webcamBlocks": [
@@ -1200,8 +1217,8 @@
         "parent-2",
         "zipcode",
         "neighborhood",
-                "language",
-                "language-follow-up",
+        "language",
+        "language-follow-up",
         "exit-survey"
 
     ]

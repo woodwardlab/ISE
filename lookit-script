@@ -1197,6 +1197,8 @@
                         {
                             "text": "Please make sure we can see your baby's eyes!"
                         },
+                         {"text": "Make sure your baby can't touch the space bar (the pause button)!"
+                        },
                         {
                             "text": "Once you and your baby are ready, click the next button to start watching the videos!"
                         }

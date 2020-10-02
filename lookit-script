@@ -1,5 +1,25 @@
 {
     "frames": {
+        "start-recording-with-video": {
+            "kind": "exp-lookit-start-recording",
+            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ],
+            "video": "attentiongrabber",
+            "displayFullscreen": true
+        },
+        "stop-recording-with-video": {
+            "kind": "exp-lookit-stop-recording",
+            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ],
+            "video": "attentiongrabber",
+            "displayFullscreen": true
+        },
         "trials": {
             "kind": "choice",
             "sampler": "random-parameter-set",
@@ -301,6 +321,8 @@
             ],
             "commonFrameProperties": {
                 "kind": "exp-lookit-composite-video-trial",
+                "doRecording": false,
+                "autoProceed": true,
                 "baseDir": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/",
                 "testCount": 1,
                 "audioTypes": [
@@ -357,9 +379,9 @@
                     "properties": {
                         "language-1": {
                             "enum": [
-                                "<b> Monolingual (One language only) </b>: A “monolingual” infant is one who hears one language almost all of the time (e.g., over 95% of the time). All of the child’s primary caregivers speak to her in this one language. An example might be a child who hears English from all family members at home. She may occasionally hear another language on TV (e.g., Spanish on Dora the Explorer) or in a weekly language-learning playgroup, but all of her primary caregivers speak to her in English. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native English speaker, and not be fluent in any other language.",
-                                "<b> Exposure (One main language and some exposure to another language) </b>: An “exposure” infant is one who hears primarily one main langauge, but who is exposed to a second language on a regular basis, but not nearly as much as the main language (e.g., 80-90% English; 10-20% Spanish). An example might be a child who hears English from both parents, yet who has a grandmother or nanny who watches the baby one or two afternoons a week and speaks in Spanish. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of English, and will have some proficiency in a second language, yet will not be fluent in that language.",
-                                "<b> Bilingual/Multilingual (Two languages or more) </b>: A “bilingual/multilingual” infant hears at least two or more other languages on a regular basis (e.g., 50% English/50% Spanish; or 70% English/30% Spanish). An example might be a child who hears English from one parent and Spanish from a second parent. Or, the child might hear English from both parents and hear Spanish during the day each day from a grand parent or nanny. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native speaker of both English and of another language(s)."
+                                "<b> Monolingual (One language only) </b>: <br> A “monolingual” infant is one who hears one language almost all of the time (e.g., over 95% of the time). All of the child’s primary caregivers speak to her in this one language. An example might be a child who hears English from all family members at home. She may occasionally hear another language on TV (e.g., Spanish on Dora the Explorer) or in a weekly language-learning playgroup, but all of her primary caregivers speak to her in English. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native English speaker, and not be fluent in any other language.",
+                                "<b> Exposure (One main language and some exposure to another language) </b>: <br>  An “exposure” infant is one who hears primarily one main langauge, but who is exposed to a second language on a regular basis, but not nearly as much as the main language (e.g., 80-90% English; 10-20% Spanish). An example might be a child who hears English from both parents, yet who has a grandmother or nanny who watches the baby one or two afternoons a week and speaks in Spanish. If this description describes your child, you might imagine that if his current language environment continues, when he grows up, he will be a native speaker of English, and will have some proficiency in a second language, yet will not be fluent in that language.",
+                                "<b> Bilingual/Multilingual (Two languages or more) </b>: <br> A “bilingual/multilingual” infant hears at least two or more other languages on a regular basis (e.g., 50% English/50% Spanish; or 70% English/30% Spanish). An example might be a child who hears English from one parent and Spanish from a second parent. Or, the child might hear English from both parents and hear Spanish during the day each day from a grand parent or nanny. If this description describes your child, you might imagine that if her current language environment continues, when she grows up, she will be a native speaker of both English and of another language(s)."
                             ]
                         }
                     }
@@ -1167,6 +1189,9 @@
                             "text": "Again, we are most interested in your baby's natural attention so please don't talk or direct your baby's attention while the people are on the screen. "
                         },
                         {
+                            "text": "Please close all other tabs or windows of your browser, to minimize any disruptions and ensure a good connection."
+                        },
+                        {
                             "text": "To pause the study, press the space bar."
                         },
                         {
@@ -1178,21 +1203,47 @@
                     ]
                 },
                 {
+                    "text": "Please turn the volume up so that it's easy to hear but still comfortable.",
+                    "title": "Test your audio and get ready to start",
+                    "mediaBlock": {
+                        "text": "You should hear 'Ready to go?'",
+                        "isVideo": false,
+                        "sources": [
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/audio/ready.mp3",
+                                "type": "audio/mp3"
+                            },
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/audio/ready.ogg",
+                                "type": "audio/ogg"
+                            }
+                        ],
+                        "mustPlay": true,
+                        "warningText": "Please try playing the sample audio."
+                    }
+                }
+             ],
+            "nextButtonText": "Next"
+        },
+             "web-cam": {
+            "kind": "exp-lookit-instructions",
+            "blocks": [
+                 {
                     "text": "There are several different ways you can hold your baby for the study: <br> (1) over your shoulder <br> (2) on your lap <br> (3) on a high chair.<br> Choose whatever’s comfortable for you both!",
                     "image": {
                         "alt": "Parent holding child looking over shoulder or on lap",
-                        "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/img/Parent_instruction_image.jpeg"
+                        "src": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/img/Parent_instruction_image.png"
                     },
-                    "title": "Holding your baby"
+                                        "title": "Holding your baby"
+
                 },
                 {
                     "text": "Please close your eyes or look down during the study if you feel comfortable doing so. This helps us be sure you don’t influence where your baby looks by accident."
                 }
-            ],
+                ],
             "showWebcam": true,
             "webcamBlocks": [
-                {
-                    "title": "Webcam position",
+                {                  "title": "Webcam position",
                     "listblocks": [
                         {
                             "text": "Please make sure we can see your baby's eyes!"
@@ -1209,11 +1260,15 @@
         }
     },
     "sequence": [
+
         "video-config",
         "video-consent",
         "instructions",
         "final-instructions",
+                "web-cam",
+            "start-recording-with-video",
         "trials",
+                "stop-recording-with-video",
         "demographic",
         "parent-1",
         "parent-2",

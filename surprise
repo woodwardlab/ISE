@@ -1,0 +1,903 @@
+{
+    "frames": {
+        "exit-survey": {
+            "kind": "exp-lookit-exit-survey",
+            "debriefing": {
+                "text": "Discovering how children use information about people's actions in a learning context will help scientists better understand the mechanisms behind selective learning.",
+                "title": "Thank you!"
+            }
+        },
+        "imageIntro": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "Study_Start_Audio",
+            "images": [
+                {
+                    "src": "girafe.png",
+                    "type": "image/png",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/marccolomer/lookit-stimuli-template/master/",
+            "audioTypes": [
+                "mp3"
+            ],
+            "autoProceed": true,
+            "doRecording": false,
+            "durationSeconds": 9
+        },
+        "imageEnd": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "Study_End_Audio",
+            "images": [
+                {
+                    "src": "BabyLabUC.png",
+                    "type": "image/png",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/marccolomer/lookit-stimuli-template/master/",
+            "audioTypes": [
+                "mp3"
+            ],
+            "autoProceed": true,
+            "doRecording": false,
+            "durationSeconds": 14
+        },
+        "start-recording-with-video": {
+            "kind": "exp-lookit-start-recording",
+            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ],
+            "video": "attentiongrabber",
+            "displayFullscreen": true
+        },
+        "stop-recording-with-video": {
+            "kind": "exp-lookit-stop-recording",
+            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ],
+            "video": "attentiongrabber",
+            "displayFullscreen": true
+        },
+        "test-trials": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO1"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO2"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO3"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO4"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "CALIB"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO5"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO6"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO7"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO8"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "CALIB"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO9"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO10"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO11"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO12"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "CALIB"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO13"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO14"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO15"
+                    }
+                },
+                {
+                    "video": {
+                        "position": "fill",
+                        "source": "VIDEO16"
+                    }
+                }                
+            ],
+            "parameterSets": [
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_irat_rattle_ball",
+                    "VIDEO4": "test_irat_gombie_gasS",
+                    "VIDEO5": "learning_rattle_ball_left",
+                    "VIDEO6": "learning_bell_ball_left",
+                    "VIDEO7": "learning_rattle_ball_right",
+                    "VIDEO8": "learning_bell_ball_right",
+                    "VIDEO9": "learning_gombie_ball_left",
+                    "VIDEO10": "learning_blicket_ball_left",
+                    "VIDEO11": "learning_gombie_ball_right",
+                    "VIDEO12": "learning_blicket_ball_right",
+                    "VIDEO13": "story_nicoR_Vnico_long",
+                    "VIDEO14": "story_nicoR_Vnat",
+                    "VIDEO15": "story_nicoL_Vnico",
+                    "VIDEO16": "story_nicoL_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_rat_rattle_ball",
+                    "VIDEO4": "test_rat_gombie_gasS",
+                    "VIDEO5": "learning_rattle_ball_left",
+                    "VIDEO6": "learning_bell_ball_left",
+                    "VIDEO7": "learning_rattle_ball_right",
+                    "VIDEO8": "learning_bell_ball_right",
+                    "VIDEO9": "learning_gombie_ball_left",
+                    "VIDEO10": "learning_blicket_ball_left",
+                    "VIDEO11": "learning_gombie_ball_right",
+                    "VIDEO12": "learning_blicket_ball_right",
+                    "VIDEO13": "story_nicoR_Vnico_long",
+                    "VIDEO14": "story_nicoR_Vnat",
+                    "VIDEO15": "story_nicoL_Vnico",
+                    "VIDEO16": "story_nicoL_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_irat_rattle_ball",
+                    "VIDEO4": "test_irat_blicket_gasS",
+                    "VIDEO5": "learning_rattle_ball_left",
+                    "VIDEO6": "learning_bell_ball_left",
+                    "VIDEO7": "learning_rattle_ball_right",
+                    "VIDEO8": "learning_bell_ball_right",
+                    "VIDEO9": "learning_blicket_ball_left",
+                    "VIDEO10": "learning_gombie_ball_left",
+                    "VIDEO11": "learning_blicket_ball_right",
+                    "VIDEO12": "learning_gombie_ball_right",
+                    "VIDEO13": "story_nicoR_Vnico_long",
+                    "VIDEO14": "story_nicoR_Vnat",
+                    "VIDEO15": "story_nicoL_Vnico",
+                    "VIDEO16": "story_nicoL_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_rat_rattle_ball",
+                    "VIDEO4": "test_rat_blicket_gasS",
+                    "VIDEO5": "learning_rattle_ball_left",
+                    "VIDEO6": "learning_bell_ball_left",
+                    "VIDEO7": "learning_rattle_ball_right",
+                    "VIDEO8": "learning_bell_ball_right",
+                    "VIDEO9": "learning_blicket_ball_left",
+                    "VIDEO10": "learning_gombie_ball_left",
+                    "VIDEO11": "learning_blicket_ball_right",
+                    "VIDEO12": "learning_gombie_ball_right",
+                    "VIDEO13": "story_nicoR_Vnico_long",
+                    "VIDEO14": "story_nicoR_Vnat",
+                    "VIDEO15": "story_nicoL_Vnico",
+                    "VIDEO16": "story_nicoL_Vnat",
+                    "CALIB": "Calibration_chick"
+                },  
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_irat_gombie_ball",
+                    "VIDEO4": "test_irat_rattle_gasS",
+                    "VIDEO5": "learning_gombie_ball_left",
+                    "VIDEO6": "learning_blicket_ball_right",
+                    "VIDEO7": "learning_gombie_ball_right",
+                    "VIDEO8": "learning_blicket_ball_left",
+                    "VIDEO9": "learning_rattle_ball_right",
+                    "VIDEO10": "learning_bell_ball_right",
+                    "VIDEO11": "learning_rattle_ball_left",
+                    "VIDEO12": "learning_bell_ball_left",
+                    "VIDEO13": "story_nicoL_Vnico_long",
+                    "VIDEO14": "story_nicoL_Vnat",
+                    "VIDEO15": "story_nicoR_Vnico",
+                    "VIDEO16": "story_nicoR_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_rat_gombie_ball",
+                    "VIDEO4": "test_rat_rattle_gasS",
+                    "VIDEO5": "learning_gombie_ball_left",
+                    "VIDEO6": "learning_blicket_ball_right",
+                    "VIDEO7": "learning_gombie_ball_right",
+                    "VIDEO8": "learning_blicket_ball_left",
+                    "VIDEO9": "learning_rattle_ball_right",
+                    "VIDEO10": "learning_bell_ball_right",
+                    "VIDEO11": "learning_rattle_ball_left",
+                    "VIDEO12": "learning_bell_ball_left",
+                    "VIDEO13": "story_nicoL_Vnico_long",
+                    "VIDEO14": "story_nicoL_Vnat",
+                    "VIDEO15": "story_nicoR_Vnico",
+                    "VIDEO16": "story_nicoR_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_irat_blicket_ball",
+                    "VIDEO4": "test_irat_rattle_gasS",
+                    "VIDEO5": "learning_blicket_ball_right",
+                    "VIDEO6": "learning_gombie_ball_right",
+                    "VIDEO7": "learning_blicket_ball_left",
+                    "VIDEO8": "learning_gombie_ball_left",
+                    "VIDEO9": "learning_rattle_ball_right",
+                    "VIDEO10": "learning_bell_ball_right",
+                    "VIDEO11": "learning_rattle_ball_left",
+                    "VIDEO12": "learning_bell_ball_left",
+                    "VIDEO13": "story_nicoL_Vnico_long",
+                    "VIDEO14": "story_nicoL_Vnat",
+                    "VIDEO15": "story_nicoR_Vnico",
+                    "VIDEO16": "story_nicoR_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_rat_blicket_ball",
+                    "VIDEO4": "test_rat_rattle_gasS",
+                    "VIDEO5": "learning_blicket_ball_right",
+                    "VIDEO6": "learning_gombie_ball_right",
+                    "VIDEO7": "learning_blicket_ball_left",
+                    "VIDEO8": "learning_gombie_ball_left",
+                    "VIDEO9": "learning_rattle_ball_right",
+                    "VIDEO10": "learning_bell_ball_right",
+                    "VIDEO11": "learning_rattle_ball_left",
+                    "VIDEO12": "learning_bell_ball_left",
+                    "VIDEO13": "story_nicoL_Vnico_long",
+                    "VIDEO14": "story_nicoL_Vnat",
+                    "VIDEO15": "story_nicoR_Vnico",
+                    "VIDEO16": "story_nicoR_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_irat_bell_ball",
+                    "VIDEO4": "test_irat_gombie_gasS",
+                    "VIDEO5": "learning_bell_ball_right",
+                    "VIDEO6": "learning_rattle_ball_right",
+                    "VIDEO7": "learning_bell_ball_left",
+                    "VIDEO8": "learning_rattle_ball_left",
+                    "VIDEO9": "learning_gombie_ball_right",
+                    "VIDEO10": "learning_blicket_ball_right",
+                    "VIDEO11": "learning_gombie_ball_left",
+                    "VIDEO12": "learning_blicket_ball_left",
+                    "VIDEO13": "story_nicoL_Vnico_long",
+                    "VIDEO14": "story_nicoL_Vnat",
+                    "VIDEO15": "story_nicoR_Vnico",
+                    "VIDEO16": "story_nicoR_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_rat_bell_ball",
+                    "VIDEO4": "test_rat_gombie_gasS",
+                    "VIDEO5": "learning_bell_ball_right",
+                    "VIDEO6": "learning_rattle_ball_right",
+                    "VIDEO7": "learning_bell_ball_left",
+                    "VIDEO8": "learning_rattle_ball_left",
+                    "VIDEO9": "learning_gombie_ball_right",
+                    "VIDEO10": "learning_blicket_ball_right",
+                    "VIDEO11": "learning_gombie_ball_left",
+                    "VIDEO12": "learning_blicket_ball_left",
+                    "VIDEO13": "story_nicoL_Vnico_long",
+                    "VIDEO14": "story_nicoL_Vnat",
+                    "VIDEO15": "story_nicoR_Vnico",
+                    "VIDEO16": "story_nicoR_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_irat_bell_ball",
+                    "VIDEO4": "test_irat_blicket_gasS",
+                    "VIDEO5": "learning_bell_ball_right",
+                    "VIDEO6": "learning_rattle_ball_right",
+                    "VIDEO7": "learning_bell_ball_left",
+                    "VIDEO8": "learning_rattle_ball_left",
+                    "VIDEO9": "learning_blicket_ball_right",
+                    "VIDEO10": "learning_gombie_ball_right",
+                    "VIDEO11": "learning_blicket_ball_left",
+                    "VIDEO12": "learning_gombie_ball_left",
+                    "VIDEO13": "story_nicoL_Vnico_long",
+                    "VIDEO14": "story_nicoL_Vnat",
+                    "VIDEO15": "story_nicoR_Vnico",
+                    "VIDEO16": "story_nicoR_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_rat_bell_ball",
+                    "VIDEO4": "test_rat_blicket_gasS",
+                    "VIDEO5": "learning_bell_ball_right",
+                    "VIDEO6": "learning_rattle_ball_right",
+                    "VIDEO7": "learning_bell_ball_left",
+                    "VIDEO8": "learning_rattle_ball_left",
+                    "VIDEO9": "learning_blicket_ball_right",
+                    "VIDEO10": "learning_gombie_ball_right",
+                    "VIDEO11": "learning_blicket_ball_left",
+                    "VIDEO12": "learning_gombie_ball_left",
+                    "VIDEO13": "story_nicoL_Vnico_long",
+                    "VIDEO14": "story_nicoL_Vnat",
+                    "VIDEO15": "story_nicoR_Vnico",
+                    "VIDEO16": "story_nicoR_Vnat",
+                    "CALIB": "Calibration_chick"
+                }, 
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_irat_gombie_ball",
+                    "VIDEO4": "test_irat_bell_gasS",
+                    "VIDEO5": "learning_gombie_ball_left",
+                    "VIDEO6": "learning_blicket_ball_left",
+                    "VIDEO7": "learning_gombie_ball_right",
+                    "VIDEO8": "learning_blicket_ball_right",
+                    "VIDEO9": "learning_bell_ball_left",
+                    "VIDEO10": "learning_rattle_ball_left",
+                    "VIDEO11": "learning_bell_ball_right",
+                    "VIDEO12": "learning_rattle_ball_right",
+                    "VIDEO13": "story_nicoR_Vnico_long",
+                    "VIDEO14": "story_nicoR_Vnat",
+                    "VIDEO15": "story_nicoL_Vnico",
+                    "VIDEO16": "story_nicoL_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_rat_gombie_ball",
+                    "VIDEO4": "test_rat_bell_gasS",
+                    "VIDEO5": "learning_gombie_ball_left",
+                    "VIDEO6": "learning_blicket_ball_left",
+                    "VIDEO7": "learning_gombie_ball_right",
+                    "VIDEO8": "learning_blicket_ball_right",
+                    "VIDEO9": "learning_bell_ball_left",
+                    "VIDEO10": "learning_rattle_ball_left",
+                    "VIDEO11": "learning_bell_ball_right",
+                    "VIDEO12": "learning_rattle_ball_right",
+                    "VIDEO13": "story_nicoR_Vnico_long",
+                    "VIDEO14": "story_nicoR_Vnat",
+                    "VIDEO15": "story_nicoL_Vnico",
+                    "VIDEO16": "story_nicoL_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_irat_blicket_ball",
+                    "VIDEO4": "test_irat_bell_gasS",
+                    "VIDEO5": "learning_blicket_ball_left",
+                    "VIDEO6": "learning_gombie_ball_left",
+                    "VIDEO7": "learning_blicket_ball_right",
+                    "VIDEO8": "learning_gombie_ball_right",
+                    "VIDEO9": "learning_bell_ball_left",
+                    "VIDEO10": "learning_rattle_ball_left",
+                    "VIDEO11": "learning_bell_ball_right",
+                    "VIDEO12": "learning_rattle_ball_right",
+                    "VIDEO13": "story_nicoR_Vnico_long",
+                    "VIDEO14": "story_nicoR_Vnat",
+                    "VIDEO15": "story_nicoL_Vnico",
+                    "VIDEO16": "story_nicoL_Vnat",
+                    "CALIB": "Calibration_chick"
+                },
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_rat_blicket_ball",
+                    "VIDEO4": "test_rat_bell_gasS",
+                    "VIDEO5": "learning_blicket_ball_left",
+                    "VIDEO6": "learning_gombie_ball_left",
+                    "VIDEO7": "learning_blicket_ball_right",
+                    "VIDEO8": "learning_gombie_ball_right",
+                    "VIDEO9": "learning_bell_ball_left",
+                    "VIDEO10": "learning_rattle_ball_left",
+                    "VIDEO11": "learning_bell_ball_right",
+                    "VIDEO12": "learning_rattle_ball_right",
+                    "VIDEO13": "story_nicoR_Vnico_long",
+                    "VIDEO14": "story_nicoR_Vnat",
+                    "VIDEO15": "story_nicoL_Vnico",
+                    "VIDEO16": "story_nicoL_Vnat",
+                    "CALIB": "Calibration_chick"
+                }                
+            ],
+            "commonFrameProperties": {
+                "kind": "exp-lookit-video",
+                "doRecording": false,
+                "backgroundColor": "black",
+                "autoProceed": true,
+                "baseDir": "https://raw.githubusercontent.com/marccolomer/lookit-stimuli-template/master/",
+                "audioTypes": [
+                    "mp3"
+                ],
+                "videoTypes": [
+                    "mp4"
+                ],
+                "requiredDuration": 0,
+                "requireAudioCount": 0,
+                "requireVideoCount": 1,
+                "restartAfterPause": true,
+                "pauseKey": "x",
+                "pauseKeyDescription": "X",
+                "pauseAudio": "pause",
+                "pauseVideo": "attentiongrabber",
+                "pauseText": "(You'll have a moment to turn around again.)",
+                "unpauseAudio": "return_after_pause"
+            }
+        },
+        "test-trials-sydney": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
+                {
+                    "startSessionRecording": true,
+                    "sources": "VIDEO1",
+                    "altSources": "VIDEO1",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ",
+                    "calibrationLength": 2000
+                },
+                {
+                    "sources": "VIDEO2",
+                    "altSources": "VIDEO2",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "VIDEO3",
+                    "altSources": "VIDEO3",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "VIDEO4",
+                    "altSources": "VIDEO4",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "VIDEO5",
+                    "altSources": "VIDEO5",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ",
+                    "calibrationLength": 2000
+                },
+                {
+                    "sources": "VIDEO6",
+                    "altSources": "VIDEO6",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "VIDEO7",
+                    "altSources": "VIDEO7",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "VIDEO8",
+                    "altSources": "VIDEO8",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "VIDEO9",
+                    "altSources": "VIDEO9",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ",
+                    "calibrationLength": 2000
+                },
+                {
+                    "sources": "VIDEO10",
+                    "altSources": "VIDEO10",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "VIDEO11",
+                    "altSources": "VIDEO11",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "VIDEO12",
+                    "altSources": "VIDEO12",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "VIDEO13",
+                    "altSources": "VIDEO13",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ",
+                    "calibrationLength": 2000
+                },
+                {
+                    "sources": "VIDEO14",
+                    "altSources": "VIDEO14",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "VIDEO15",
+                    "altSources": "VIDEO15",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                },
+                {
+                    "sources": "VIDEO16",
+                    "altSources": "VIDEO16",
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                }
+            ],
+            "parameterSets": [
+                {
+                    "VIDEO1": "famil_ball",
+                    "VIDEO2": "famil_gasS",
+                    "VIDEO3": "test_irat_rattle_ball",
+                    "VIDEO4": "test_irat_gombie_gasS",
+                    "VIDEO5": "learning_rattle_ball_left",
+                    "VIDEO6": "learning_bell_ball_left",
+                    "VIDEO7": "learning_rattle_ball_right",
+                    "VIDEO8": "learning_bell_ball_right",
+                    "VIDEO9": "learning_gombie_ball_left",
+                    "VIDEO10": "learning_blicket_ball_left",
+                    "VIDEO11": "learning_gombie_ball_right",
+                    "VIDEO12": "learning_blicket_ball_right",
+                    "VIDEO13": "story_nicoR_Vnico",
+                    "VIDEO14": "story_nicoR_Vnat",
+                    "VIDEO15": "story_nicoL_Vnico",
+                    "VIDEO16": "story_nicoL_Vnat",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                }
+            ],
+            "commonFrameProperties": {
+                "kind": "exp-lookit-composite-video-trial",
+                "doRecording": false,
+                "baseDir": "https://raw.githubusercontent.com/sbuffonge/lookit-stimuli-template/master/",
+                "testCount": 1,
+                "audioTypes": [
+                    "mp3"
+                ],
+                "pauseAudio": "pause",
+                "videoTypes": [
+                    "mp4"
+                ],
+                "attnSources": "attentiongrabber",
+                "introSources": [],
+                "musicSources": [],
+                "unpauseAudio": "return_after_pause",
+                "announceLength": 3,
+                "calibrationLength": 3,
+                "calibrationPositions": [
+                    "left",
+                    "right",
+                    "center"
+                ],
+                "calibrationAudioSources": "chimes",
+                "calibrationVideoSources": "attentiongrabber",
+                "backgroundColor": "black"
+            }
+        },
+        "instructions": {
+            "kind": "exp-lookit-text",
+            "blocks": [
+                {
+                    "emph": true,
+                    "text": "Important: your child should not be with you until the videos begin--we will tell you when you should bring them. First, let's go over what will happen!"
+                },
+                {
+                    "text": "During this study, your baby will watch videos of a person teaching the name and sound associated with some objects. We will then present the objects in pairs and play a sound or word repeatedly, while we record where your child chooses to look."
+                },
+                {
+                    "text": "You’ll have a chance to preview the videos ahead of time, during the instructions video."
+                },
+                {
+                    "text": "The experiment's video section will take about 4 minutes."
+                },
+                {
+                    "text": "You will be able to select a video privacy level at the end of the study."
+                }
+            ],
+            "showPreviousButton": false
+        },
+        "video-config": {
+            "kind": "exp-video-config",
+            "troubleshootingIntro": "If you're having any trouble getting your webcam set up, please feel free to call the University of Chicago Woodward Lab at (773) 834 - 9791 and we'd be glad to help you out!"
+        },
+        "video-consent": {
+            "kind": "exp-lookit-video-consent",
+            "PIName": "Professor Amanda Woodward",
+            "datause": "We are interested in how infants and young children reason about the world and how they learn from other people. In today's study, we are investigating how identifying surprising actions influences children’s social learning. A research assistant will watch your video to measure how long the baby looks at the screen.",
+            "payment": "There are no direct benefits to you or your child from participating in this study, but we hope you will enjoy the experience. Your participation in the study does not involve any risks to you beyond those of everyday life. Although we try to make the studies fun, sometimes children become bored or distressed. You will be emailed a $5 Amazon gift card, within a week of participating in this study, as long as your child is in the age range of our study and has not participated in our study in the past 30 days.",
+            "purpose": "This study aims at studying what cues shape infants' motivation to learn from others. From previous studies, we know that infants expect people to reach for objects efficiently, for example following the shortest path available. We also know that presenting infants with surprising events boosts their learning. For example, they are more likely to learn new information about an object if they see the object flying. Here, we study if infants' knowledge about how others should act influences their social learning. Are they more likely to learn novel information from someone who reaches for objects efficiently (expected behavior) or inefficiently (unexpected behavior)?",
+            "template": "consent_003",
+            "PIContact": "woodward@uchicago.edu",
+            "participation": "You and your child are free to choose whether to be in this study. If you and your child choose to participate, it's okay to stop at any point during the session. Please pause or stop the session if your child becomes very fussy or does not want to participate!",
+            "procedures": "Your child will watch videos of a person showing fun actions with toys. The person in the video will either act expectedly (e.g., reaching for a toy using the most efficient movement) or unexpectedly (e.g., reaching for a toy while doing an unnecessary movement). After these actions, the person will provide some novel information about the toys. At the end of the study, we will measure whether children have associated the toys with specific sounds or labels and whether they remember the person's voice. Auditory stimuli (sound, word or voice) will be played as infants see a pair of two toys or two people on the screen: one toy/person will match the auditory stimuli, whereas the other will be a distractor. We will measure where your child prefers to look at. We will use your webcam to follow your child's gaze as different videos are shown.",
+            "institution": "The University of Chicago",
+            "research_rights_statement": "Your child's patterns of response will be observed and videotaped for data collection purposes only. The videotape will be confidential and stored securely at the research facility. These materials will not be distributed without your permission. You may discontinue this study at any time and for any reason. Participation is completely voluntary and the decision to participate or not participate will in no way affect your relationship with The University of Chicago. If you decide to withdraw, data collected up until the point of withdrawal may still be included in analysis. You are not waiving any legal claims, rights or remedies because of your participation in this research study. If you feel you have been treated unfairly, or you have questions regarding your rights as a participant, you may contact the Social & Behavioral Sciences Institutional Review Board at The University of Chicago, sbs-irb@uchicago.edu."
+        },
+        "video-preview": {
+            "kind": "exp-lookit-stimuli-preview",
+            "blocks": [
+                {
+                    "text": "During the videos, we'll ask that you hold your child over your shoulder like this, so that you face away from the screen.",
+                    "image": {
+                        "alt": "Father holding child looking over his shoulder",
+                        "src": "https://s3.amazonaws.com/lookitcontents/exp-physics/OverShoulder.jpg"
+                    }
+                },
+                {
+                    "text": "The reason we ask this is that your child is learning from you all the time. Even if they can't see where you're looking, you may unconsciously shift to face the \"unexpected\" events and influence your child's attention. We want to make sure we're measuring your child's own intuitions, rather than yours! (We know YOU know whether things should fall up or down.)"
+                },
+                {
+                    "text": "If you'd like to see the videos your child will be shown, you can take a look ahead of time now. It's important that you do this WITHOUT your child, so that the videos will still be new to them!"
+                }
+            ],
+            "stimuli": [
+                {
+                    "video": [
+                        {
+                            "src": "https://raw.githubusercontent.com/sbuffonge/lookit-stimuli-template/master/mp4/test_irat_gombie_ball.mp4",
+                            "type": "video/mp4",
+                            "width": 100
+                        }
+                    ],
+                    "caption": "Here's an example of a video where the experimenter reaches for an object, then labels that object."
+                },
+                {
+                    "video": [
+                        {
+                            "src": "https://raw.githubusercontent.com/sbuffonge/lookit-stimuli-template/master/mp4/learning_gombie_ball_left.mp4",
+                            "type": "video/mp4",
+                            "width": 100
+                        }
+                    ],
+                    "caption": "Here's an example of a video where the experimenter repeats the previous label, while two objects are shown. "
+                }
+            ],
+            "skipButtonText": "Skip preview",
+            "previewButtonText": "Preview the videos (my child cannot see the screen)",
+            "showPreviousButton": true
+        },
+        "final-instructions": {
+            "kind": "exp-lookit-instructions",
+            "blocks": [
+                {
+                    "title": "Before we begin:",
+                    "listblocks": [
+                        {
+                            "text": "The video section will take about 4 minutes to complete."
+                        },
+                        {
+                            "text": "We are most interested in your baby's natural attention so we ask that you do not talk to your baby or direct their attention while the videos are playing or frozen."
+                        },
+                        {
+                            "text": "Please close all other tabs or windows of your browser, to minimize any disruptions and ensure a good connection."
+                        },
+                        {
+                            "text": "To pause the study, press the space bar."
+                        },
+                        {
+                            "text": "If you want to stop the study for any reason, you can press ctrl-X or F1 to skip to the exit survey and select a privacy level for your video."
+                        },
+                        {
+                            "text": "You will be able to select a video privacy level at the end of the study."
+                        }
+                    ]
+                },
+                {
+                    "text": "Please, during the study, sit your baby in your lap, look down, close your eyes, and do not interact with them unless they turn toward you or try to get off your lap. We may not be able to use your child's data if you interact or talk to them.",
+                    "image": {
+                        "alt": "Mother holding child on her lap",
+                        "src": "https://raw.githubusercontent.com/sbuffonge/lookit-stimuli-template/master/img/parent_instruction.png"
+                    },
+                    "title": "Holding your baby"
+                },
+                {
+                    "text": "Please turn the volume up so that it's easy to hear but still comfortable.",
+                    "title": "Test your audio and get ready to start",
+                    "mediaBlock": {
+                        "text": "You should hear 'Ready to go?'",
+                        "isVideo": false,
+                        "sources": [
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/audio/ready.mp3",
+                                "type": "audio/mp3"
+                            },
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/audio/ready.ogg",
+                                "type": "audio/ogg"
+                            }
+                        ],
+                        "mustPlay": true,
+                        "warningText": "Please try playing the sample audio."
+                    }
+                }
+            ],
+            "nextButtonText": "Next"
+        },
+        "video-quality": {
+            "kind": "exp-video-config-quality",
+            "title": "Webcam instructions",
+            "introText": "We'll be analyzing where your child chooses to look during the videos--but only if we can tell where that is! Please check each of the following to ensure we're able to use your video:",
+            "requireItemConfirmation": true,
+            "completedItemText": "Did it!",
+            "instructionBlocks": [
+                {
+                    "text": "<strong>Make sure the webcam you're using is roughly centered</strong> relative to this monitor. This makes it much easier for us to tell whether your child is looking to the left or right!",
+                    "image": {
+                        "src": "https://s3.amazonaws.com/lookitcontents/website/centering.png",
+                        "alt": "Example images of using centered external webcam on monitor or built-in webcam on laptop."
+                    }
+                },
+                {
+                    "text": "<strong>Turn off any other monitors</strong> connected to your computer, besides the one with the centered webcam. (If there's just one monitor, you're all set!)",
+                    "image": {
+                        "src": "https://s3.amazonaws.com/lookitcontents/website/monitors.png",
+                        "alt": "Example images showing laptop screen turned off if using external monitor and webcam, or external monitor turned off if using built-in webcam and laptop screen."
+                    }
+                },
+                {
+                    "text": "Check the lighting by making sure you can <strong>clearly see your own eyes</strong> on the webcam view to the right. You may need to either turn on a light or reduce light coming from behind you.",
+                    "image": {
+                        "src": "https://s3.amazonaws.com/lookitcontents/website/lighting.png",
+                        "alt": "Example images showing good lighting, room too dark, and backlit scene where eyes are not visible."
+                    }
+                },
+                {
+                    "text": "If it's practical, <strong>minimize exciting things</strong> that are visible behind or to the side of the screen--for instance, by facing a wall instead of the kitchen. (If this isn't practical for you, don't worry about it--just check the box!)",
+                    "image": {
+                        "src": "https://s3.amazonaws.com/lookitcontents/website/distractions.png",
+                        "alt": "Example images showing a child and puppy next to the computer, versus a computer just on its own."
+                    }
+                },
+                {
+                    "text": "We are ready to go! <strong>Please, bring your child with you. Make sure that your child's eyes are visible on the video and they are positioned in the center of the screen</strong>."
+                }
+            ],
+            "requireTestVideo": false,
+            "showRecordMenu": false,
+            "recordingInstructionText": "<br><br><br><br><strong>When you and your child are ready click NEXT and the study will start!</strong>"
+        },
+        "final-instructions2": {
+            "kind": "exp-lookit-instructions",
+            "showWebcam": true,
+            "webcamBlocks": [
+                {
+                    "title": "Webcam instructions",
+                    "text": "Make sure the webcam you're using is roughly centered relative to this monitor. This makes it much easier for us to tell whether your child is looking to the left or right!",
+                    "image": {
+                        "alt": "Webcam centering",
+                        "src": "https://raw.githubusercontent.com/sbuffonge/lookit-stimuli-template/master/img/centering.png"
+                    },
+                    "listblocks": [
+                        {
+                            "text": "Please, bring your child with you. Make sure you can see your child's eyes in the video."
+                        },
+                        {
+                            "text": "Please, make sure that there is enough light in the room so that your child's eyes are well-visible (e.g., avoid light coming from behind you). If possible, please try to minimize any distractions while your child watches the video (e.g., other people, TV, etc.)."
+                        },
+                        {
+                            "text": "Once you and your baby are ready, click the next button to start watching the videos!"
+                        }
+                    ]
+                }
+            ],
+            "nextButtonText": "Next"
+        },
+        "instructions-video": {
+            "kind": "exp-lookit-instructions",
+            "blocks": [
+                {
+                    "text": "Watch this video, to find out what will happen in this study!",
+                    "title": "Instructions",
+                    "mediaBlock": {
+                        "isVideo": true,
+                        "sources": [
+                            {
+                                "src": "https://raw.githubusercontent.com/sbuffonge/lookit-stimuli-template/master/mp4/instructions.mp4",
+                                "type": "video/mp4"
+                            }
+                        ],
+                        "mustPlay": true
+                    }
+                }
+            ],
+            "nextButtonText": "Next",
+            "showPreviousButton": false
+        }
+    },
+    "sequence": [
+        "instructions",
+        "video-config",
+        "video-consent",
+        "instructions-video",
+        "final-instructions",
+        "video-quality",
+        "imageIntro",
+        "start-recording-with-video",
+        "test-trials",
+        "imageEnd",
+        "stop-recording-with-video",
+        "exit-survey"
+    ]
+}

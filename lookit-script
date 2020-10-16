@@ -18,9 +18,12 @@
                 "mp4"
             ],
             "video": "attentiongrabber",
-            "displayFullscreen": true
+            "displayFullscreen": true,
+            "commonFrameProperties": {
+            "maxUploadSeconds": 15
+            }
         },
-        "trials": {
+        "fam_trials": {
             "kind": "choice",
             "sampler": "random-parameter-set",
             "frameList": [
@@ -44,11 +47,284 @@
                     "sources": "FAM",
                     "altSources": "FAM",
                     "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                }
+               
+            ],
+            "parameterSets": [
+                {
+                    "FAM": "W1W2",
+                    "TEST1": "W1W2A-15",
+                    "TEST2": "W1W2D-15",
+                    "ALTTEST1": "W1W2D-15",
+                    "ALTTEST2": "W1W2A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
                 },
+                {
+                    "FAM": "W1W2",
+                    "TEST1": "W1W2D-15",
+                    "TEST2": "W1W2A-15",
+                    "ALTTEST1": "W1W2A-15",
+                    "ALTTEST2": "W1W2D-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W1W3",
+                    "TEST1": "W1W3A-15",
+                    "TEST2": "W1W3D-15",
+                    "ALTTEST1": "W1W3D-15",
+                    "ALTTEST2": "W1W3A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W1W3",
+                    "TEST1": "W1W3D-15",
+                    "TEST2": "W1W3A-15",
+                    "ALTTEST1": "W1W3A-15",
+                    "ALTTEST2": "W1W3D-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W2W3",
+                    "TEST1": "W2W3A-15",
+                    "TEST2": "W2W3D-15",
+                    "ALTTEST1": "W2W3D-15",
+                    "ALTTEST2": "W2W3A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W2W3",
+                    "TEST1": "W2W3D-15",
+                    "TEST2": "W2W3A-15",
+                    "ALTTEST1": "W2W3A-15",
+                    "ALTTEST2": "W2W3D-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "B1B2",
+                    "TEST1": "B1B2A-15",
+                    "TEST2": "B1B2D-15",
+                    "ALTTEST1": "B1B2D-15",
+                    "ALTTEST2": "B1B2A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "B1B2",
+                    "TEST1": "B1B2D-15",
+                    "TEST2": "B1B2A-15",
+                    "ALTTEST1": "B1B2A-15",
+                    "ALTTEST2": "B1B2D-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "B1B4",
+                    "TEST1": "B1B4A-15",
+                    "TEST2": "B1B4D-15",
+                    "ALTTEST1": "B1B4D-15",
+                    "ALTTEST2": "B1B4A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "B1B4",
+                    "TEST1": "B1B4D-15",
+                    "TEST2": "B1B4A-15",
+                    "ALTTEST1": "B1B4A-15",
+                    "ALTTEST2": "B1B4D-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "B2B4",
+                    "TEST1": "B2B4A-15",
+                    "TEST2": "B2B4D-15",
+                    "ALTTEST1": "B2B4D-15",
+                    "ALTTEST2": "B2B4A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "B2B4",
+                    "TEST1": "B2B4D-15",
+                    "TEST2": "B2B4A-15",
+                    "ALTTEST1": "B2B4A-15",
+                    "ALTTEST2": "B2B4D-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W1B4",
+                    "TEST1": "W1B4A-15",
+                    "TEST2": "W1B4D-15",
+                    "ALTTEST1": "W1B4D-15",
+                    "ALTTEST2": "W1B4A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W2B4",
+                    "TEST1": "W2B4D-15",
+                    "TEST2": "W2B4A-15",
+                    "ALTTEST1": "W2B4A-15",
+                    "ALTTEST2": "W2B4D-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W3B4",
+                    "TEST1": "W3B4A-15",
+                    "TEST2": "W3B4D-15",
+                    "ALTTEST1": "W3B4D-15",
+                    "ALTTEST2": "W3B4A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W4B1",
+                    "TEST1": "W4B1D-15",
+                    "TEST2": "W4B1A-15",
+                    "ALTTEST1": "W4B1A-15",
+                    "ALTTEST2": "W4B1D-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W4B2",
+                    "TEST1": "W4B2A-15",
+                    "TEST2": "W4B2D-15",
+                    "ALTTEST1": "W4B2D-15",
+                    "ALTTEST2": "W4B2A-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                },
+                {
+                    "FAM": "W4B4",
+                    "TEST1": "W4B4D-15",
+                    "TEST2": "W4B4A-15",
+                    "ALTTEST1": "W4B4A-15",
+                    "ALTTEST2": "W4B4D-15",
+                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                        "chimes",
+                        "bells",
+                        "electronic",
+                        "xylophone"
+                    ]
+                }
+            ],
+
+            "commonFrameProperties": {
+                "kind": "exp-lookit-composite-video-trial",
+                "doRecording": false,
+                "autoProceed": true,
+                "baseDir": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/",
+                "testCount": 1,
+                "audioTypes": [
+                    "mp3"
+                ],
+                "pauseAudio": "pause",
+                "videoTypes": [
+                    "mp4"
+                ],
+                "attnSources": "attentiongrabber",
+                "introSources": [],
+                "musicSources": [],
+                "unpauseAudio": "Grace_return_from_pause",
+                "announceLength": 3,
+                "calibrationLength": 0,
+                "calibrationPositions": [
+                    "left",
+                    "right",
+                    "center"
+                ],
+                "calibrationAudioSources": "chimes",
+                "calibrationVideoSources": "attentiongrabber"
+            }
+        },
+       
+"test_trials": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "frameList": [
                 {
                     "sources": "TEST1",
                     "altSources": "ALTTEST1",
-                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
+                    "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ",
+                    "calibrationLength": 2000
                 },
                 {
                     "sources": "TEST2",
@@ -440,7 +716,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Information about parents </b> <br> In this section, we will ask for some information about your child’s parents. Please tell us first about the parent who spends the <b>most</b> time caring for your child on a daily basis.<br> <br><i>(What do we mean by parent? Here we are specifically interested in the people responsible for raising your child, rather than other caregivers like a nanny. However, for our purposes “parents” don’t need to be official parents or guardians. For instance, we would include a parent’s live-in partner who is sharing parenting responsibilities, or a grandparent raising a child without an official custody arrangement. We are interested in the people your child sees the most, not in biological relationships - you do not need to include a biological parent who is not involved in raising your child.) </i><br><br> If multiple parents spend equal amounts of time caring for the child, you can choose any of them to enter first, and enter the additional parents on the next page.",
+                    "title": "<b> Information about caregivers </b> <br> In this section, we will ask for some information about your child’s caregivers. Please tell us about the caregiver who spends the <b>most</b> time caring for your child on a daily basis.<br> <br><i>(What do we mean by caregivers? Here we are specifically interested in the people who spend the most time with your child, such as a parent or nanny or any other individual. For our purposes, these caregivers don’t need to be official parents or guardians. For instance, we would include a parent’s live-in partner who is sharing caregiving responsibilities, or a grandparent raising a child without an official custody arrangement. We are interested in the people your child sees the most, not in biological relationships - you do not need to include a biological parent who is not involved in raising your child.) </i><br><br> If multiple caregivers spend equal amounts of time caring for the child, you can choose any of them to enter first, and enter the additional caregivers on the next page.",
                     "properties": {
                         "parent1": {
                             "enum": [
@@ -449,7 +725,7 @@
                                 "Other (please specify below)"
                             ],
                             "type": "string",
-                            "title": "Parent 1 is: "
+                            "title": "Caregiver 1 is: "
                         },
                         "parent1-1": {
                             "type": "string",
@@ -466,7 +742,7 @@
                                 "Other (please specify below)"
                             ],
                             "type": "checkbox",
-                            "title": "I would identify Parent 1's race or ethnicity as (please check all that apply)"
+                            "title": "I would identify Caregiver 1's race or ethnicity as (please check all that apply)"
                         },
                         "parent1-race2": {
                             "type": "string",
@@ -474,7 +750,7 @@
                         },
                         "parent1-education": {
                             "enum": [
-                                "8th grade of less",
+                                "8th grade or less",
                                 "9th - 12th grade no diploma",
                                 "High school graduate or GED completed",
                                 "Some college credit but no degree",
@@ -483,7 +759,7 @@
                                 "Graduate or professional degree"
                             ],
                             "type": "string",
-                            "title": "Parent 1's highest level of education:"
+                            "title": "Caregiver 1's highest level of education:"
                         }
                     },
                     "dependencies": {
@@ -512,7 +788,7 @@
                             "type": "checkbox"
                         },
                         "parent1-race2": {
-                            "placeholder": "please specify parent race or ethnicity"
+                            "placeholder": "please specify caregiver race or ethnicity"
                         },
                         "parent1-education": {
                             "sort": false
@@ -527,15 +803,15 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Information about parents </b>",
+                    "title": "<b> Information about caregivers </b>",
                     "properties": {
                         "parent2": {
                             "enum": [
                                 "No",
-                                "Yes, there are additional parent(s)"
+                                "Yes, there are additional caregiver(s)"
                             ],
                             "type": "string",
-                            "title": "Are there additional parent(s) who spend an equal amount of time caring for your child? "
+                            "title": "Are there additional caregiver(s) who spend an equal amount of time caring for your child? "
                         },
                         "parent2-0": {
                             "enum": [
@@ -544,7 +820,7 @@
                                 "Other (please specify below)"
                             ],
                             "type": "string",
-                            "title": "Parent 2 is: "
+                            "title": "Caregiver 2 is: "
                         },
                         "parent2-1": {
                             "type": "string",
@@ -561,7 +837,7 @@
                                 "Other (please specify below)"
                             ],
                             "type": "checkbox",
-                            "title": "I would identify Parent 2's race or ethnicity as (please check all that apply)"
+                            "title": "I would identify Caregiver 2's race or ethnicity as (please check all that apply)"
                         },
                         "parent2-race2": {
                             "type": "string",
@@ -569,7 +845,7 @@
                         },
                         "parent2-education": {
                             "enum": [
-                                "8th grade of less",
+                                "8th grade or less",
                                 "9th - 12th grade no diploma",
                                 "High school graduate or GED completed",
                                 "Some college credit but no degree",
@@ -578,15 +854,15 @@
                                 "Graduate or professional degree"
                             ],
                             "type": "string",
-                            "title": "Parent 2's highest level of education:"
+                            "title": "Caregiver 2's highest level of education:"
                         },
                         "parent2-z-othercaregivers": {
                             "enum": [
                                 "No",
-                                "Yes, there are more parent(s)"
+                                "Yes, there are more caregiver(s)"
                             ],
                             "type": "string",
-                            "title": "Are there other parent(s) for your child?"
+                            "title": "Are there other caregiver(s) for your child?"
                         },
                         "parent2-z-othercaregivers-parent3": {
                             "enum": [
@@ -595,7 +871,7 @@
                                 "Other (please specify below)"
                             ],
                             "type": "string",
-                            "title": "Parent 3 is: "
+                            "title": "Caregiver 3 is: "
                         },
                         "parent2-z-othercaregivers-parent3-1": {
                             "type": "string",
@@ -612,7 +888,7 @@
                                 "Other (please specify below)"
                             ],
                             "type": "checkbox",
-                            "title": "I would identify Parent 3's race or ethnicity as (please check all that apply)"
+                            "title": "I would identify Caregiver 3's race or ethnicity as (please check all that apply)"
                         },
                         "parent2-z-othercaregivers-parent3-race2": {
                             "type": "string",
@@ -620,7 +896,7 @@
                         },
                         "parent2-z-othercaregivers-parent3-education": {
                             "enum": [
-                                "8th grade of less",
+                                "8th grade or less",
                                 "9th - 12th grade no diploma",
                                 "High school graduate or GED completed",
                                 "Some college credit but no degree",
@@ -629,15 +905,15 @@
                                 "Graduate or professional degree"
                             ],
                             "type": "string",
-                            "title": "Parent 3's highest level of education:"
+                            "title": "Caregiver 3's highest level of education:"
                         },
                         "parent2-z-othercaregivers-z-othercaregivers": {
                             "enum": [
                                 "No",
-                                "Yes, there are more parent(s)"
+                                "Yes, there are more caregiver(s)"
                             ],
                             "type": "string",
-                            "title": "Are there other parent(s) for your child?"
+                            "title": "Are there other caregiver(s) for your child?"
                         },
                         "parent2-z-othercaregivers-z-othercaregivers-parent4": {
                             "enum": [
@@ -646,7 +922,7 @@
                                 "Other (please specify below)"
                             ],
                             "type": "string",
-                            "title": "Parent 4 is: "
+                            "title": "Caregiver 4 is: "
                         },
                         "parent2-z-othercaregivers-z-othercaregivers-parent4-1": {
                             "type": "string",
@@ -663,7 +939,7 @@
                                 "Other (please specify below)"
                             ],
                             "type": "checkbox",
-                            "title": "I would identify Parent 4's race or ethnicity as (please check all that apply)"
+                            "title": "I would identify Caregiver 4's race or ethnicity as (please check all that apply)"
                         },
                         "parent2-z-othercaregivers-z-othercaregivers-parent4-race2": {
                             "type": "string",
@@ -671,7 +947,7 @@
                         },
                         "parent2-z-othercaregivers-z-othercaregivers-parent4-education": {
                             "enum": [
-                                "8th grade of less",
+                                "8th grade or less",
                                 "9th - 12th grade no diploma",
                                 "High school graduate or GED completed",
                                 "Some college credit but no degree",
@@ -680,7 +956,7 @@
                                 "Graduate or professional degree"
                             ],
                             "type": "string",
-                            "title": "Parent 4's highest level of education:"
+                            "title": "Caregiver 4's highest level of education:"
                         }
                     },
                     "dependencies": {
@@ -750,7 +1026,7 @@
                             "removeDefaultNone": true,
                             "dependencies": {
                                 "parent2": [
-                                    "Yes, there are additional parent(s)"
+                                    "Yes, there are additional caregiver(s)"
                                 ]
                             }
                         },
@@ -774,7 +1050,7 @@
                             }
                         },
                         "parent2-race2": {
-                            "placeholder": "please specify parent race or ethnicity",
+                            "placeholder": "please specify caregiver race or ethnicity",
                             "dependencies": {
                                 "parent2-0": [
                                     "Mother",
@@ -810,7 +1086,7 @@
                             "type": "radio",
                             "dependencies": {
                                 "parent2-z-othercaregivers": [
-                                    "Yes, there are more parent(s)"
+                                    "Yes, there are more caregiver(s)"
                                 ]
                             },
                             "removeDefaultNone": true
@@ -835,7 +1111,7 @@
                             }
                         },
                         "parent2-z-othercaregivers-parent3-race2": {
-                            "placeholder": "please specify parent race or ethnicity",
+                            "placeholder": "please specify caregiver race or ethnicity",
                             "dependencies": {
                                 "parent2-z-othercaregivers-parent3": [
                                     "Mother",
@@ -871,7 +1147,7 @@
                             "type": "radio",
                             "dependencies": {
                                 "parent2-z-othercaregivers-z-othercaregivers": [
-                                    "Yes, there are more parent(s)"
+                                    "Yes, there are more caregiver(s)"
                                 ]
                             },
                             "removeDefaultNone": true
@@ -897,7 +1173,7 @@
                             "removeDefaultNone": true
                         },
                         "parent2-z-othercaregivers-z-othercaregivers-parent4-race2": {
-                            "placeholder": "please specify parent race or ethnicity",
+                            "placeholder": "please specify caregiver race or ethnicity",
                             "dependencies": {
                                 "pparent2-z-othercaregivers-z-othercaregivers-parent4": [
                                     "Mother",
@@ -926,7 +1202,7 @@
             "formSchema": {
                 "schema": {
                     "type": "object",
-                    "title": "<b> Demographic Survey </b> <br> This survey will ask some information about your child, your child's parents, and the neighborhood your child lives in to better understand your child's social experience with people who vary in racial and linguistic backgrounds. This survey will take about 5-10 minutes. Your answers will be kept completely confidential and will be used for research purposes only.",
+                    "title": "<b> Demographic Survey </b> <br> This survey will ask some information about your child, your child's caregivers, and the neighborhood your child lives in to better understand your child's social experience with people who vary in racial and linguistic backgrounds. This survey will take about 5-10 minutes. Your answers will be kept completely confidential and will be used for research purposes only.",
                     "properties": {
                         "race": {
                             "enum": [
@@ -1062,7 +1338,7 @@
                     }
                 },
                 {
-                    "text": "First your child will see a video of two people talking. This video is repeated four times. <br><br>Then we will alternate between videos that show those people saying hi, and videos that show those people turning their backs to each other. Each of those videos is repeated three times.<br><br> In some videos, there will be a <b>BEEP</b> sound. The video will then freeze for a few seconds. This is supposed to happen! <br><br> Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image.<br><br> Please don't talk while the people are on screen and do not direct your baby's attention or point to the screen when the people are on screen. <br><br> If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos.",
+                    "text": "First, your child will see a video of two people talking repeated four times. <br><br>Next, your child will either see a video that shows those people saying hi or a video that shows those people turning their backs to each other. Each video will be repeated three times.<br><br> In some videos, there will be a <b>BEEP</b> sound. The video will then freeze for a few seconds. This is supposed to happen! <br><br> Please keep it at this frozen, still picture until it automatically proceeds. We are most interested in how long babies continue to look at this still image.<br><br> If your baby looks away that's okay! There will be a colorful ball with a fun sound to re-focus your baby's attention in between the videos.",
                     "title": "Here are some points for you to remember:"
                 }
             ],
@@ -1260,16 +1536,20 @@
         }
     },
     "sequence": [
+               
         "video-config",
         "video-consent",
         "instructions",
         "final-instructions",
                 "web-cam",
             "start-recording-with-video",
-        "trials",
+        "fam_trials",
+        "stop-recording-with-video",
+                    "start-recording-with-video",
+        "test_trials",
                 "stop-recording-with-video",
         "demographic",
-        "parent-1",
+ "parent-1",
         "parent-2",
         "zipcode",
         "neighborhood",

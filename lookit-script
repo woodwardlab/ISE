@@ -1,5 +1,5 @@
 {
-    "frames": {
+"frames": {
         "start-recording-with-video": {
             "kind": "exp-lookit-start-recording",
             "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
@@ -18,12 +18,9 @@
                 "mp4"
             ],
             "video": "attentiongrabber",
-            "displayFullscreen": true,
-            "commonFrameProperties": {
-            "maxUploadSeconds": 15
-            }
+            "displayFullscreen": true
         },
-        "fam_trials": {
+        "trials": {
             "kind": "choice",
             "sampler": "random-parameter-set",
             "frameList": [
@@ -47,279 +44,7 @@
                     "sources": "FAM",
                     "altSources": "FAM",
                     "audioSources": "ATTENTIONGETTER_AUDIO_OPTIONS#UNIQ"
-                }
-               
-            ],
-            "parameterSets": [
-                {
-                    "FAM": "W1W2",
-                    "TEST1": "W1W2A-15",
-                    "TEST2": "W1W2D-15",
-                    "ALTTEST1": "W1W2D-15",
-                    "ALTTEST2": "W1W2A-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
                 },
-                {
-                    "FAM": "W1W2",
-                    "TEST1": "W1W2D-15",
-                    "TEST2": "W1W2A-15",
-                    "ALTTEST1": "W1W2A-15",
-                    "ALTTEST2": "W1W2D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "W1W3",
-                    "TEST1": "W1W3A-15",
-                    "TEST2": "W1W3D-15",
-                    "ALTTEST1": "W1W3D-15",
-                    "ALTTEST2": "W1W3A-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "W1W3",
-                    "TEST1": "W1W3D-15",
-                    "TEST2": "W1W3A-15",
-                    "ALTTEST1": "W1W3A-15",
-                    "ALTTEST2": "W1W3D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "W2W3",
-                    "TEST1": "W2W3A-15",
-                    "TEST2": "W2W3D-15",
-                    "ALTTEST1": "W2W3D-15",
-                    "ALTTEST2": "W2W3A-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "W2W3",
-                    "TEST1": "W2W3D-15",
-                    "TEST2": "W2W3A-15",
-                    "ALTTEST1": "W2W3A-15",
-                    "ALTTEST2": "W2W3D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "B1B2",
-                    "TEST1": "B1B2A-15",
-                    "TEST2": "B1B2D-15",
-                    "ALTTEST1": "B1B2D-15",
-                    "ALTTEST2": "B1B2A-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "B1B2",
-                    "TEST1": "B1B2D-15",
-                    "TEST2": "B1B2A-15",
-                    "ALTTEST1": "B1B2A-15",
-                    "ALTTEST2": "B1B2D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "B1B4",
-                    "TEST1": "B1B4A-15",
-                    "TEST2": "B1B4D-15",
-                    "ALTTEST1": "B1B4D-15",
-                    "ALTTEST2": "B1B4A-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "B1B4",
-                    "TEST1": "B1B4D-15",
-                    "TEST2": "B1B4A-15",
-                    "ALTTEST1": "B1B4A-15",
-                    "ALTTEST2": "B1B4D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "B2B4",
-                    "TEST1": "B2B4A-15",
-                    "TEST2": "B2B4D-15",
-                    "ALTTEST1": "B2B4D-15",
-                    "ALTTEST2": "B2B4A-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "B2B4",
-                    "TEST1": "B2B4D-15",
-                    "TEST2": "B2B4A-15",
-                    "ALTTEST1": "B2B4A-15",
-                    "ALTTEST2": "B2B4D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "W1B4",
-                    "TEST1": "W1B4A-15",
-                    "TEST2": "W1B4D-15",
-                    "ALTTEST1": "W1B4D-15",
-                    "ALTTEST2": "W1B4A-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "W2B4",
-                    "TEST1": "W2B4D-15",
-                    "TEST2": "W2B4A-15",
-                    "ALTTEST1": "W2B4A-15",
-                    "ALTTEST2": "W2B4D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "W3B4",
-                    "TEST1": "W3B4A-15",
-                    "TEST2": "W3B4D-15",
-                    "ALTTEST1": "W3B4D-15",
-                    "ALTTEST2": "W3B4A-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "W4B1",
-                    "TEST1": "W4B1D-15",
-                    "TEST2": "W4B1A-15",
-                    "ALTTEST1": "W4B1A-15",
-                    "ALTTEST2": "W4B1D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "W4B2",
-                    "TEST1": "W4B2A-15",
-                    "TEST2": "W4B2D-15",
-                    "ALTTEST1": "W4B2D-15",
-                    "ALTTEST2": "W4B2A-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                },
-                {
-                    "FAM": "W4B4",
-                    "TEST1": "W4B4D-15",
-                    "TEST2": "W4B4A-15",
-                    "ALTTEST1": "W4B4A-15",
-                    "ALTTEST2": "W4B4D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
-                        "electronic",
-                        "xylophone"
-                    ]
-                }
-            ],
-
-            "commonFrameProperties": {
-                "kind": "exp-lookit-composite-video-trial",
-                "doRecording": false,
-                "autoProceed": true,
-                "baseDir": "https://raw.githubusercontent.com/woodwardlab/lookit-stimuli-template/master/",
-                "testCount": 1,
-                "audioTypes": [
-                    "mp3"
-                ],
-                "pauseAudio": "pause",
-                "videoTypes": [
-                    "mp4"
-                ],
-                "attnSources": "attentiongrabber",
-                "introSources": [],
-                "musicSources": [],
-                "unpauseAudio": "Grace_return_from_pause",
-                "announceLength": 3,
-                "calibrationLength": 0,
-                "calibrationPositions": [
-                    "left",
-                    "right",
-                    "center"
-                ],
-                "calibrationAudioSources": "chimes",
-                "calibrationVideoSources": "attentiongrabber"
-            }
-        },
-       
-"test_trials": {
-            "kind": "choice",
-            "sampler": "random-parameter-set",
-            "frameList": [
                 {
                     "sources": "TEST1",
                     "altSources": "ALTTEST1",
@@ -372,16 +97,16 @@
                         "electronic",
                         "xylophone"
                     ]
-                },
-                {
-                    "FAM": "W1W2",
-                    "TEST1": "W1W2D-15",
-                    "TEST2": "W1W2A-15",
-                    "ALTTEST1": "W1W2A-15",
-                    "ALTTEST2": "W1W2D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
+                 },
+                 {
+                     "FAM": "W1W2",
+                     "TEST1": "W1W2D-15",
+                     "TEST2": "W1W2A-15",
+                     "ALTTEST1": "W1W2A-15",
+                     "ALTTEST2": "W1W2D-15",
+                     "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                         "chimes",
+                         "bells",
                         "electronic",
                         "xylophone"
                     ]
@@ -398,16 +123,16 @@
                         "electronic",
                         "xylophone"
                     ]
-                },
-                {
-                    "FAM": "W1W3",
-                    "TEST1": "W1W3D-15",
-                    "TEST2": "W1W3A-15",
-                    "ALTTEST1": "W1W3A-15",
-                    "ALTTEST2": "W1W3D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
+                 },
+                 {
+                     "FAM": "W1W3",
+                     "TEST1": "W1W3D-15",
+                     "TEST2": "W1W3A-15",
+                     "ALTTEST1": "W1W3A-15",
+                     "ALTTEST2": "W1W3D-15",
+                     "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                         "chimes",
+                         "bells",
                         "electronic",
                         "xylophone"
                     ]
@@ -424,16 +149,16 @@
                         "electronic",
                         "xylophone"
                     ]
-                },
-                {
-                    "FAM": "W2W3",
-                    "TEST1": "W2W3D-15",
-                    "TEST2": "W2W3A-15",
-                    "ALTTEST1": "W2W3A-15",
-                    "ALTTEST2": "W2W3D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
+                 },
+                 {
+                     "FAM": "W2W3",
+                     "TEST1": "W2W3D-15",
+                     "TEST2": "W2W3A-15",
+                     "ALTTEST1": "W2W3A-15",
+                     "ALTTEST2": "W2W3D-15",
+                     "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                         "chimes",
+                         "bells",
                         "electronic",
                         "xylophone"
                     ]
@@ -450,16 +175,16 @@
                         "electronic",
                         "xylophone"
                     ]
-                },
-                {
-                    "FAM": "B1B2",
-                    "TEST1": "B1B2D-15",
-                    "TEST2": "B1B2A-15",
-                    "ALTTEST1": "B1B2A-15",
-                    "ALTTEST2": "B1B2D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
+                 },
+                 {
+                     "FAM": "B1B2",
+                     "TEST1": "B1B2D-15",
+                     "TEST2": "B1B2A-15",
+                     "ALTTEST1": "B1B2A-15",
+                     "ALTTEST2": "B1B2D-15",
+                     "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                         "chimes",
+                         "bells",
                         "electronic",
                         "xylophone"
                     ]
@@ -476,16 +201,16 @@
                         "electronic",
                         "xylophone"
                     ]
-                },
-                {
-                    "FAM": "B1B4",
-                    "TEST1": "B1B4D-15",
-                    "TEST2": "B1B4A-15",
-                    "ALTTEST1": "B1B4A-15",
-                    "ALTTEST2": "B1B4D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
+                 },
+                 {
+                     "FAM": "B1B4",
+                     "TEST1": "B1B4D-15",
+                     "TEST2": "B1B4A-15",
+                     "ALTTEST1": "B1B4A-15",
+                     "ALTTEST2": "B1B4D-15",
+                     "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                         "chimes",
+                         "bells",
                         "electronic",
                         "xylophone"
                     ]
@@ -502,16 +227,16 @@
                         "electronic",
                         "xylophone"
                     ]
-                },
-                {
-                    "FAM": "B2B4",
-                    "TEST1": "B2B4D-15",
-                    "TEST2": "B2B4A-15",
-                    "ALTTEST1": "B2B4A-15",
-                    "ALTTEST2": "B2B4D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
+                 },
+                 {
+                     "FAM": "B2B4",
+                     "TEST1": "B2B4D-15",
+                     "TEST2": "B2B4A-15",
+                     "ALTTEST1": "B2B4A-15",
+                     "ALTTEST2": "B2B4D-15",
+                     "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                         "chimes",
+                         "bells",
                         "electronic",
                         "xylophone"
                     ]
@@ -528,16 +253,16 @@
                         "electronic",
                         "xylophone"
                     ]
-                },
-                {
-                    "FAM": "W2B4",
-                    "TEST1": "W2B4D-15",
-                    "TEST2": "W2B4A-15",
-                    "ALTTEST1": "W2B4A-15",
-                    "ALTTEST2": "W2B4D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
+                 },
+                 {
+                     "FAM": "W2B4",
+                     "TEST1": "W2B4D-15",
+                     "TEST2": "W2B4A-15",
+                     "ALTTEST1": "W2B4A-15",
+                     "ALTTEST2": "W2B4D-15",
+                     "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                         "chimes",
+                         "bells",
                         "electronic",
                         "xylophone"
                     ]
@@ -554,16 +279,16 @@
                         "electronic",
                         "xylophone"
                     ]
-                },
-                {
-                    "FAM": "W4B1",
-                    "TEST1": "W4B1D-15",
-                    "TEST2": "W4B1A-15",
-                    "ALTTEST1": "W4B1A-15",
-                    "ALTTEST2": "W4B1D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
+                 },
+                 {
+                     "FAM": "W4B1",
+                     "TEST1": "W4B1D-15",
+                     "TEST2": "W4B1A-15",
+                     "ALTTEST1": "W4B1A-15",
+                     "ALTTEST2": "W4B1D-15",
+                     "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                         "chimes",
+                         "bells",
                         "electronic",
                         "xylophone"
                     ]
@@ -580,16 +305,16 @@
                         "electronic",
                         "xylophone"
                     ]
-                },
-                {
-                    "FAM": "W4B4",
-                    "TEST1": "W4B4D-15",
-                    "TEST2": "W4B4A-15",
-                    "ALTTEST1": "W4B4A-15",
-                    "ALTTEST2": "W4B4D-15",
-                    "ATTENTIONGETTER_AUDIO_OPTIONS": [
-                        "chimes",
-                        "bells",
+                 },
+                 {
+                     "FAM": "W4B4",
+                     "TEST1": "W4B4D-15",
+                     "TEST2": "W4B4A-15",
+                     "ALTTEST1": "W4B4A-15",
+                     "ALTTEST2": "W4B4D-15",
+                     "ATTENTIONGETTER_AUDIO_OPTIONS": [
+                         "chimes",
+                         "bells",
                         "electronic",
                         "xylophone"
                     ]
@@ -1541,15 +1266,12 @@
         "video-consent",
         "instructions",
         "final-instructions",
-                "web-cam",
-            "start-recording-with-video",
-        "fam_trials",
+        "web-cam",
+        "start-recording-with-video",
+        "trials",
         "stop-recording-with-video",
-                    "start-recording-with-video",
-        "test_trials",
-                "stop-recording-with-video",
         "demographic",
- "parent-1",
+        "parent-1",
         "parent-2",
         "zipcode",
         "neighborhood",
